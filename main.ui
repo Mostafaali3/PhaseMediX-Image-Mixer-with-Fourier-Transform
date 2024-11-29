@@ -6,15 +6,1440 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1170</width>
+    <height>765</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <property name="styleSheet">
+   <string notr="true">*{
+    background-color: #0f1729;  
+    color: #ffffff;     
+	font-size:14px;
+
+}
+
+QLineEdit {
+    background-color: #0f1729;   /* Updated dark background */
+    color: #ffffff;              /* Updated white text */
+    border: 1px solid #ffffff;   /* Updated blue border */
+	border-top:none;
+	border-right: none;
+	border-left: none;
+    padding: 4px 8px;
+    font-size: 14px;
+}
+
+QLineEdit:hover {
+    border: 1px solid #ffffff;   /* Updated lighter blue on hover */
+	border-top:none;
+	border-right: none;
+	border-left: none;
+}
+
+QLineEdit:focus {
+    border: 1px solid #ffffff;   /* Stronger blue when focused */
+	border-top:none;
+	border-right: none;
+	border-left: none;
+    background-color: #142A4A;   /* Slightly lighter background on focus */
+    color: #ffffff;              /* Text turns blue when focused */
+}
+
+QLineEdit::placeholder {
+    color: #39bef7;              /* Lighter blue for the placeholder */
+    font-style: italic;
+}
+
+QLineEdit:disabled {
+    background-color: #1B2C3E;   /* Darker background when disabled */
+    color: #888888;              /* Gray text when disabled */
+    border: 2px solid #666666;   /* Gray border when disabled */
+}
+
+QPushButton {
+    background-color: #0f1729;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+QPushButton:hover {
+    background-color: #142A4A;
+}
+
+QToolTip {
+    background-color: #0f1729;   /* Updated background */
+    color: #e1e8f0;              /* Updated white text */
+    border: 1px solid #39bef7;   /* Updated blue border */
+    padding: 5px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* Sliders */
+QSlider::groove:horizontal {
+    border: 1px solid #ffffff;   /* Updated white border */
+    height: 8px;
+    background: #0f1729;
+    border-radius: 4px;
+}
+
+QSlider::handle:horizontal {
+    background: #ffffff;         /* Updated white handle */
+    border: 1px solid #e1e8f0;   /* White border around handle */
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin: -7px 0;
+}
+
+QSlider::sub-page:horizontal {
+    background: #ffffff;         /* Updated white for sub-page */
+    border: 1px solid #ffffff;   /* White border for sub-page */
+    height: 8px;
+    border-radius: 4px;
+}
+
+QSlider::add-page:horizontal {
+    background: #0f1729;
+    border: 1px solid #ffffff;   /* White border for add-page */
+    height: 8px;
+    border-radius: 4px;
+}
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" colspan="2">
+     <layout class="QVBoxLayout" name="verticalLayout_15">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <property name="spacing">
+         <number>20</number>
+        </property>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="spacing">
+           <number>20</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_9">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <item>
+               <widget class="QLabel" name="label">
+                <property name="maximumSize">
+                 <size>
+                  <width>45</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">font-size:14px;
+</string>
+                </property>
+                <property name="text">
+                 <string>Mode:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="modeComboBox">
+                <property name="minimumSize">
+                 <size>
+                  <width>140</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>160</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">*{
+border:none;
+margin-top: 0px;
+font-size:14px;
+}
+QComboBox {
+    background-color: #0f1729;
+    color: #ffffff;
+    border: 2px solid #ffffff;   /* White border */
+    border-radius: 5px;
+    padding: 5px;
+}
+
+QComboBox::drop-down {
+    border-left: 1px solid #ffffff; /* White border */
+}
+
+QComboBox QAbstractItemView {
+    background-color: #0f1729;  /* Background color of dropdown items */
+    color: #ffffff;             /* Text color of dropdown items */
+    border: 1px solid #ffffff;  /* Border around the dropdown */
+    selection-background-color: #1e293b;
+    selection-color: #ffffff;            /* Text color of selected item */
+    padding: 5px;
+}
+</string>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Magnitude/ Phase</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Real/ Imaginary</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_6">
+              <item>
+               <widget class="QLabel" name="label_3">
+                <property name="maximumSize">
+                 <size>
+                  <width>60</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Region:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="regionComboScale">
+                <property name="minimumSize">
+                 <size>
+                  <width>60</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>80</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">*{
+border:none;
+margin-top: 0px;
+font-size:14px;
+}
+QComboBox {
+    background-color: #0f1729;
+    color: #ffffff;
+    border: 2px solid #ffffff;   /* White border */
+    border-radius: 5px;
+    padding: 5px;
+}
+
+QComboBox::drop-down {
+    border-left: 1px solid #ffffff; /* White border */
+}
+
+QComboBox QAbstractItemView {
+    background-color: #0f1729;  /* Background color of dropdown items */
+    color: #ffffff;             /* Text color of dropdown items */
+    border: 1px solid #ffffff;  /* Border around the dropdown */
+    selection-background-color: #1e293b;
+    selection-color: #ffffff;            /* Text color of selected item */
+    padding: 5px;
+}
+</string>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Full</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Inner</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Outer</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_8">
+              <item>
+               <widget class="QLabel" name="label_4">
+                <property name="maximumSize">
+                 <size>
+                  <width>60</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Display:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="displayComboBox">
+                <property name="minimumSize">
+                 <size>
+                  <width>100</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>120</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">*{
+border:none;
+margin-top: 0px;
+font-size:14px;
+}
+QComboBox {
+    background-color: #0f1729;
+    color: #ffffff;
+    border: 2px solid #ffffff;   /* White border */
+    border-radius: 5px;
+    padding: 5px;
+}
+
+QComboBox::drop-down {
+    border-left: 1px solid #ffffff; /* White border */
+}
+
+QComboBox QAbstractItemView {
+    background-color: #0f1729;  /* Background color of dropdown items */
+    color: #ffffff;             /* Text color of dropdown items */
+    border: 1px solid #ffffff;  /* Border around the dropdown */
+    selection-background-color: #1e293b;
+    selection-color: #ffffff;            /* Text color of selected item */
+    padding: 5px;
+}
+</string>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Output 01</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Output 02</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_10">
+            <item>
+             <widget class="QPushButton" name="convertButton">
+              <property name="layoutDirection">
+               <enum>Qt::RightToLeft</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">    border: 2px solid #ffffff;   /* White border */
+</string>
+              </property>
+              <property name="text">
+               <string>Convert </string>
+              </property>
+              <property name="icon">
+               <iconset resource="icons_setup/icons.qrc">
+                <normaloff>:/icons_setup/icons/convert.png</normaloff>:/icons_setup/icons/convert.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>16</width>
+                <height>16</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <item>
+           <widget class="QFrame" name="frame_2">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_24">
+             <item>
+              <widget class="QFrame" name="loadingFrame">
+               <property name="minimumSize">
+                <size>
+                 <width>300</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>500</width>
+                 <height>7</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">*{
+background-color: #ffffff;
+border-radius: 10px;
+}
+
+</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="convertingLoading">
+               <property name="maximumSize">
+                <size>
+                 <width>50</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>  10 %</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>20</number>
+      </property>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <property name="spacing">
+         <number>20</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_11">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_10">
+            <property name="spacing">
+             <number>15</number>
+            </property>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_13">
+              <item>
+               <widget class="QFrame" name="image1Frame">
+                <property name="minimumSize">
+                 <size>
+                  <width>450</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>1111111</width>
+                  <height>16777213</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">border: 2px solid #ffffff;   /* White border */
+padding: 0;
+border-radius: 5px;
+</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_14">
+                 <item>
+                  <widget class="QFrame" name="image1">
+                   <property name="minimumSize">
+                    <size>
+                     <width>200</width>
+                     <height>200</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>500</width>
+                     <height>500</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">border: none;
+    background-color: #142A4A;
+    border-radius: 5px;
+
+</string>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame">
+                   <property name="maximumSize">
+                    <size>
+                     <width>2</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">border: none;
+background-color: #ffffff;
+</string>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="image1Frequancy">
+                   <property name="minimumSize">
+                    <size>
+                     <width>200</width>
+                     <height>200</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>500</width>
+                     <height>500</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">border: none;
+background-color: #142A4A;
+    border-radius: 5px;
+
+</string>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_12">
+              <item>
+               <widget class="QComboBox" name="image1ComboBox">
+                <property name="styleSheet">
+                 <string notr="true">*{
+border:none;
+margin-top: 0px;
+font-size:14px;
+}
+QComboBox {
+    background-color: #0f1729;
+    color: #ffffff;
+    border: 2px solid #ffffff;   /* White border */
+    border-radius: 5px;
+    padding: 5px;
+}
+
+QComboBox::drop-down {
+    border-left: 1px solid #ffffff; /* White border */
+}
+
+QComboBox QAbstractItemView {
+    background-color: #0f1729;  /* Background color of dropdown items */
+    color: #ffffff;             /* Text color of dropdown items */
+    border: 1px solid #ffffff;  /* Border around the dropdown */
+    selection-background-color: #1e293b;
+    selection-color: #ffffff;            /* Text color of selected item */
+    padding: 5px;
+}
+</string>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Magnitude</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Phase</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Real</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Imaginary</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSlider" name="image1Slider">
+                <property name="styleSheet">
+                 <string notr="true">/* Sliders */
+QSlider::groove:horizontal {
+    border: 1px solid #ffffff;   /* Updated white border */
+    height: 8px;
+    background: #0f1729;
+    border-radius: 4px;
+}
+
+QSlider::handle:horizontal {
+    background: #ffffff;         /* Updated white handle */
+    border: 1px solid #e1e8f0;   /* White border around handle */
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin: -7px 0;
+}
+
+QSlider::sub-page:horizontal {
+    background: #ffffff;         /* Updated white for sub-page */
+    border: 1px solid #ffffff;   /* White border for sub-page */
+    height: 8px;
+    border-radius: 4px;
+}
+
+QSlider::add-page:horizontal {
+    background: #0f1729;
+    border: 1px solid #ffffff;   /* White border for add-page */
+    height: 8px;
+    border-radius: 4px;
+}</string>
+                </property>
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="image1Loading">
+                <property name="text">
+                 <string>10 %</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_7">
+            <property name="spacing">
+             <number>15</number>
+            </property>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_16">
+              <item>
+               <widget class="QFrame" name="image2Frame">
+                <property name="minimumSize">
+                 <size>
+                  <width>450</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>11111111</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">border: 2px solid #ffffff;   /* White border */
+padding: 0;
+    border-radius: 5px;
+</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_15">
+                 <item>
+                  <widget class="QFrame" name="image2">
+                   <property name="minimumSize">
+                    <size>
+                     <width>200</width>
+                     <height>200</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>500</width>
+                     <height>500</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">border: none;
+background-color: #142A4A;
+    border-radius: 5px;
+
+</string>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_4">
+                   <property name="maximumSize">
+                    <size>
+                     <width>2</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">border: none;
+background-color: #ffffff;
+</string>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="image2Frequency">
+                   <property name="minimumSize">
+                    <size>
+                     <width>200</width>
+                     <height>200</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>500</width>
+                     <height>500</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">border: none;
+background-color: #142A4A;
+    border-radius: 5px;
+
+</string>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_17">
+              <item>
+               <widget class="QComboBox" name="image2ComboBox">
+                <property name="styleSheet">
+                 <string notr="true">*{
+border:none;
+margin-top: 0px;
+font-size:14px;
+}
+QComboBox {
+    background-color: #0f1729;
+    color: #ffffff;
+    border: 2px solid #ffffff;   /* White border */
+    border-radius: 5px;
+    padding: 5px;
+}
+
+QComboBox::drop-down {
+    border-left: 1px solid #ffffff; /* White border */
+}
+
+QComboBox QAbstractItemView {
+    background-color: #0f1729;  /* Background color of dropdown items */
+    color: #ffffff;             /* Text color of dropdown items */
+    border: 1px solid #ffffff;  /* Border around the dropdown */
+    selection-background-color: #1e293b;
+    selection-color: #ffffff;            /* Text color of selected item */
+    padding: 5px;
+}
+</string>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Magnitude</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Phase</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Real</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Imaginary</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSlider" name="image2Slider">
+                <property name="styleSheet">
+                 <string notr="true">/* Sliders */
+QSlider::groove:horizontal {
+    border: 1px solid #ffffff;   /* Updated white border */
+    height: 8px;
+    background: #0f1729;
+    border-radius: 4px;
+}
+
+QSlider::handle:horizontal {
+    background: #ffffff;         /* Updated white handle */
+    border: 1px solid #e1e8f0;   /* White border around handle */
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin: -7px 0;
+}
+
+QSlider::sub-page:horizontal {
+    background: #ffffff;         /* Updated white for sub-page */
+    border: 1px solid #ffffff;   /* White border for sub-page */
+    height: 8px;
+    border-radius: 4px;
+}
+
+QSlider::add-page:horizontal {
+    background: #0f1729;
+    border: 1px solid #ffffff;   /* White border for add-page */
+    height: 8px;
+    border-radius: 4px;
+}</string>
+                </property>
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="image2Loading">
+                <property name="text">
+                 <string>10 %</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_12">
+            <property name="spacing">
+             <number>15</number>
+            </property>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_18">
+              <item>
+               <widget class="QFrame" name="image3Frame">
+                <property name="minimumSize">
+                 <size>
+                  <width>450</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>11111111</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">border: 2px solid #ffffff;   /* White border */
+padding: 0;
+    border-radius: 5px;
+
+</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_22">
+                 <item>
+                  <widget class="QFrame" name="image3">
+                   <property name="minimumSize">
+                    <size>
+                     <width>200</width>
+                     <height>200</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>500</width>
+                     <height>500</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">border: none;
+    background-color: #142A4A;
+    border-radius: 5px;
+
+</string>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_6">
+                   <property name="maximumSize">
+                    <size>
+                     <width>2</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">border: none;
+background-color: #ffffff;
+</string>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="image3Frequency">
+                   <property name="minimumSize">
+                    <size>
+                     <width>200</width>
+                     <height>200</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>500</width>
+                     <height>500</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">border: none;
+    background-color: #142A4A;
+    border-radius: 5px;
+
+</string>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_19">
+              <item>
+               <widget class="QComboBox" name="image3ComboBox">
+                <property name="styleSheet">
+                 <string notr="true">*{
+border:none;
+margin-top: 0px;
+font-size:14px;
+}
+QComboBox {
+    background-color: #0f1729;
+    color: #ffffff;
+    border: 2px solid #ffffff;   /* White border */
+    border-radius: 5px;
+    padding: 5px;
+}
+
+QComboBox::drop-down {
+    border-left: 1px solid #ffffff; /* White border */
+}
+
+QComboBox QAbstractItemView {
+    background-color: #0f1729;  /* Background color of dropdown items */
+    color: #ffffff;             /* Text color of dropdown items */
+    border: 1px solid #ffffff;  /* Border around the dropdown */
+    selection-background-color: #1e293b;
+    selection-color: #ffffff;            /* Text color of selected item */
+    padding: 5px;
+}
+</string>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Magnitude</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Phase</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Real</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Imaginary</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSlider" name="image3Slider">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="image3Loading">
+                <property name="text">
+                 <string>10 %</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_11">
+            <property name="spacing">
+             <number>15</number>
+            </property>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_20">
+              <item>
+               <widget class="QFrame" name="image4Frame">
+                <property name="minimumSize">
+                 <size>
+                  <width>450</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>11111111</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">border: 2px solid #ffffff;   /* White border */
+padding: 0;
+    border-radius: 5px;
+
+</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_23">
+                 <item>
+                  <widget class="QFrame" name="image4">
+                   <property name="minimumSize">
+                    <size>
+                     <width>200</width>
+                     <height>200</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>500</width>
+                     <height>500</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">border: none;
+    background-color: #142A4A;
+    border-radius: 5px;
+
+</string>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_7">
+                   <property name="maximumSize">
+                    <size>
+                     <width>2</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">border: none;
+background-color: #ffffff;
+</string>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="image4Frequency">
+                   <property name="minimumSize">
+                    <size>
+                     <width>200</width>
+                     <height>200</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>500</width>
+                     <height>500</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">border: none;
+    background-color: #142A4A;
+    border-radius: 5px;
+
+</string>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_21">
+              <item>
+               <widget class="QComboBox" name="image4ComboBox">
+                <property name="styleSheet">
+                 <string notr="true">*{
+border:none;
+margin-top: 0px;
+font-size:14px;
+}
+QComboBox {
+    background-color: #0f1729;
+    color: #ffffff;
+    border: 2px solid #ffffff;   /* White border */
+    border-radius: 5px;
+    padding: 5px;
+}
+
+QComboBox::drop-down {
+    border-left: 1px solid #ffffff; /* White border */
+}
+
+QComboBox QAbstractItemView {
+    background-color: #0f1729;  /* Background color of dropdown items */
+    color: #ffffff;             /* Text color of dropdown items */
+    border: 1px solid #ffffff;  /* Border around the dropdown */
+    selection-background-color: #1e293b;
+    selection-color: #ffffff;            /* Text color of selected item */
+    padding: 5px;
+}
+</string>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Magnitude</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Phase</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Real</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Imaginary</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSlider" name="image4Slider">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="image4Loading">
+                <property name="text">
+                 <string>10 %</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="spacing">
+         <number>15</number>
+        </property>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_13">
+          <property name="leftMargin">
+           <number>5</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>5</number>
+          </property>
+          <property name="bottomMargin">
+           <number>5</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="maximumSize">
+             <size>
+              <width>70</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Output 01</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="output1Frame">
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>200</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>250</width>
+              <height>250</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: none;
+background-color: #142A4A;
+    border-radius: 5px;
+
+</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_14">
+          <property name="leftMargin">
+           <number>5</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>5</number>
+          </property>
+          <property name="bottomMargin">
+           <number>5</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>80</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Output 02</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="output2Frame">
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>200</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>250</width>
+              <height>250</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: none;
+background-color: #142A4A;
+    border-radius: 5px;
+
+</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="icons_setup/icons.qrc"/>
+ </resources>
  <connections/>
 </ui>

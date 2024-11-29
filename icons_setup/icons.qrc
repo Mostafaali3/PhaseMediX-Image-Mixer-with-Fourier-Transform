@@ -3,6 +3,7 @@
   <qresource>
 
     <file>..\icons_setup\icons\logo.png</file>
+    <file>..\icons_setup\icons\convert.png</file>
 
   </qresource>
 </RCC>

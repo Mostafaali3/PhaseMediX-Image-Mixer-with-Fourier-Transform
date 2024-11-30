@@ -1,10 +1,11 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow, QFrame, QVBoxLayout
+from PyQt5.QtWidgets import QApplication, QMainWindow, QFrame, QVBoxLayout, QFileDialog
 from PyQt5.uic import loadUi
 from PyQt5.QtGui import QIcon
 from helper_function.compile_qrc import compile_qrc
 from classes.imageViewer import ImageViewer
 from classes.componentsViewer import ComponentViewer
+import cv2
 
 compile_qrc()
 
@@ -51,6 +52,14 @@ class MainWindow(QMainWindow):
         self.output_viewer_2 = ImageViewer()
         self.output_viewer_frame_2.layout().addWidget(self.output_viewer_2)
         
+        
+    def load_image(self, viewer_number):
+        file_path, _ = QFileDialog.getOpenFileName(self, 'Open Image File', '', 'Image Files (*.jpeg *.jpg *.png *.bmp *.gif);;All Files (*)')
+        
+        if file_path.endswith('.jpeg'):
+            image = cv2.imread(file_path)
+            pass
+
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

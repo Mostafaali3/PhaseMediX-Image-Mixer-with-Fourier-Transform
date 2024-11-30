@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1170</width>
+    <width>1188</width>
     <height>765</height>
    </rect>
   </property>
@@ -114,8 +114,23 @@ QSlider::add-page:horizontal {
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
+    <property name="horizontalSpacing">
+     <number>9</number>
+    </property>
+    <property name="verticalSpacing">
+     <number>30</number>
+    </property>
     <item row="0" column="0" colspan="2">
      <layout class="QVBoxLayout" name="verticalLayout_15">
+      <property name="leftMargin">
+       <number>10</number>
+      </property>
+      <property name="topMargin">
+       <number>10</number>
+      </property>
+      <property name="rightMargin">
+       <number>10</number>
+      </property>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_2">
         <property name="spacing">
@@ -158,7 +173,7 @@ QSlider::add-page:horizontal {
                 <property name="maximumSize">
                  <size>
                   <width>160</width>
-                  <height>16777215</height>
+                  <height>30</height>
                  </size>
                 </property>
                 <property name="styleSheet">
@@ -229,7 +244,7 @@ QComboBox QAbstractItemView {
                 <property name="maximumSize">
                  <size>
                   <width>80</width>
-                  <height>16777215</height>
+                  <height>30</height>
                  </size>
                 </property>
                 <property name="styleSheet">
@@ -305,7 +320,7 @@ QComboBox QAbstractItemView {
                 <property name="maximumSize">
                  <size>
                   <width>120</width>
-                  <height>16777215</height>
+                  <height>30</height>
                  </size>
                 </property>
                 <property name="styleSheet">
@@ -356,6 +371,12 @@ QComboBox QAbstractItemView {
            <layout class="QHBoxLayout" name="horizontalLayout_10">
             <item>
              <widget class="QPushButton" name="convertButton">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>40</height>
+               </size>
+              </property>
               <property name="layoutDirection">
                <enum>Qt::RightToLeft</enum>
               </property>
@@ -398,7 +419,13 @@ QComboBox QAbstractItemView {
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_7">
           <item>
-           <widget class="QFrame" name="frame_2">
+           <widget class="QFrame" name="loadingParent">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>35</height>
+             </size>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -461,7 +488,16 @@ border-radius: 10px;
     <item row="2" column="0" colspan="2">
      <layout class="QHBoxLayout" name="horizontalLayout">
       <property name="spacing">
-       <number>20</number>
+       <number>30</number>
+      </property>
+      <property name="leftMargin">
+       <number>10</number>
+      </property>
+      <property name="rightMargin">
+       <number>10</number>
+      </property>
+      <property name="bottomMargin">
+       <number>10</number>
       </property>
       <item>
        <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -487,8 +523,8 @@ border-radius: 10px;
                 </property>
                 <property name="maximumSize">
                  <size>
-                  <width>1111111</width>
-                  <height>16777213</height>
+                  <width>6000</width>
+                  <height>6000</height>
                  </size>
                 </property>
                 <property name="styleSheet">
@@ -504,6 +540,9 @@ border-radius: 5px;
                  <enum>QFrame::Raised</enum>
                 </property>
                 <layout class="QHBoxLayout" name="horizontalLayout_14">
+                 <property name="spacing">
+                  <number>15</number>
+                 </property>
                  <item>
                   <widget class="QFrame" name="image1">
                    <property name="minimumSize">
@@ -544,6 +583,7 @@ border-radius: 5px;
                    <property name="styleSheet">
                     <string notr="true">border: none;
 background-color: #ffffff;
+margin: 0px 5px;
 </string>
                    </property>
                    <property name="frameShape">
@@ -556,6 +596,12 @@ background-color: #ffffff;
                  </item>
                  <item>
                   <widget class="QFrame" name="image1Frequancy">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
                    <property name="minimumSize">
                     <size>
                      <width>200</width>
@@ -726,6 +772,9 @@ padding: 0;
                  <enum>QFrame::Raised</enum>
                 </property>
                 <layout class="QHBoxLayout" name="horizontalLayout_15">
+                 <property name="spacing">
+                  <number>15</number>
+                 </property>
                  <item>
                   <widget class="QFrame" name="image2">
                    <property name="minimumSize">
@@ -778,6 +827,12 @@ background-color: #ffffff;
                  </item>
                  <item>
                   <widget class="QFrame" name="image2Frequency">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
                    <property name="minimumSize">
                     <size>
                      <width>200</width>
@@ -953,6 +1008,9 @@ padding: 0;
                  <enum>QFrame::Raised</enum>
                 </property>
                 <layout class="QHBoxLayout" name="horizontalLayout_22">
+                 <property name="spacing">
+                  <number>15</number>
+                 </property>
                  <item>
                   <widget class="QFrame" name="image3">
                    <property name="minimumSize">
@@ -1005,6 +1063,12 @@ background-color: #ffffff;
                  </item>
                  <item>
                   <widget class="QFrame" name="image3Frequency">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
                    <property name="minimumSize">
                     <size>
                      <width>200</width>
@@ -1144,6 +1208,9 @@ padding: 0;
                  <enum>QFrame::Raised</enum>
                 </property>
                 <layout class="QHBoxLayout" name="horizontalLayout_23">
+                 <property name="spacing">
+                  <number>15</number>
+                 </property>
                  <item>
                   <widget class="QFrame" name="image4">
                    <property name="minimumSize">
@@ -1196,6 +1263,12 @@ background-color: #ffffff;
                  </item>
                  <item>
                   <widget class="QFrame" name="image4Frequency">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
                    <property name="minimumSize">
                     <size>
                      <width>200</width>
@@ -1312,32 +1385,25 @@ QComboBox QAbstractItemView {
         <item>
          <layout class="QVBoxLayout" name="verticalLayout_13">
           <property name="leftMargin">
-           <number>5</number>
+           <number>0</number>
           </property>
           <property name="topMargin">
            <number>0</number>
           </property>
           <property name="rightMargin">
-           <number>5</number>
+           <number>0</number>
           </property>
           <property name="bottomMargin">
-           <number>5</number>
+           <number>0</number>
           </property>
           <item>
-           <widget class="QLabel" name="label_2">
-            <property name="maximumSize">
-             <size>
-              <width>70</width>
-              <height>30</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>Output 01</string>
-            </property>
-           </widget>
-          </item>
-          <item>
            <widget class="QFrame" name="output1Frame">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
             <property name="minimumSize">
              <size>
               <width>200</width>
@@ -1346,8 +1412,8 @@ QComboBox QAbstractItemView {
             </property>
             <property name="maximumSize">
              <size>
-              <width>250</width>
-              <height>250</height>
+              <width>350</width>
+              <height>500</height>
              </size>
             </property>
             <property name="styleSheet">
@@ -1365,22 +1431,70 @@ background-color: #142A4A;
             </property>
            </widget>
           </item>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="maximumSize">
+             <size>
+              <width>70</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Output 01</string>
+            </property>
+           </widget>
+          </item>
          </layout>
         </item>
         <item>
          <layout class="QVBoxLayout" name="verticalLayout_14">
           <property name="leftMargin">
-           <number>5</number>
+           <number>0</number>
           </property>
           <property name="topMargin">
            <number>0</number>
           </property>
           <property name="rightMargin">
-           <number>5</number>
+           <number>0</number>
           </property>
           <property name="bottomMargin">
-           <number>5</number>
+           <number>0</number>
           </property>
+          <item>
+           <widget class="QFrame" name="output2Frame">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>200</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>350</width>
+              <height>500</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: none;
+background-color: #142A4A;
+    border-radius: 5px;
+
+</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
           <item>
            <widget class="QLabel" name="label_5">
             <property name="minimumSize">
@@ -1397,35 +1511,6 @@ background-color: #142A4A;
             </property>
             <property name="text">
              <string>Output 02</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QFrame" name="output2Frame">
-            <property name="minimumSize">
-             <size>
-              <width>200</width>
-              <height>200</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>250</width>
-              <height>250</height>
-             </size>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">border: none;
-background-color: #142A4A;
-    border-radius: 5px;
-
-</string>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
-            </property>
-            <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
             </property>
            </widget>
           </item>

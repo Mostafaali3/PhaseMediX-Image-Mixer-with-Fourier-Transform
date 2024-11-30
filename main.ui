@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1188</width>
+    <width>1190</width>
     <height>765</height>
    </rect>
   </property>
@@ -166,13 +166,13 @@ QSlider::add-page:horizontal {
                <widget class="QComboBox" name="modeComboBox">
                 <property name="minimumSize">
                  <size>
-                  <width>140</width>
+                  <width>160</width>
                   <height>0</height>
                  </size>
                 </property>
                 <property name="maximumSize">
                  <size>
-                  <width>160</width>
+                  <width>200</width>
                   <height>30</height>
                  </size>
                 </property>
@@ -237,13 +237,13 @@ QComboBox QAbstractItemView {
                <widget class="QComboBox" name="regionComboScale">
                 <property name="minimumSize">
                  <size>
-                  <width>60</width>
+                  <width>130</width>
                   <height>0</height>
                  </size>
                 </property>
                 <property name="maximumSize">
                  <size>
-                  <width>80</width>
+                  <width>160</width>
                   <height>30</height>
                  </size>
                 </property>
@@ -313,13 +313,13 @@ QComboBox QAbstractItemView {
                <widget class="QComboBox" name="displayComboBox">
                 <property name="minimumSize">
                  <size>
-                  <width>100</width>
+                  <width>130</width>
                   <height>0</height>
                  </size>
                 </property>
                 <property name="maximumSize">
                  <size>
-                  <width>120</width>
+                  <width>160</width>
                   <height>30</height>
                  </size>
                 </property>
@@ -545,6 +545,12 @@ border-radius: 5px;
                  </property>
                  <item>
                   <widget class="QFrame" name="image1">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
                    <property name="minimumSize">
                     <size>
                      <width>200</width>
@@ -777,6 +783,12 @@ padding: 0;
                  </property>
                  <item>
                   <widget class="QFrame" name="image2">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
                    <property name="minimumSize">
                     <size>
                      <width>200</width>
@@ -1013,6 +1025,12 @@ padding: 0;
                  </property>
                  <item>
                   <widget class="QFrame" name="image3">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
                    <property name="minimumSize">
                     <size>
                      <width>200</width>
@@ -1213,6 +1231,12 @@ padding: 0;
                  </property>
                  <item>
                   <widget class="QFrame" name="image4">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
                    <property name="minimumSize">
                     <size>
                      <width>200</width>
@@ -1399,7 +1423,7 @@ QComboBox QAbstractItemView {
           <item>
            <widget class="QFrame" name="output1Frame">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
@@ -1432,17 +1456,21 @@ background-color: #142A4A;
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="label_2">
-            <property name="maximumSize">
-             <size>
-              <width>70</width>
-              <height>30</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>Output 01</string>
-            </property>
-           </widget>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QLabel" name="label_2">
+              <property name="maximumSize">
+               <size>
+                <width>70</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Output 01</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
           </item>
          </layout>
         </item>
@@ -1463,7 +1491,7 @@ background-color: #142A4A;
           <item>
            <widget class="QFrame" name="output2Frame">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
@@ -1496,23 +1524,27 @@ background-color: #142A4A;
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="label_5">
-            <property name="minimumSize">
-             <size>
-              <width>0</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>80</width>
-              <height>30</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>Output 02</string>
-            </property>
-           </widget>
+           <layout class="QHBoxLayout" name="horizontalLayout_25">
+            <item>
+             <widget class="QLabel" name="label_5">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>80</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Output 02</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
           </item>
          </layout>
         </item>

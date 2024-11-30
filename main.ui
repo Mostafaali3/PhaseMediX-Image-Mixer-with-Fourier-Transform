@@ -576,6 +576,7 @@ border-radius: 5px;
                    <property name="frameShadow">
                     <enum>QFrame::Raised</enum>
                    </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_3"/>
                   </widget>
                  </item>
                  <item>
@@ -633,6 +634,7 @@ background-color: #142A4A;
                    <property name="frameShadow">
                     <enum>QFrame::Raised</enum>
                    </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_5"/>
                   </widget>
                  </item>
                 </layout>
@@ -814,6 +816,7 @@ background-color: #142A4A;
                    <property name="frameShadow">
                     <enum>QFrame::Raised</enum>
                    </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_6"/>
                   </widget>
                  </item>
                  <item>
@@ -870,6 +873,7 @@ background-color: #142A4A;
                    <property name="frameShadow">
                     <enum>QFrame::Raised</enum>
                    </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_8"/>
                   </widget>
                  </item>
                 </layout>
@@ -1056,6 +1060,7 @@ padding: 0;
                    <property name="frameShadow">
                     <enum>QFrame::Raised</enum>
                    </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_20"/>
                   </widget>
                  </item>
                  <item>
@@ -1112,6 +1117,7 @@ background-color: #ffffff;
                    <property name="frameShadow">
                     <enum>QFrame::Raised</enum>
                    </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_19"/>
                   </widget>
                  </item>
                 </layout>
@@ -1262,6 +1268,7 @@ padding: 0;
                    <property name="frameShadow">
                     <enum>QFrame::Raised</enum>
                    </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_18"/>
                   </widget>
                  </item>
                  <item>
@@ -1318,6 +1325,7 @@ background-color: #ffffff;
                    <property name="frameShadow">
                     <enum>QFrame::Raised</enum>
                    </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_17"/>
                   </widget>
                  </item>
                 </layout>
@@ -1423,7 +1431,7 @@ QComboBox QAbstractItemView {
           <item>
            <widget class="QFrame" name="output1Frame">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
@@ -1453,6 +1461,7 @@ background-color: #142A4A;
             <property name="frameShadow">
              <enum>QFrame::Raised</enum>
             </property>
+            <layout class="QVBoxLayout" name="verticalLayout_9"/>
            </widget>
           </item>
           <item>
@@ -1491,7 +1500,7 @@ background-color: #142A4A;
           <item>
            <widget class="QFrame" name="output2Frame">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+             <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
@@ -1521,6 +1530,7 @@ background-color: #142A4A;
             <property name="frameShadow">
              <enum>QFrame::Raised</enum>
             </property>
+            <layout class="QVBoxLayout" name="verticalLayout_16"/>
            </widget>
           </item>
           <item>

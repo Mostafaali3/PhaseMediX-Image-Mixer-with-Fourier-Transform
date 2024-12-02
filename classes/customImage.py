@@ -4,7 +4,7 @@ import cv2
 import matplotlib.pyplot as plt
 
 class CustomImage():
-    def __init__(self , image = None):
+    def __init__(self , image = []):
         if (len(image) != 0 ):
             imported_image_gray_scale = cv2.cvtColor(image , cv2.COLOR_BGR2GRAY)
             # Height

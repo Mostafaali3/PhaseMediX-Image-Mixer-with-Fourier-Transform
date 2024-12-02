@@ -5,6 +5,7 @@ from PyQt5.QtGui import QIcon
 from helper_function.compile_qrc import compile_qrc
 from classes.imageViewer import ImageViewer
 from classes.componentsViewer import ComponentViewer
+from classes.customImage import CustomImage
 import cv2
 
 compile_qrc()
@@ -51,6 +52,12 @@ class MainWindow(QMainWindow):
         self.output_viewer_frame_2 = self.findChild(QFrame, 'output2Frame')
         self.output_viewer_2 = ImageViewer()
         self.output_viewer_frame_2.layout().addWidget(self.output_viewer_2)
+        
+        self.list_of_images = [CustomImage(), CustomImage(), CustomImage(), CustomImage()]
+        # self.list_of_image_viewers = [self.image_viewer_1, self.image_viewer_2, self.image_viewer_3, self.image_viewer_4]
+        # self.list_of_component_viewers = [self.components_viewer_1, self.components_viewer_2, self.components_viewer_3, self.components_viewer_4]
+        
+        
         
         
     def load_image(self, viewer_number):

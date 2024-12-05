@@ -18,55 +18,55 @@ class MainWindow(QMainWindow):
         self.setWindowTitle('Image Mixer')
         self.setWindowIcon(QIcon('icons_setup\icons\logo.png'))
         
-        self.image_viewer_frame_1 = self.findChild(QFrame, 'image1')
-        self.components_viewer_frame_1 = self.findChild(QFrame, 'image1Frequancy')
-        self.image_viewer_1 = ImageViewer()
-        self.components_viewer_1 = ComponentViewer()
-        self.components_viewer_frame_1.layout().addWidget(self.components_viewer_1)
-        self.image_viewer_frame_1.layout().addWidget(self.image_viewer_1)
+    #     self.image_viewer_frame_1 = self.findChild(QFrame, 'image1')
+    #     self.components_viewer_frame_1 = self.findChild(QFrame, 'image1Frequancy')
+    #     self.image_viewer_1 = ImageViewer()
+    #     self.components_viewer_1 = ComponentViewer()
+    #     self.components_viewer_frame_1.layout().addWidget(self.components_viewer_1)
+    #     self.image_viewer_frame_1.layout().addWidget(self.image_viewer_1)
         
-        self.image_viewer_frame_2 = self.findChild(QFrame, 'image2')
-        self.components_viewer_frame_2 = self.findChild(QFrame, 'image2Frequency')
-        self.image_viewer_2 = ImageViewer()
-        self.components_viewer_2 = ComponentViewer()
-        self.components_viewer_frame_2.layout().addWidget(self.components_viewer_2)
-        self.image_viewer_frame_2.layout().addWidget(self.image_viewer_2)
+    #     self.image_viewer_frame_2 = self.findChild(QFrame, 'image2')
+    #     self.components_viewer_frame_2 = self.findChild(QFrame, 'image2Frequency')
+    #     self.image_viewer_2 = ImageViewer()
+    #     self.components_viewer_2 = ComponentViewer()
+    #     self.components_viewer_frame_2.layout().addWidget(self.components_viewer_2)
+    #     self.image_viewer_frame_2.layout().addWidget(self.image_viewer_2)
         
-        self.image_viewer_frame_3 = self.findChild(QFrame, 'image3')
-        self.components_viewer_frame_3 = self.findChild(QFrame, 'image3Frequency')
-        self.image_viewer_3 = ImageViewer()
-        self.components_viewer_3 = ComponentViewer()
-        self.components_viewer_frame_3.layout().addWidget(self.components_viewer_3)
-        self.image_viewer_frame_3.layout().addWidget(self.image_viewer_3)
+    #     self.image_viewer_frame_3 = self.findChild(QFrame, 'image3')
+    #     self.components_viewer_frame_3 = self.findChild(QFrame, 'image3Frequency')
+    #     self.image_viewer_3 = ImageViewer()
+    #     self.components_viewer_3 = ComponentViewer()
+    #     self.components_viewer_frame_3.layout().addWidget(self.components_viewer_3)
+    #     self.image_viewer_frame_3.layout().addWidget(self.image_viewer_3)
         
-        self.image_viewer_frame_4 = self.findChild(QFrame, 'image4')
-        self.components_viewer_frame_4 = self.findChild(QFrame, 'image4Frequency')
-        self.image_viewer_4 = ImageViewer()
-        self.components_viewer_4 = ComponentViewer()
-        self.components_viewer_frame_4.layout().addWidget(self.components_viewer_4)
-        self.image_viewer_frame_4.layout().addWidget(self.image_viewer_4)
+    #     self.image_viewer_frame_4 = self.findChild(QFrame, 'image4')
+    #     self.components_viewer_frame_4 = self.findChild(QFrame, 'image4Frequency')
+    #     self.image_viewer_4 = ImageViewer()
+    #     self.components_viewer_4 = ComponentViewer()
+    #     self.components_viewer_frame_4.layout().addWidget(self.components_viewer_4)
+    #     self.image_viewer_frame_4.layout().addWidget(self.image_viewer_4)
         
-        self.output_viewer_frame_1 = self.findChild(QFrame, 'output1Frame')
-        self.output_viewer_1 = ImageViewer()
-        self.output_viewer_frame_1.layout().addWidget(self.output_viewer_1)
+    #     self.output_viewer_frame_1 = self.findChild(QFrame, 'output1Frame')
+    #     self.output_viewer_1 = ImageViewer()
+    #     self.output_viewer_frame_1.layout().addWidget(self.output_viewer_1)
         
-        self.output_viewer_frame_2 = self.findChild(QFrame, 'output2Frame')
-        self.output_viewer_2 = ImageViewer()
-        self.output_viewer_frame_2.layout().addWidget(self.output_viewer_2)
-        # self.output_viewer_1.set_double_click_handler(lambda : )
+        # self.output_viewer_frame_2 = self.findChild(QFrame, 'output2Frame')
+        # self.output_viewer_2 = ImageViewer()
+        # self.output_viewer_frame_2.layout().addWidget(self.output_viewer_2)
+        # # self.output_viewer_1.set_double_click_handler(lambda : )
         
-        self.list_of_images = [CustomImage(), CustomImage(), CustomImage(), CustomImage()]
-        self.list_of_image_viewers = [self.image_viewer_1, self.image_viewer_2, self.image_viewer_3, self.image_viewer_4]
-        self.list_of_component_viewers = [self.components_viewer_1, self.components_viewer_2, self.components_viewer_3, self.components_viewer_4]
+        # self.list_of_images = [CustomImage(), CustomImage(), CustomImage(), CustomImage()]
+        # self.list_of_image_viewers = [self.image_viewer_1, self.image_viewer_2, self.image_viewer_3, self.image_viewer_4]
+        # self.list_of_component_viewers = [self.components_viewer_1, self.components_viewer_2, self.components_viewer_3, self.components_viewer_4]
         
-        self.controller = Controller(self.list_of_images, self.list_of_component_viewers, self.list_of_image_viewers)
-        self.controller.list_of_images = self.list_of_images
-        self.controller.list_of_component_viewers = self.list_of_component_viewers
-        self.controller.list_of_image_viewers = self.list_of_image_viewers
+        # self.controller = Controller(self.list_of_images, self.list_of_component_viewers, self.list_of_image_viewers)
+        # self.controller.list_of_images = self.list_of_images
+        # self.controller.list_of_component_viewers = self.list_of_component_viewers
+        # self.controller.list_of_image_viewers = self.list_of_image_viewers
         
         #setting the double click handlers
-        for i, viewer in enumerate(self.list_of_image_viewers):
-            viewer.set_double_click_handler(lambda i=i: self.load_image(i))
+        # for i, viewer in enumerate(self.list_of_image_viewers):
+        #     viewer.set_double_click_handler(lambda i=i: self.load_image(i))
         
         
         

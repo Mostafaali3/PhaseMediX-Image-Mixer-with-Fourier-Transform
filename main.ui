@@ -544,7 +544,7 @@ border-radius: 5px;
                   <number>15</number>
                  </property>
                  <item>
-                  <widget class="QFrame" name="image1">
+                  <widget class="QLabel" name="image1">
                    <property name="sizePolicy">
                     <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
                      <horstretch>0</horstretch>
@@ -570,39 +570,13 @@ border-radius: 5px;
 
 </string>
                    </property>
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
-                   </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
-                   </property>
-                   <layout class="QVBoxLayout" name="verticalLayout_3"/>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QFrame" name="frame">
-                   <property name="maximumSize">
-                    <size>
-                     <width>2</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">border: none;
-background-color: #ffffff;
-margin: 0px 5px;
-</string>
-                   </property>
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
-                   </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
+                   <property name="text">
+                    <string/>
                    </property>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QFrame" name="image1Frequancy">
+                  <widget class="QLabel" name="image1Frequancy">
                    <property name="sizePolicy">
                     <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
                      <horstretch>0</horstretch>
@@ -623,18 +597,14 @@ margin: 0px 5px;
                    </property>
                    <property name="styleSheet">
                     <string notr="true">border: none;
-background-color: #142A4A;
+    background-color: #142A4A;
     border-radius: 5px;
 
 </string>
                    </property>
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
+                   <property name="text">
+                    <string/>
                    </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
-                   </property>
-                   <layout class="QVBoxLayout" name="verticalLayout_5"/>
                   </widget>
                  </item>
                 </layout>
@@ -784,7 +754,7 @@ padding: 0;
                   <number>15</number>
                  </property>
                  <item>
-                  <widget class="QFrame" name="image2">
+                  <widget class="QLabel" name="image2">
                    <property name="sizePolicy">
                     <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
                      <horstretch>0</horstretch>
@@ -805,43 +775,19 @@ padding: 0;
                    </property>
                    <property name="styleSheet">
                     <string notr="true">border: none;
-background-color: #142A4A;
+    background-color: #142A4A;
     border-radius: 5px;
+
 
 </string>
                    </property>
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
-                   </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
-                   </property>
-                   <layout class="QVBoxLayout" name="verticalLayout_6"/>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QFrame" name="frame_4">
-                   <property name="maximumSize">
-                    <size>
-                     <width>2</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">border: none;
-background-color: #ffffff;
-</string>
-                   </property>
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
-                   </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
+                   <property name="text">
+                    <string/>
                    </property>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QFrame" name="image2Frequency">
+                  <widget class="QLabel" name="image2Frequancy">
                    <property name="sizePolicy">
                     <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
                      <horstretch>0</horstretch>
@@ -862,18 +808,15 @@ background-color: #ffffff;
                    </property>
                    <property name="styleSheet">
                     <string notr="true">border: none;
-background-color: #142A4A;
+    background-color: #142A4A;
     border-radius: 5px;
+
 
 </string>
                    </property>
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
+                   <property name="text">
+                    <string/>
                    </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
-                   </property>
-                   <layout class="QVBoxLayout" name="verticalLayout_8"/>
                   </widget>
                  </item>
                 </layout>
@@ -1028,7 +971,40 @@ padding: 0;
                   <number>15</number>
                  </property>
                  <item>
-                  <widget class="QFrame" name="image3">
+                  <widget class="QLabel" name="image3">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>200</width>
+                     <height>200</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>500</width>
+                     <height>500</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">border: none;
+    background-color: #142A4A;
+    border-radius: 5px;
+
+
+</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="image3Frequancy">
                    <property name="sizePolicy">
                     <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
                      <horstretch>0</horstretch>
@@ -1054,70 +1030,9 @@ padding: 0;
 
 </string>
                    </property>
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
+                   <property name="text">
+                    <string/>
                    </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
-                   </property>
-                   <layout class="QVBoxLayout" name="verticalLayout_20"/>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QFrame" name="frame_6">
-                   <property name="maximumSize">
-                    <size>
-                     <width>2</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">border: none;
-background-color: #ffffff;
-</string>
-                   </property>
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
-                   </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QFrame" name="image3Frequency">
-                   <property name="sizePolicy">
-                    <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-                     <horstretch>0</horstretch>
-                     <verstretch>0</verstretch>
-                    </sizepolicy>
-                   </property>
-                   <property name="minimumSize">
-                    <size>
-                     <width>200</width>
-                     <height>200</height>
-                    </size>
-                   </property>
-                   <property name="maximumSize">
-                    <size>
-                     <width>500</width>
-                     <height>500</height>
-                    </size>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">border: none;
-    background-color: #142A4A;
-    border-radius: 5px;
-
-</string>
-                   </property>
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
-                   </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
-                   </property>
-                   <layout class="QVBoxLayout" name="verticalLayout_19"/>
                   </widget>
                  </item>
                 </layout>
@@ -1236,7 +1151,7 @@ padding: 0;
                   <number>15</number>
                  </property>
                  <item>
-                  <widget class="QFrame" name="image4">
+                  <widget class="QLabel" name="image4">
                    <property name="sizePolicy">
                     <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
                      <horstretch>0</horstretch>
@@ -1262,38 +1177,13 @@ padding: 0;
 
 </string>
                    </property>
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
-                   </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
-                   </property>
-                   <layout class="QVBoxLayout" name="verticalLayout_18"/>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QFrame" name="frame_7">
-                   <property name="maximumSize">
-                    <size>
-                     <width>2</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">border: none;
-background-color: #ffffff;
-</string>
-                   </property>
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
-                   </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
+                   <property name="text">
+                    <string/>
                    </property>
                   </widget>
                  </item>
                  <item>
-                  <widget class="QFrame" name="image4Frequency">
+                  <widget class="QLabel" name="image4Frequancy">
                    <property name="sizePolicy">
                     <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
                      <horstretch>0</horstretch>
@@ -1319,13 +1209,9 @@ background-color: #ffffff;
 
 </string>
                    </property>
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
+                   <property name="text">
+                    <string/>
                    </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
-                   </property>
-                   <layout class="QVBoxLayout" name="verticalLayout_17"/>
                   </widget>
                  </item>
                 </layout>
@@ -1429,7 +1315,7 @@ QComboBox QAbstractItemView {
            <number>0</number>
           </property>
           <item>
-           <widget class="QFrame" name="output1Frame">
+           <widget class="QLabel" name="output1Label">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
               <horstretch>0</horstretch>
@@ -1450,18 +1336,14 @@ QComboBox QAbstractItemView {
             </property>
             <property name="styleSheet">
              <string notr="true">border: none;
-background-color: #142A4A;
+    background-color: #142A4A;
     border-radius: 5px;
 
 </string>
             </property>
-            <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
+            <property name="text">
+             <string/>
             </property>
-            <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
-            </property>
-            <layout class="QVBoxLayout" name="verticalLayout_9"/>
            </widget>
           </item>
           <item>
@@ -1498,9 +1380,9 @@ background-color: #142A4A;
            <number>0</number>
           </property>
           <item>
-           <widget class="QFrame" name="output2Frame">
+           <widget class="QLabel" name="output2Label">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+             <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
@@ -1519,18 +1401,14 @@ background-color: #142A4A;
             </property>
             <property name="styleSheet">
              <string notr="true">border: none;
-background-color: #142A4A;
+    background-color: #142A4A;
     border-radius: 5px;
 
 </string>
             </property>
-            <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
+            <property name="text">
+             <string/>
             </property>
-            <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
-            </property>
-            <layout class="QVBoxLayout" name="verticalLayout_16"/>
            </widget>
           </item>
           <item>

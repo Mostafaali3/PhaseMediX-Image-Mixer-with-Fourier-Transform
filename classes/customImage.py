@@ -1,11 +1,14 @@
 from copy import deepcopy
 import numpy as np
 import cv2
+import pyqtgraph as pg
 import matplotlib.pyplot as plt
 
 class CustomImage():
-    def __init__(self , image = []):
+    def __init__(self , image = [], loaded = False):
+        self.loaded = False
         if (len(image) != 0 ):
+            self.loaded = True
             imported_image_gray_scale = cv2.cvtColor(image , cv2.COLOR_BGR2GRAY)
             # Height
             image_x_components = np.arange(1 , imported_image_gray_scale.shape[0] +1 )

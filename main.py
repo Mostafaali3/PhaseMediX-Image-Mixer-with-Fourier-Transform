@@ -6,6 +6,7 @@ from helper_function.compile_qrc import compile_qrc
 from classes.imageViewer import ImageViewer
 from classes.componentsViewer import ComponentViewer
 from classes.customImage import CustomImage
+from classes.controller import Controller
 import cv2
 
 compile_qrc()
@@ -52,10 +53,20 @@ class MainWindow(QMainWindow):
         self.output_viewer_frame_2 = self.findChild(QFrame, 'output2Frame')
         self.output_viewer_2 = ImageViewer()
         self.output_viewer_frame_2.layout().addWidget(self.output_viewer_2)
+        # self.output_viewer_1.set_double_click_handler(lambda : )
         
         self.list_of_images = [CustomImage(), CustomImage(), CustomImage(), CustomImage()]
-        # self.list_of_image_viewers = [self.image_viewer_1, self.image_viewer_2, self.image_viewer_3, self.image_viewer_4]
-        # self.list_of_component_viewers = [self.components_viewer_1, self.components_viewer_2, self.components_viewer_3, self.components_viewer_4]
+        self.list_of_image_viewers = [self.image_viewer_1, self.image_viewer_2, self.image_viewer_3, self.image_viewer_4]
+        self.list_of_component_viewers = [self.components_viewer_1, self.components_viewer_2, self.components_viewer_3, self.components_viewer_4]
+        
+        self.controller = Controller(self.list_of_images, self.list_of_component_viewers, self.list_of_image_viewers)
+        self.controller.list_of_images = self.list_of_images
+        self.controller.list_of_component_viewers = self.list_of_component_viewers
+        self.controller.list_of_image_viewers = self.list_of_image_viewers
+        
+        #setting the double click handlers
+        for i, viewer in enumerate(self.list_of_image_viewers):
+            viewer.set_double_click_handler(lambda i=i: self.load_image(i))
         
         
         
@@ -63,9 +74,14 @@ class MainWindow(QMainWindow):
     def load_image(self, viewer_number):
         file_path, _ = QFileDialog.getOpenFileName(self, 'Open Image File', '', 'Image Files (*.jpeg *.jpg *.png *.bmp *.gif);;All Files (*)')
         
+        print(viewer_number)
         if file_path.endswith('.jpeg'):
             image = cv2.imread(file_path)
-            pass
+            new_image = CustomImage(image)
+            self.list_of_images[viewer_number] = new_image
+            self.list_of_image_viewers[viewer_number].current_image = new_image
+            self.controller.set_current_images_list()
+            # pass
 
 
 if __name__ == '__main__':

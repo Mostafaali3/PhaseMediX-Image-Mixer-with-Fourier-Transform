@@ -14,7 +14,7 @@ class Controller():
         for i,image in enumerate(self.list_of_images):
             if image.loaded:
                 index = copy(i)
-                # self.list_of_image_viewers[index].current_image = image
+                self.list_of_image_viewers[index].current_image = image
                 self.list_of_image_viewers[index].update_plot()
                 
                 

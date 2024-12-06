@@ -1,7 +1,8 @@
 from classes.viewer import Viewer
 import numpy as np 
+from PyQt5.QtWidgets import QFileDialog, QLabel
 
-class ComponentViewer(Viewer):
+class ComponentViewer(QLabel):
     def __init__(self):
         super().__init__()
         # self.show_grid(x=False, y=False)

@@ -11,13 +11,13 @@ class CustomImage():
             self.loaded = True
             imported_image_gray_scale = cv2.cvtColor(image , cv2.COLOR_BGR2GRAY)
             # Height
-            image_x_components = np.arange(1 , imported_image_gray_scale.shape[0] +1 )
+            image_x_components = np.arange(0 , imported_image_gray_scale.shape[0] +1 )
             # Width
-            image_y_components = np.arange(1 , imported_image_gray_scale.shape[1] +1 )
+            image_y_components = np.arange(0 , imported_image_gray_scale.shape[1] +1 )
             self.__original_image = np.empty((3,), dtype=object)
             self.__original_image[0] = image_x_components
             self.__original_image[1] = image_y_components
-            self.__original_image[2] = np.array(imported_image_gray_scale)
+            self.__original_image[2] = np.array(imported_image_gray_scale, dtype=np.uint8)
             self.__modified_image = deepcopy(self.__original_image)
             self.__original_image_fourier_components = np.empty((1,) , dtype= object)
         

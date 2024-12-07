@@ -523,8 +523,8 @@ border-radius: 10px;
                 </property>
                 <property name="maximumSize">
                  <size>
-                  <width>6000</width>
-                  <height>6000</height>
+                  <width>800</width>
+                  <height>800</height>
                  </size>
                 </property>
                 <property name="styleSheet">
@@ -559,8 +559,8 @@ border-radius: 5px;
                    </property>
                    <property name="maximumSize">
                     <size>
-                     <width>500</width>
-                     <height>500</height>
+                     <width>600</width>
+                     <height>600</height>
                     </size>
                    </property>
                    <property name="styleSheet">
@@ -577,28 +577,6 @@ border-radius: 5px;
                     <enum>QFrame::Raised</enum>
                    </property>
                    <layout class="QVBoxLayout" name="verticalLayout_3"/>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QFrame" name="frame">
-                   <property name="maximumSize">
-                    <size>
-                     <width>2</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">border: none;
-background-color: #ffffff;
-margin: 0px 5px;
-</string>
-                   </property>
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
-                   </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
-                   </property>
                   </widget>
                  </item>
                  <item>
@@ -684,16 +662,6 @@ QComboBox QAbstractItemView {
                   <string>Phase</string>
                  </property>
                 </item>
-                <item>
-                 <property name="text">
-                  <string>Real</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Imaginary</string>
-                 </property>
-                </item>
                </widget>
               </item>
               <item>
@@ -763,8 +731,8 @@ QSlider::add-page:horizontal {
                 </property>
                 <property name="maximumSize">
                  <size>
-                  <width>11111111</width>
-                  <height>16777215</height>
+                  <width>800</width>
+                  <height>800</height>
                  </size>
                 </property>
                 <property name="styleSheet">
@@ -817,27 +785,6 @@ background-color: #142A4A;
                     <enum>QFrame::Raised</enum>
                    </property>
                    <layout class="QVBoxLayout" name="verticalLayout_6"/>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QFrame" name="frame_4">
-                   <property name="maximumSize">
-                    <size>
-                     <width>2</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">border: none;
-background-color: #ffffff;
-</string>
-                   </property>
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
-                   </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
-                   </property>
                   </widget>
                  </item>
                  <item>
@@ -923,16 +870,6 @@ QComboBox QAbstractItemView {
                   <string>Phase</string>
                  </property>
                 </item>
-                <item>
-                 <property name="text">
-                  <string>Real</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Imaginary</string>
-                 </property>
-                </item>
                </widget>
               </item>
               <item>
@@ -1006,8 +943,8 @@ QSlider::add-page:horizontal {
                 </property>
                 <property name="maximumSize">
                  <size>
-                  <width>11111111</width>
-                  <height>16777215</height>
+                  <width>800</width>
+                  <height>800</height>
                  </size>
                 </property>
                 <property name="styleSheet">
@@ -1061,27 +998,6 @@ padding: 0;
                     <enum>QFrame::Raised</enum>
                    </property>
                    <layout class="QVBoxLayout" name="verticalLayout_20"/>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QFrame" name="frame_6">
-                   <property name="maximumSize">
-                    <size>
-                     <width>2</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">border: none;
-background-color: #ffffff;
-</string>
-                   </property>
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
-                   </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
-                   </property>
                   </widget>
                  </item>
                  <item>
@@ -1167,16 +1083,6 @@ QComboBox QAbstractItemView {
                   <string>Phase</string>
                  </property>
                 </item>
-                <item>
-                 <property name="text">
-                  <string>Real</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Imaginary</string>
-                 </property>
-                </item>
                </widget>
               </item>
               <item>
@@ -1214,8 +1120,8 @@ QComboBox QAbstractItemView {
                 </property>
                 <property name="maximumSize">
                  <size>
-                  <width>11111111</width>
-                  <height>16777215</height>
+                  <width>800</width>
+                  <height>800</height>
                  </size>
                 </property>
                 <property name="styleSheet">
@@ -1269,27 +1175,6 @@ padding: 0;
                     <enum>QFrame::Raised</enum>
                    </property>
                    <layout class="QVBoxLayout" name="verticalLayout_18"/>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QFrame" name="frame_7">
-                   <property name="maximumSize">
-                    <size>
-                     <width>2</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">border: none;
-background-color: #ffffff;
-</string>
-                   </property>
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
-                   </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
-                   </property>
                   </widget>
                  </item>
                  <item>
@@ -1375,16 +1260,6 @@ QComboBox QAbstractItemView {
                   <string>Phase</string>
                  </property>
                 </item>
-                <item>
-                 <property name="text">
-                  <string>Real</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Imaginary</string>
-                 </property>
-                </item>
                </widget>
               </item>
               <item>
@@ -1444,7 +1319,7 @@ QComboBox QAbstractItemView {
             </property>
             <property name="maximumSize">
              <size>
-              <width>350</width>
+              <width>400</width>
               <height>500</height>
              </size>
             </property>
@@ -1513,7 +1388,7 @@ background-color: #142A4A;
             </property>
             <property name="maximumSize">
              <size>
-              <width>350</width>
+              <width>500</width>
               <height>500</height>
              </size>
             </property>

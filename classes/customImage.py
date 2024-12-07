@@ -19,7 +19,12 @@ class CustomImage():
             self.__original_image[1] = image_y_components
             self.__original_image[2] = np.array(imported_image_gray_scale, dtype=np.uint8)
             self.__modified_image = deepcopy(self.__original_image)
-            self.__original_image_fourier_components = np.empty((1,) , dtype= object)
+            
+            # self.__original_image_fourier_components = np.empty((1,) , dtype= object)
+            self.__original_image_fourier_components = np.fft.fft2(self.modified_image[2])
+            self.__original_image_fourier_components = np.fft.fftshift(self.__original_image_fourier_components)
+            
+            self.__modified_image_fourier_components = deepcopy(self.__original_image_fourier_components)
         
     @property
     def original_image(self):
@@ -53,12 +58,15 @@ class CustomImage():
     def modified_image_fourier_components(self , new_modified_image_fourier_components):
         self.__modified_image_fourier_components = new_modified_image_fourier_components
         
-    
-    def fourier_transform_image(self):
-        fourier_transformed_image = np.fft.fft2(self.modified_image[2])
-        shifted_fourier_transformed_image = np.fft.fftshift(fourier_transformed_image)
-        self.original_image_fourier_components = shifted_fourier_transformed_image
-        self.modified_image_fourier_components = deepcopy(self.original_image_fourier_components) 
+    # not used pice of code
+    # def fourier_transform_image(self):
+    #     fourier_transformed_image = np.fft.fft2(self.modified_image[2])
+    #     shifted_fourier_transformed_image = np.fft.fftshift(fourier_transformed_image)
+    #     self.original_image_fourier_components = shifted_fourier_transformed_image
+    #     self.modified_image_fourier_components = deepcopy(self.original_image_fourier_components) 
+        
+    def transform(self):
+        self.modified_image_fourier_components = np.fft.fftshift(np.fft.fft2(self.modified_image[2]))
     
     
     def handle_image_size(self , height , width):
@@ -69,4 +77,3 @@ class CustomImage():
             self.modified_image[0] = np.arange(1 , height + 1)
             self.modified_image[1] = np.arange(1 , width + 1)
             self.modified_image[2] = cv2.resize(self.original_image[2] , (width , height))
-            self.fourier_transform_image()

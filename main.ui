@@ -523,8 +523,8 @@ border-radius: 10px;
                 </property>
                 <property name="maximumSize">
                  <size>
-                  <width>6000</width>
-                  <height>6000</height>
+                  <width>800</width>
+                  <height>800</height>
                  </size>
                 </property>
                 <property name="styleSheet">
@@ -559,8 +559,8 @@ border-radius: 5px;
                    </property>
                    <property name="maximumSize">
                     <size>
-                     <width>500</width>
-                     <height>500</height>
+                     <width>600</width>
+                     <height>600</height>
                     </size>
                    </property>
                    <property name="styleSheet">
@@ -763,8 +763,8 @@ QSlider::add-page:horizontal {
                 </property>
                 <property name="maximumSize">
                  <size>
-                  <width>11111111</width>
-                  <height>16777215</height>
+                  <width>800</width>
+                  <height>800</height>
                  </size>
                 </property>
                 <property name="styleSheet">
@@ -1006,8 +1006,8 @@ QSlider::add-page:horizontal {
                 </property>
                 <property name="maximumSize">
                  <size>
-                  <width>11111111</width>
-                  <height>16777215</height>
+                  <width>800</width>
+                  <height>800</height>
                  </size>
                 </property>
                 <property name="styleSheet">
@@ -1214,8 +1214,8 @@ QComboBox QAbstractItemView {
                 </property>
                 <property name="maximumSize">
                  <size>
-                  <width>11111111</width>
-                  <height>16777215</height>
+                  <width>800</width>
+                  <height>800</height>
                  </size>
                 </property>
                 <property name="styleSheet">
@@ -1444,7 +1444,7 @@ QComboBox QAbstractItemView {
             </property>
             <property name="maximumSize">
              <size>
-              <width>350</width>
+              <width>400</width>
               <height>500</height>
              </size>
             </property>
@@ -1513,7 +1513,7 @@ background-color: #142A4A;
             </property>
             <property name="maximumSize">
              <size>
-              <width>350</width>
+              <width>500</width>
               <height>500</height>
              </size>
             </property>

@@ -580,28 +580,6 @@ border-radius: 5px;
                   </widget>
                  </item>
                  <item>
-                  <widget class="QFrame" name="frame">
-                   <property name="maximumSize">
-                    <size>
-                     <width>2</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">border: none;
-background-color: #ffffff;
-margin: 0px 5px;
-</string>
-                   </property>
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
-                   </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
                   <widget class="QFrame" name="image1Frequancy">
                    <property name="sizePolicy">
                     <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
@@ -682,16 +660,6 @@ QComboBox QAbstractItemView {
                 <item>
                  <property name="text">
                   <string>Phase</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Real</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Imaginary</string>
                  </property>
                 </item>
                </widget>
@@ -820,27 +788,6 @@ background-color: #142A4A;
                   </widget>
                  </item>
                  <item>
-                  <widget class="QFrame" name="frame_4">
-                   <property name="maximumSize">
-                    <size>
-                     <width>2</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">border: none;
-background-color: #ffffff;
-</string>
-                   </property>
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
-                   </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
                   <widget class="QFrame" name="image2Frequency">
                    <property name="sizePolicy">
                     <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
@@ -921,16 +868,6 @@ QComboBox QAbstractItemView {
                 <item>
                  <property name="text">
                   <string>Phase</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Real</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Imaginary</string>
                  </property>
                 </item>
                </widget>
@@ -1064,27 +1001,6 @@ padding: 0;
                   </widget>
                  </item>
                  <item>
-                  <widget class="QFrame" name="frame_6">
-                   <property name="maximumSize">
-                    <size>
-                     <width>2</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">border: none;
-background-color: #ffffff;
-</string>
-                   </property>
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
-                   </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
                   <widget class="QFrame" name="image3Frequency">
                    <property name="sizePolicy">
                     <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
@@ -1165,16 +1081,6 @@ QComboBox QAbstractItemView {
                 <item>
                  <property name="text">
                   <string>Phase</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Real</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Imaginary</string>
                  </property>
                 </item>
                </widget>
@@ -1272,27 +1178,6 @@ padding: 0;
                   </widget>
                  </item>
                  <item>
-                  <widget class="QFrame" name="frame_7">
-                   <property name="maximumSize">
-                    <size>
-                     <width>2</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">border: none;
-background-color: #ffffff;
-</string>
-                   </property>
-                   <property name="frameShape">
-                    <enum>QFrame::StyledPanel</enum>
-                   </property>
-                   <property name="frameShadow">
-                    <enum>QFrame::Raised</enum>
-                   </property>
-                  </widget>
-                 </item>
-                 <item>
                   <widget class="QFrame" name="image4Frequency">
                    <property name="sizePolicy">
                     <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
@@ -1373,16 +1258,6 @@ QComboBox QAbstractItemView {
                 <item>
                  <property name="text">
                   <string>Phase</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Real</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string>Imaginary</string>
                  </property>
                 </item>
                </widget>

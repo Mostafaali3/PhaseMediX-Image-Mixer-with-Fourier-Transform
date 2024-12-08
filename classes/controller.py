@@ -1,13 +1,17 @@
 from classes.mixer import Mixer
 from copy import copy
+from classes.modesEnum import RegionMode
+from classes.customImage import CustomImage
 import numpy as np
+import cv2
 
 class Controller():
-    def __init__(self, list_of_iamges,list_of_image_viewers,list_of_component_viewers, list_of_combo_boxes):
+    def __init__(self, list_of_iamges,list_of_image_viewers,list_of_component_viewers, list_of_combo_boxes , list_of_output_viewers):
         self.list_of_images = list_of_iamges
         self.list_of_image_viewers = list_of_image_viewers
         self.list_of_component_viewers = list_of_component_viewers
         self.list_of_combo_boxes = list_of_combo_boxes
+        self.list_of_output_viewers = list_of_output_viewers
         for box in self.list_of_combo_boxes:
             box.currentTextChanged.connect(self.set_current_images_list)
             
@@ -18,6 +22,8 @@ class Controller():
         self.result_image_2 = None #custom image
         self.min_hight = 50000
         self.min_width = 50000
+        self.image_weights = [25,25,25,25]
+        # self.old_image_weights = [25,25,25,25]
         
     def get_min_image_size(self):
         '''
@@ -67,7 +73,33 @@ class Controller():
         self.update_image_plots()
         self.update_component_plots()
                 
-                
+    # def detect_and_adjust_weights(current_weights, incoming_weights, tolerance=1e-6):
+        
+    #     modified_indices = [
+    #         i for i in range(len(current_weights))
+    #         if abs(current_weights[i] - incoming_weights[i]) > tolerance
+    #     ]
+        
+    #     adjusted_values = [incoming_weights[i] for i in modified_indices]
+        
+    #     fixed_weights_sum = sum(incoming_weights[i] for i in modified_indices)
+    #     remaining_weight = 1.0 - fixed_weights_sum
+        
+    #     unadjusted_indices = [i for i in range(len(current_weights)) if i not in modified_indices]
+    #     if unadjusted_indices:
+    #         equal_weight = remaining_weight / len(unadjusted_indices)
+    #         for idx in unadjusted_indices:
+    #             incoming_weights[idx] = equal_weight
+        
+    #     return incoming_weights, modified_indices, adjusted_values            
     
-    def mix_all(self, output_viewer_number:int):
-        pass
+    def mix_all(self, output_viewer_number:int ,region_mode):
+        self.Mixer.images_list = self.list_of_images
+        temp_weights = self.image_weights
+        self.image_weights = [weight / 100 for weight in self.image_weights]
+        mixer_result = self.Mixer.mix(self.image_weights,[0],region_mode)
+        mixer_result_normalized = cv2.normalize(mixer_result , None ,0 ,255 ,cv2.NORM_MINMAX).astype(np.uint8)
+        self.result_image_1 = CustomImage(mixer_result_normalized)
+        self.list_of_output_viewers[output_viewer_number].current_image = self.result_image_1
+        self.list_of_output_viewers[output_viewer_number].update_plot()
+        self.image_weights = temp_weights

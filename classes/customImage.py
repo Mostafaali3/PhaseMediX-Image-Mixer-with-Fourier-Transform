@@ -9,7 +9,10 @@ class CustomImage():
         self.loaded = False
         if (len(image) != 0 ):
             self.loaded = True
-            imported_image_gray_scale = cv2.cvtColor(image , cv2.COLOR_BGR2GRAY)
+            if(len(image.shape) == 3):
+                imported_image_gray_scale = cv2.cvtColor(image , cv2.COLOR_BGR2GRAY)
+            else:
+                imported_image_gray_scale = image    
             # Height
             image_x_components = np.arange(0 , imported_image_gray_scale.shape[0] +1 )
             # Width
@@ -25,7 +28,10 @@ class CustomImage():
             self.__original_image_fourier_components = np.fft.fftshift(self.__original_image_fourier_components)
             
             self.__modified_image_fourier_components = deepcopy(self.__original_image_fourier_components)
-        
+            self.image__mag_weight = 25
+            self.image__phase_weight = 25
+            self.image_mag_taken = False
+            self.image_phase_taken = False
     @property
     def original_image(self):
         return self.__original_image
@@ -68,6 +74,8 @@ class CustomImage():
     def transform(self):
         self.modified_image_fourier_components = np.fft.fftshift(np.fft.fft2(self.modified_image[2]))
     
+    def inverse_transform(self):
+        self.modified_image[2] = np.fft.ifft2(np.fft.ifftshift(self.modified_image_fourier_components))
     
     def handle_image_size(self , height , width):
         current_image_height , current_image_width  = self.original_image[2].shape[:2]  

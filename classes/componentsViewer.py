@@ -6,14 +6,12 @@ import pyqtgraph as pg
 class ComponentViewer(Viewer):
     def __init__(self):
         super().__init__()
-        self.roii = pg.ROI([50, 50], [50, 50], movable=True, resizable=True)  # Initial position and size
+        self.roii = pg.RectROI([50, 50], [50, 50], movable=True, resizable=True)  # Initial position and size
         self.roii.addScaleHandle([1, 1], [0, 0])  # Add handles for resizing
         self.roii.addScaleHandle([0, 0], [1, 1])
         self.ui.roiBtn.setChecked(True)
-        # self.show_grid(x=False, y=False)
-        
-        
-    
+        # self.show_grid(x=False, y=False)        
+
     def update_plot(self, plot_type:str):
         if self.current_image.modified_image[2].ndim == 2:
             if hasattr(self, 'imageItem'):

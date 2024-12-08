@@ -35,37 +35,58 @@ class Mixer():
         if (isinstance(new_result_image_2 , CustomImage)):
             self.__result_image_2 = new_result_image_2
         
+    def get_region_image(self ,image_number , region_mode ,boundaries): 
+        region_image = self.images_list[image_number].modified_image_fourier_components
+                
+        if (region_mode == RegionMode.INNER):
+            region_image = region_image[boundaries[2]:boundaries[3]+1 , boundaries[0]:boundaries[1]+1 ]
+            
+        if (region_mode == RegionMode.OUTER):
+            left_region = region_image[boundaries[2]:boundaries[3]+1 , :boundaries[0]]
+            right_region = region_image[boundaries[2]:boundaries[3]+1 , boundaries[1]+1 :]
+            top_region = region_image[boundaries[3]+1: , :]
+            bottom_region = region_image[:boundaries[2] , :]
+            
+            top_bottom_region = np.vstack((bottom_region , top_region ))
+            left_right_region = np.hstack((left_region , np.zeros((boundaries[3] - boundaries[2] +1 , boundaries[1] - boundaries[0] +1  )),right_region))
+            region_image = np.vstack((top_bottom_region , left_right_region))  
         
-    def mix(self, weights, view_port:int , boundaries , region_mode):
-        resulted_mix = []
+        return region_image
+    
+    def mix(self, weights , boundaries , region_mode):
+        resulted_mix_magnitude = 0
+        resulted_mix_phase = 0
         if (self.current_mode == Mode.MAGNITUDE_PHASE):
+            weighted_images_magnitudes = []
+            weighted_images_phases = []
             for image_number in range(len(self.images_list)):
-                if(len(self.images_list[image_number].original_image[2]) == 0 ):
+                if(self.images_list[image_number].loaded == False ):
                     continue
                 
-                region_image = self.images_list[image_number].original_image[2]
-                
-                if (region_mode == RegionMode.INNER):
-                    region_image = region_image[boundaries[2]:boundaries[3]+1 , boundaries[0]:boundaries[1]+1 ]
-                    
-                if (region_mode == RegionMode.OUTER):
-                    left_region = region_image[boundaries[2]:boundaries[3]+1 , :boundaries[0]]
-                    right_region = region_image[boundaries[2]:boundaries[3]+1 , boundaries[1]+1 :]
-                    top_region = region_image[boundaries[3]+1: , :]
-                    bottom_region = region_image[:boundaries[2] , :]
-                    
-                    top_bottom_region = np.vstack((bottom_region , top_region ))
-                    left_right_region = np.hstack((left_region , np.zeros((boundaries[3] - boundaries[2] +1 , boundaries[1] - boundaries[0] +1  )),right_region))
-                    region_image = np.vstack((top_bottom_region , left_right_region))
-                print(region_image)
-                image_magnitude = np.abs(self.images_list[image_number].original_image_fourier_components)
-                image_phase = np.angle(self.images_list[image_number].original_image_fourier_components)
+                region_image = self.get_region_image(image_number , region_mode ,boundaries )
+
+                image_magnitude = np.abs(region_image)
+                image_phase = np.angle(region_image)
                 
                 if(self.images_modes[image_number] == Mode.MAGNITUDE):
                     weighted_image_magnitude = image_magnitude * weights[image_number]
+                    weighted_images_magnitudes.append(weighted_image_magnitude)
+                    # weighted_images_phases.append(image_phase)
                     
                 if(self.images_modes[image_number] == Mode.PHASE):
                     weighted_image_phase = image_phase * weights[image_number]
-                    
+                    weighted_images_phases.append(weighted_image_phase)
+                    # weighted_images_magnitudes.append(image_magnitude)
+
+            for weighted_mag in weighted_images_magnitudes:
+                resulted_mix_magnitude += weighted_mag
+            for weighted_phase in weighted_images_phases:
+                resulted_mix_phase += weighted_phase
+            
         elif (self.current_mode == Mode.REAL_IMAGINARY):
             pass
+        
+        resulted_mix_complex =  resulted_mix_magnitude * np.exp(1j * resulted_mix_phase) 
+        resulted_inversed_image = np.fft.ifft2(np.fft.ifftshift(resulted_mix_complex))
+        resulted_image_real = resulted_inversed_image.real
+        return resulted_image_real

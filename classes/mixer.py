@@ -56,6 +56,8 @@ class Mixer():
     def mix(self, weights , boundaries , region_mode):
         resulted_mix_magnitude = 0
         resulted_mix_phase = 0
+        resulted_mix_real = 0
+        resulted_mix_imag = 0
         if (self.current_mode == Mode.MAGNITUDE_PHASE):
             weighted_images_magnitudes = []
             weighted_images_phases = []
@@ -82,11 +84,37 @@ class Mixer():
                 resulted_mix_magnitude += weighted_mag
             for weighted_phase in weighted_images_phases:
                 resulted_mix_phase += weighted_phase
+            resulted_mix_complex =  resulted_mix_magnitude * np.exp(1j * resulted_mix_phase) 
+
             
         elif (self.current_mode == Mode.REAL_IMAGINARY):
-            pass
-        
-        resulted_mix_complex =  resulted_mix_magnitude * np.exp(1j * resulted_mix_phase) 
+            weighted_images_real_parts = []
+            weighted_images_imaginary_parts = []
+            for image_number in range(len(self.images_list)):
+                if(self.images_list[image_number].loaded == False ):
+                    continue
+                
+                region_image = self.get_region_image(image_number , region_mode ,boundaries )
+
+                image_real = np.real(region_image)
+                image_imag = np.imag(region_image)
+                
+                if(self.images_modes[image_number] == Mode.REAL):
+                    weighted_image_real = image_real * weights[image_number]
+                    weighted_images_real_parts.append(weighted_image_real)
+                    # weighted_images_phases.append(image_phase)
+                    
+                if(self.images_modes[image_number] == Mode.PHASE):
+                    weighted_image_imag = image_imag * weights[image_number]
+                    weighted_images_imaginary_parts.append(weighted_image_imag)
+                    # weighted_images_magnitudes.append(image_magnitude)
+
+            for weighted_real in weighted_images_real_parts:
+                resulted_mix_real += weighted_real
+            for weighted_imag in weighted_images_imaginary_parts:
+                resulted_mix_imag += weighted_imag
+            resulted_mix_complex = resulted_mix_real + 1j * resulted_mix_imag
+            
         resulted_inversed_image = np.fft.ifft2(np.fft.ifftshift(resulted_mix_complex))
         resulted_image_real = resulted_inversed_image.real
         return resulted_image_real

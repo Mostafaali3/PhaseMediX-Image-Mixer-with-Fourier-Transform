@@ -6,7 +6,6 @@ from classes.modesEnum import RegionMode
 from classes.customImage import CustomImage
 import numpy as np
 import cv2
-import time
 class Controller():
     
     roi_changed =  pyqtSignal(object)  # Signal to emit ROI object
@@ -19,7 +18,7 @@ class Controller():
         self.list_of_output_viewers = list_of_output_viewers
         for box in self.list_of_combo_boxes:
             box.currentTextChanged.connect(self.set_current_images_list)
-        
+        self.rect = []
         
         self.mix_finished = pyqtSignal()  # Signal emitted when mixing finishes
         self.Mixer = Mixer()
@@ -37,7 +36,11 @@ class Controller():
         # Get the region and size from the source ROI
         new_pos = source_roi.pos()
         new_size = source_roi.size()
-
+        rect = source_roi.boundingRect()
+        self.rect = [
+            [rect.left(), rect.top()],
+            [rect.right(), rect.bottom()]
+        ]
         # Update all other ROIs
         for i, component_viewer in enumerate(self.list_of_component_viewers):
             roi = component_viewer.roi
@@ -52,12 +55,13 @@ class Controller():
             [rect.left(), rect.top()],
             [rect.right(), rect.bottom()]
         ]
+        
     
     def set_roi_boundaries(self, roi, roi_bounds):
         roi.setPos(roi_bounds[0])
         roi.setSize(
             [roi_bounds[1][0] - roi_bounds[0][0], roi_bounds[1][1] - roi_bounds[0][1]]
-        )  
+        )
     def get_min_image_size(self):
         '''
         this function gets the min width and hight of all images
@@ -134,7 +138,7 @@ class Controller():
         self.Mixer.images_list = self.list_of_images
         temp_weights = self.image_weights
         self.image_weights = [weight / 100 for weight in self.image_weights]
-        mixer_result = self.Mixer.mix(self.image_weights,[0],region_mode)
+        mixer_result = self.Mixer.mix(self.image_weights,self.rect,region_mode)
         mixer_result_normalized = cv2.normalize(mixer_result , None ,0 ,255 ,cv2.NORM_MINMAX).astype(np.uint8)
         self.result_image_1 = CustomImage(mixer_result_normalized)
         self.list_of_output_viewers[output_viewer_number].current_image = self.result_image_1

@@ -11,6 +11,7 @@ from classes.componentsViewer import ComponentViewer
 from classes.customImage import CustomImage
 from classes.controller import Controller
 from classes.modesEnum import RegionMode , Mode
+from classes.mixer import MixThread
 from copy import copy
 import cv2
 import logging
@@ -29,6 +30,8 @@ class MainWindow(QMainWindow):
         super(MainWindow, self).__init__()
         
         self.logger = logging.getLogger(self.__class__.__name__)
+        self.loading_timer = QTimer(self)
+
         loadUi('main.ui', self)
         self.setWindowTitle('Image Mixer')
         self.setWindowIcon(QIcon('icons_setup\icons\logo.png'))
@@ -145,30 +148,9 @@ class MainWindow(QMainWindow):
             viewer.set_double_click_handler(lambda i=i: self.load_image(i))
         
         
-        
-    def start_loading(self):
-        self.loading_gradient_pos = 0
-        self.loading_timer = QTimer(self)
-        self.loading_timer.timeout.connect(self.update_loading_frame)
-        self.loading_timer.start(50)  # Update every 50 ms
 
-    def stop_loading(self):
-        if self.loading_timer:
-            self.loading_timer.stop()
     
-    def update_loading_frame(self):
-        self.loading_gradient_pos += 10
-        if self.loading_gradient_pos > self.loading_frame.width():
-            self.loading_gradient_pos = 0
-        
-        gradient = QLinearGradient(self.loading_gradient_pos, 0, self.loading_frame.width(), 0)
-        gradient.setColorAt(0, QColor("red"))
-        gradient.setColorAt(1, QColor("white"))
-        brush = QBrush(gradient)
-        palette = self.loading_frame.palette()
-        palette.setBrush(QPalette.Background, brush)
-        self.loading_frame.setAutoFillBackground(True)
-        self.loading_frame.setPalette(palette)
+    
                 
     def load_image(self, viewer_number):
         file_path, _ = QFileDialog.getOpenFileName(self, 'Open Image File', '', 'Image Files (*.jpeg *.jpg *.png *.bmp *.gif);;All Files (*)')
@@ -294,15 +276,48 @@ class MainWindow(QMainWindow):
         self.logger.debug(f"Current output viewport: {self.current_output_viewport}")
         self.logger.debug(f"Current region mode: {self.current_region_mode}")
         try:
-            self.controller.mix_all(self.current_output_viewport, self.current_region_mode)
             self.start_loading()
-            time.sleep(3)
-            self.stop_loading()
-            self.logger.info("Mixing operation completed successfully")
+            self.mix_thread = MixThread(self.controller, self.current_output_viewport, self.current_region_mode)
+            self.mix_thread.mix_finished.connect(self.mixing_finished)  # Connect signal to handler
+            self.mix_thread.start()
         except Exception as e:
             self.logger.error(f"Error during mixing operation: {e}")
             raise
+        
+    def mixing_finished(self):
+        self.logger.info("Mixing completed successfully")
+        print('Mixing Done')
+        self.stop_loading()
+        self.mix_thread.deleteLater()
+        
+    def start_loading(self):
+        self.loading_gradient_pos = 0
+        self.loading_timer = QTimer(self)  # Ensure timer is instantiated
+        self.loading_timer.timeout.connect(self.update_loading_frame)
+        self.loading_timer.start(10)  # Update every 10 ms for smooth animation
 
+    def update_loading_frame(self):
+        print('loading')
+        increment = 2.5  # Each update increases position by 2.5 pixels
+        self.loading_gradient_pos += increment
+        if self.loading_gradient_pos > self.loading_frame.width():
+            self.loading_gradient_pos = 0  # Reset for looping animation if needed
+
+        # Create gradient animation
+        # Create a gradient as a stylesheet background
+        gradient = f"""
+        background: qlineargradient(x1: {self.loading_gradient_pos / self.loading_frame.width()}, 
+                                    y1: 0, 
+                                    x2: 1, 
+                                    y2: 0, 
+                                    stop: 0 red, 
+                                    stop: 1 white);
+        """
+        self.loading_frame.setStyleSheet(gradient)
+
+    def stop_loading(self):
+        if self.loading_timer and self.loading_timer.isActive():
+            self.loading_timer.stop()
 
 
 

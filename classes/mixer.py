@@ -1,5 +1,7 @@
 from classes.customImage import CustomImage
 from classes.modesEnum import Mode , RegionMode
+from PyQt5.QtCore import QThread, pyqtSignal
+import time
 import numpy as np
 import logging
 class Mixer():
@@ -40,6 +42,7 @@ class Mixer():
             self.__result_image_2 = new_result_image_2
         
     def get_region_image(self ,image_number , region_mode ,boundaries): 
+        print(boundaries)
         region_image = self.images_list[image_number].modified_image_fourier_components
                 
         if (region_mode == RegionMode.INNER):
@@ -122,3 +125,22 @@ class Mixer():
         resulted_inversed_image = np.fft.ifft2(np.fft.ifftshift(resulted_mix_complex))
         resulted_image_real = resulted_inversed_image.real
         return resulted_image_real
+    
+class MixThread(QThread):
+    mix_finished = pyqtSignal()
+
+    def __init__(self, controller, output_viewer_number, region_mode):
+        super().__init__()
+        self.controller = controller
+        self.output_viewer_number = output_viewer_number
+        self.region_mode = region_mode
+
+    def run(self):
+        try:
+            
+            print('thread starts')
+            time.sleep(2)  # Simulate a time-consuming mixing operation
+
+            self.controller.mix_all(self.output_viewer_number, self.region_mode)
+        finally:
+            self.mix_finished.emit()

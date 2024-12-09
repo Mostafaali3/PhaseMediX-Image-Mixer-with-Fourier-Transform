@@ -26,8 +26,11 @@ class CustomImage():
             # self.__original_image_fourier_components = np.empty((1,) , dtype= object)
             self.__original_image_fourier_components = np.fft.fft2(self.modified_image[2])
             self.__original_image_fourier_components = np.fft.fftshift(self.__original_image_fourier_components)
-            
             self.__modified_image_fourier_components = deepcopy(self.__original_image_fourier_components)
+            
+            # this variable is to hhandle a problem in the image sizing and contrast 
+            self.original_sized_image = deepcopy(self.__original_image)
+            
             self.image__mag_weight = 25
             self.image__phase_weight = 25
             self.image_mag_taken = False
@@ -85,3 +88,6 @@ class CustomImage():
             self.modified_image[0] = np.arange(1 , height + 1)
             self.modified_image[1] = np.arange(1 , width + 1)
             self.modified_image[2] = cv2.resize(self.original_image[2] , (width , height))
+            self.original_sized_image[0] = np.arange(1 , height + 1)
+            self.original_sized_image[1] = np.arange(1 , width + 1)
+            self.original_sized_image[2] = cv2.resize(self.original_image[2] , (width , height))

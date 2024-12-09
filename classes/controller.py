@@ -44,7 +44,9 @@ class Controller():
         for i,image in enumerate(self.list_of_images):
             if image.loaded:
                 index = copy(i)
-                self.list_of_images[index].handle_image_size(self.min_hight, self.min_width)
+                image_hight, image_width  = self.list_of_images[index].original_sized_image[2].shape[:2]
+                if image_width!=self.min_width or image_hight!= self.min_hight:
+                    self.list_of_images[index].handle_image_size(self.min_hight, self.min_width)
                 
                 if not self.list_of_images[index].original_image[2].shape == self.list_of_images[index].modified_image.shape:
                     self.list_of_images[index].transform()

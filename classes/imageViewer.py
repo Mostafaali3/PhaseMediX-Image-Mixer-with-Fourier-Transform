@@ -82,7 +82,7 @@ class ImageViewer(Viewer):
             # super(QGraphicsView, self).mouseMoveEvent(event)
             
     def custom_adjust_brightness(self, brightness, contrast):
-        self.current_image.modified_image[2] = cv2.convertScaleAbs(self.current_image.original_image[2], alpha=1+contrast, beta=brightness)
+        self.current_image.modified_image[2] = cv2.convertScaleAbs(self.current_image.original_sized_image[2], alpha=1+contrast, beta=brightness)
             
                     
     def image_to_pixmap(self):

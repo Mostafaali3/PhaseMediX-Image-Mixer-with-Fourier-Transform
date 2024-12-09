@@ -15,6 +15,7 @@ class Mixer():
     
     @current_mode.setter
     def current_mode(self , new_mode):
+        self.logger.info(f"Changing mode from {self.__current_mode} to {new_mode}.")
         self.__current_mode = new_mode
 
     @property

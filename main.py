@@ -10,12 +10,22 @@ from classes.controller import Controller
 from classes.modesEnum import RegionMode , Mode
 from copy import copy
 import cv2
+import logging
 
-compile_qrc()
+# compile_qrc()
+
+logging.basicConfig(
+    filename='app.log',
+    filemode='a',  # Append mode
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    level=logging.DEBUG
+)
 
 class MainWindow(QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
+        
+        self.logger = logging.getLogger(self.__class__.__name__)
         loadUi('main.ui', self)
         self.setWindowTitle('Image Mixer')
         self.setWindowIcon(QIcon('icons_setup\icons\logo.png'))
@@ -98,12 +108,16 @@ class MainWindow(QMainWindow):
             index = copy(i)
             combo_box = self.findChild(QComboBox, f"image{i}ComboBox")
             self.list_of_combo_boxes.append(combo_box)
+            
+        
         
         self.list_of_images = [CustomImage(), CustomImage(), CustomImage(), CustomImage()]
         self.list_of_image_viewers = [self.image_viewer_1, self.image_viewer_2, self.image_viewer_3, self.image_viewer_4]
         self.list_of_component_viewers = [self.components_viewer_1, self.components_viewer_2, self.components_viewer_3, self.components_viewer_4]
         self.list_of_output_viewers = [self.output_viewer_1 , self.output_viewer_2]
+        
         self.controller = Controller(self.list_of_images, self.list_of_component_viewers, self.list_of_image_viewers, self.list_of_combo_boxes , self.list_of_output_viewers)
+        self.logger.info("Controller initialized with provided components")
         self.controller.list_of_images = self.list_of_images
         self.controller.list_of_component_viewers = self.list_of_component_viewers
         self.controller.list_of_image_viewers = self.list_of_image_viewers
@@ -128,22 +142,29 @@ class MainWindow(QMainWindow):
         
     def load_image(self, viewer_number):
         file_path, _ = QFileDialog.getOpenFileName(self, 'Open Image File', '', 'Image Files (*.jpeg *.jpg *.png *.bmp *.gif);;All Files (*)')
-        
+        self.logger.info(f"Selected file: {file_path}")
+
         print(viewer_number)
-        if file_path.endswith('.jpeg') or file_path.endswith('.jpg'):
-            image = cv2.imread(file_path)
-            print(image)
-            # image = cv2.flip(image,0)
-            new_image = CustomImage(image)
-            self.list_of_images[viewer_number] = new_image
-            self.list_of_image_viewers[viewer_number].current_image = new_image
-            self.list_of_component_viewers[viewer_number].current_image = new_image
-            self.controller.set_current_images_list()
-            self.controller.image_weights[viewer_number] = 0
-            # pass
-            # print(viewer_number)
+        if file_path:
+            if file_path.endswith('.jpeg') or file_path.endswith('.jpg'):
+                
+                image = cv2.imread(file_path)
+                if image is not None:
+                    self.logger.info(f"Image loaded successfully for viewer {viewer_number}")
+                    new_image = CustomImage(image)
+                    self.list_of_images[viewer_number] = new_image
+                    self.list_of_image_viewers[viewer_number].current_image = new_image
+                    self.list_of_component_viewers[viewer_number].current_image = new_image
+                    self.controller.set_current_images_list()
+                    self.controller.image_weights[viewer_number] = 0
+                else:
+                    self.logger.error(f"Failed to load image from {file_path}")
+        else:
+            self.logger.warning("No file selected")
     
     def set_output_viewport(self , new_output_viewport):
+        self.logger.info(f"Output viewport changed to: {new_output_viewport}")
+
         self.current_output_viewport = new_output_viewport
     
     def set_current_region_mode(self,new_region):
@@ -215,23 +236,36 @@ class MainWindow(QMainWindow):
                 self.controller.Mixer.images_modes[3] = Mode.IMAGINARY
     
     def set_image1_weight(self , slider_value):
+        self.logger.debug(f"Image 1 weight slider moved to: {slider_value}")
         self.controller.image_weights[0] = slider_value
         self.image1_weight_label.setText(f'{slider_value} %')
     
     def set_image2_weight(self , slider_value):
+        self.logger.debug(f"Image 2 weight slider moved to: {slider_value}")
         self.controller.image_weights[1] = slider_value
         self.image2_weight_label.setText(f'{slider_value} %')
     
     def set_image3_weight(self , slider_value):
+        self.logger.debug(f"Image 3 weight slider moved to: {slider_value}")
         self.controller.image_weights[2] = slider_value
         self.image3_weight_label.setText(f'{slider_value} %')
     
     def set_image4_weight(self , slider_value):
+        self.logger.debug(f"Image 4 weight slider moved to: {slider_value}")
         self.controller.image_weights[3] = slider_value
         self.image4_weight_label.setText(f'{slider_value} %')
     
     def mix_and_view(self):
-        self.controller.mix_all(self.current_output_viewport , self.current_region_mode)
+        self.logger.info("Mixing images...")
+        self.logger.debug(f"Current output viewport: {self.current_output_viewport}")
+        self.logger.debug(f"Current region mode: {self.current_region_mode}")
+        try:
+            self.controller.mix_all(self.current_output_viewport, self.current_region_mode)
+            self.logger.info("Mixing operation completed successfully")
+        except Exception as e:
+            self.logger.error(f"Error during mixing operation: {e}")
+            raise
+
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

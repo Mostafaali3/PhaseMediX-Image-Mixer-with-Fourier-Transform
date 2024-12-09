@@ -1,7 +1,10 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow, QFrame, QVBoxLayout, QFileDialog, QLabel, QComboBox, QPushButton , QSlider
 from PyQt5.uic import loadUi
+from PyQt5.QtGui import QLinearGradient, QColor, QBrush, QPalette
 from PyQt5.QtGui import QIcon
+from PyQt5.QtCore import Qt, QTimer
+import time
 from helper_function.compile_qrc import compile_qrc
 from classes.imageViewer import ImageViewer
 from classes.componentsViewer import ComponentViewer
@@ -29,6 +32,9 @@ class MainWindow(QMainWindow):
         loadUi('main.ui', self)
         self.setWindowTitle('Image Mixer')
         self.setWindowIcon(QIcon('icons_setup\icons\logo.png'))
+        
+        # self.mix_finished = pyqtSignal()  # Signal emitted when mixing finishes
+
         
         self.image_viewer_frame_1 = self.findChild(QFrame, 'image1')
         self.components_viewer_frame_1 = self.findChild(QFrame, 'image1Frequancy')
@@ -68,6 +74,8 @@ class MainWindow(QMainWindow):
         
         self.convert_button = self.findChild(QPushButton , "convertButton")
         self.convert_button.clicked.connect(self.mix_and_view)
+        
+        self.loading_frame = self.findChild(QFrame, "loadingFrame")
         
         self.output_dispaly_combobox = self.findChild(QComboBox , "displayComboBox")
         self.output_dispaly_combobox.currentIndexChanged.connect(self.set_output_viewport)
@@ -117,7 +125,6 @@ class MainWindow(QMainWindow):
         self.list_of_output_viewers = [self.output_viewer_1 , self.output_viewer_2]
         
         self.controller = Controller(self.list_of_images, self.list_of_component_viewers, self.list_of_image_viewers, self.list_of_combo_boxes , self.list_of_output_viewers)
-        self.logger.info("Controller initialized with provided components")
         self.controller.list_of_images = self.list_of_images
         self.controller.list_of_component_viewers = self.list_of_component_viewers
         self.controller.list_of_image_viewers = self.list_of_image_viewers
@@ -139,7 +146,30 @@ class MainWindow(QMainWindow):
         
         
         
+    def start_loading(self):
+        self.loading_gradient_pos = 0
+        self.loading_timer = QTimer(self)
+        self.loading_timer.timeout.connect(self.update_loading_frame)
+        self.loading_timer.start(50)  # Update every 50 ms
+
+    def stop_loading(self):
+        if self.loading_timer:
+            self.loading_timer.stop()
+    
+    def update_loading_frame(self):
+        self.loading_gradient_pos += 10
+        if self.loading_gradient_pos > self.loading_frame.width():
+            self.loading_gradient_pos = 0
         
+        gradient = QLinearGradient(self.loading_gradient_pos, 0, self.loading_frame.width(), 0)
+        gradient.setColorAt(0, QColor("red"))
+        gradient.setColorAt(1, QColor("white"))
+        brush = QBrush(gradient)
+        palette = self.loading_frame.palette()
+        palette.setBrush(QPalette.Background, brush)
+        self.loading_frame.setAutoFillBackground(True)
+        self.loading_frame.setPalette(palette)
+                
     def load_image(self, viewer_number):
         file_path, _ = QFileDialog.getOpenFileName(self, 'Open Image File', '', 'Image Files (*.jpeg *.jpg *.png *.bmp *.gif);;All Files (*)')
         self.logger.info(f"Selected file: {file_path}")
@@ -155,10 +185,14 @@ class MainWindow(QMainWindow):
                     self.list_of_images[viewer_number] = new_image
                     self.list_of_image_viewers[viewer_number].current_image = new_image
                     self.list_of_component_viewers[viewer_number].current_image = new_image
+                    self.list_of_component_viewers[viewer_number].roi.sigRegionChanged.connect(
+                    lambda: self.controller.handle_roi_change(self.list_of_component_viewers[viewer_number].roi)
+                )
                     self.controller.set_current_images_list()
                     self.controller.image_weights[viewer_number] = 0
                 else:
-                    self.logger.error(f"Failed to load image from {file_path}")
+                    self.logger.error(f"Failed to load image from {file_path}")             
+                        
         else:
             self.logger.warning("No file selected")
     
@@ -261,10 +295,15 @@ class MainWindow(QMainWindow):
         self.logger.debug(f"Current region mode: {self.current_region_mode}")
         try:
             self.controller.mix_all(self.current_output_viewport, self.current_region_mode)
+            self.start_loading()
+            time.sleep(3)
+            self.stop_loading()
             self.logger.info("Mixing operation completed successfully")
         except Exception as e:
             self.logger.error(f"Error during mixing operation: {e}")
             raise
+
+
 
 
 if __name__ == '__main__':

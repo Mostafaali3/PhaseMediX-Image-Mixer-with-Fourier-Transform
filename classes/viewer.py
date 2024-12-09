@@ -13,7 +13,6 @@ class Viewer(pg.ImageView):
         self.ui.histogram.hide()
         self.ui.roiBtn.hide()
         self.ui.menuBtn.hide()
-        
 
     def update_plot(self):
         pass

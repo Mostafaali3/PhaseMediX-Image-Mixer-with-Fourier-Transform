@@ -1,8 +1,11 @@
 from classes.customImage import CustomImage
 from classes.modesEnum import Mode , RegionMode
 import numpy as np
+import logging
 class Mixer():
     def __init__(self):
+        self.logger = logging.getLogger(self.__class__.__name__)
+        self.progress_value = 0
         self.images_list = []
         self.__result_image_1 = CustomImage()
         self.__result_image_2 = CustomImage()

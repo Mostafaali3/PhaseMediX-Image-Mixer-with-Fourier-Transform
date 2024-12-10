@@ -70,7 +70,7 @@ class ImageViewer(Viewer):
         if self.is_left_button_pressed:
             self.change_in_y = event.scenePos().y() - self.prev_mouse_pos.y()
             self.change_in_x = event.scenePos().x() - self.prev_mouse_pos.x()
-            print(event.scenePos().x())
+            # print(event.scenePos().x())
             self.brigtness_offset = self.change_in_y *1
             self.contrast_offset = self.change_in_x * 0.001
             self.custom_adjust_brightness(self.brigtness_offset, self.contrast_offset)

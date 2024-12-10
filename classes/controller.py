@@ -36,10 +36,11 @@ class Controller():
         # Get the region and size from the source ROI
         new_pos = source_roi.pos()
         new_size = source_roi.size()
-        rect = source_roi.boundingRect()
+        print(new_pos)
+
         self.rect = [
-            [rect.left(), rect.top()],
-            [rect.right(), rect.bottom()]
+            int(new_pos.x()), int(new_pos.y()),
+            int(new_pos.x()+new_size.x()), int(new_pos.y()+new_size.y())
         ]
         # Update all other ROIs
         for i, component_viewer in enumerate(self.list_of_component_viewers):
@@ -49,11 +50,13 @@ class Controller():
                 roi.setPos(new_pos)
                 roi.setSize(new_size)
                 roi.blockSignals(False)
+                
     def get_roi_boundries(self, roi):
-        rect = roi.boundingRect()
+        new_pos = roi.pos()
+        new_size = roi.size()
         return [
-            [rect.left(), rect.top()],
-            [rect.right(), rect.bottom()]
+            int(new_pos.x()), int(new_pos.y()),
+            int(new_pos.x()+new_size.x()), int(new_pos.y()+new_size.y())
         ]
         
     
@@ -62,6 +65,7 @@ class Controller():
         roi.setSize(
             [roi_bounds[1][0] - roi_bounds[0][0], roi_bounds[1][1] - roi_bounds[0][1]]
         )
+        
     def get_min_image_size(self):
         '''
         this function gets the min width and hight of all images

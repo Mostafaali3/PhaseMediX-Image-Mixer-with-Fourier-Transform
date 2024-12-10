@@ -5,13 +5,14 @@ from PyQt5.QtGui import QLinearGradient, QColor, QBrush, QPalette
 from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import Qt, QTimer
 import time
+from PyQt5.QtCore import QThread, pyqtSignal
+
 from helper_function.compile_qrc import compile_qrc
 from classes.imageViewer import ImageViewer
 from classes.componentsViewer import ComponentViewer
 from classes.customImage import CustomImage
 from classes.controller import Controller
 from classes.modesEnum import RegionMode , Mode
-from classes.mixer import MixThread
 from copy import copy
 import cv2
 import logging
@@ -164,6 +165,7 @@ class MainWindow(QMainWindow):
                 if image is not None:
                     self.logger.info(f"Image loaded successfully for viewer {viewer_number}")
                     new_image = CustomImage(image)
+                    new_image.loaded = True
                     self.list_of_images[viewer_number] = new_image
                     self.list_of_image_viewers[viewer_number].current_image = new_image
                     self.list_of_component_viewers[viewer_number].current_image = new_image
@@ -275,6 +277,7 @@ class MainWindow(QMainWindow):
         self.logger.info("Mixing images...")
         self.logger.debug(f"Current output viewport: {self.current_output_viewport}")
         self.logger.debug(f"Current region mode: {self.current_region_mode}")
+        
         try:
             self.start_loading()
             self.mix_thread = MixThread(self.controller, self.current_output_viewport, self.current_region_mode)
@@ -297,7 +300,6 @@ class MainWindow(QMainWindow):
         self.loading_timer.start(10)  # Update every 10 ms for smooth animation
 
     def update_loading_frame(self):
-        print('loading')
         increment = 2.5  # Each update increases position by 2.5 pixels
         self.loading_gradient_pos += increment
         if self.loading_gradient_pos > self.loading_frame.width():
@@ -318,6 +320,26 @@ class MainWindow(QMainWindow):
     def stop_loading(self):
         if self.loading_timer and self.loading_timer.isActive():
             self.loading_timer.stop()
+
+class MixThread(QThread):
+    mix_finished = pyqtSignal()
+
+    def __init__(self, controller, output_viewer_number, region_mode):
+        super().__init__()
+        self.controller = controller
+        self.output_viewer_number = output_viewer_number
+        self.region_mode = region_mode
+
+    def run(self):
+        try:
+            print('thread starts')
+            self.controller.mix_all(self.output_viewer_number, self.region_mode)
+        finally:
+            self.mix_finished.emit()
+            
+    def stop(self):
+        self._running = False
+
 
 
 

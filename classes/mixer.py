@@ -1,6 +1,5 @@
 from classes.customImage import CustomImage
 from classes.modesEnum import Mode , RegionMode
-from PyQt5.QtCore import QThread, pyqtSignal
 import time
 import numpy as np
 import logging
@@ -41,26 +40,35 @@ class Mixer():
         if (isinstance(new_result_image_2 , CustomImage)):
             self.__result_image_2 = new_result_image_2
         
-    def get_region_image(self ,image_number , region_mode ,boundaries): 
-        print(boundaries)
+    def get_region_image(self, image_number, region_mode, boundaries):
         region_image = self.images_list[image_number].modified_image_fourier_components
-                
-        if (region_mode == RegionMode.INNER):
-            region_image = region_image[boundaries[2]:boundaries[3]+1 , boundaries[0]:boundaries[1]+1 ]
+        print(type(region_image))
+        if region_mode != RegionMode.FULL:
+            print(boundaries)
+            left, top, right, bottom = boundaries  # Unpack boundaries
             
-        if (region_mode == RegionMode.OUTER):
-            left_region = region_image[boundaries[2]:boundaries[3]+1 , :boundaries[0]]
-            right_region = region_image[boundaries[2]:boundaries[3]+1 , boundaries[1]+1 :]
-            top_region = region_image[boundaries[3]+1: , :]
-            bottom_region = region_image[:boundaries[2] , :]
-            
-            top_bottom_region = np.vstack((bottom_region , top_region ))
-            left_right_region = np.hstack((left_region , np.zeros((boundaries[3] - boundaries[2] +1 , boundaries[1] - boundaries[0] +1  )),right_region))
-            region_image = np.vstack((top_bottom_region , left_right_region))  
-        
+        if region_mode == RegionMode.INNER:
+            # Correct slicing for the inner region
+            region_image = region_image[top:bottom+1, left:right+1]
+        elif region_mode == RegionMode.OUTER:
+            # Correct slices for outer regions
+            left_region = region_image[top:bottom+1, :left]
+            right_region = region_image[top:bottom+1, right+1:]
+            top_region = region_image[:top, :]
+            bottom_region = region_image[bottom+1:, :]
+
+            # Combine outer regions
+            top_bottom_region = np.vstack((top_region, bottom_region))
+            inner_zero_padding = np.zeros((bottom - top + 1, right - left + 1))
+            left_right_region = np.hstack((left_region, inner_zero_padding, right_region))
+            region_image = np.vstack((top_bottom_region, left_right_region))
+        print(f'region {region_image.shape}')
         return region_image
     
     def mix(self, weights , boundaries , region_mode):
+        print(f'images {len(self.images_list)}')
+        for image in self.images_list:
+            print(image.loaded)
         resulted_mix_magnitude = 0
         resulted_mix_phase = 0
         resulted_mix_real = 0
@@ -73,7 +81,7 @@ class Mixer():
                     continue
                 
                 region_image = self.get_region_image(image_number , region_mode ,boundaries )
-
+                print(f'image {region_image.shape}')
                 image_magnitude = np.abs(region_image)
                 image_phase = np.angle(region_image)
                 
@@ -126,21 +134,3 @@ class Mixer():
         resulted_image_real = resulted_inversed_image.real
         return resulted_image_real
     
-class MixThread(QThread):
-    mix_finished = pyqtSignal()
-
-    def __init__(self, controller, output_viewer_number, region_mode):
-        super().__init__()
-        self.controller = controller
-        self.output_viewer_number = output_viewer_number
-        self.region_mode = region_mode
-
-    def run(self):
-        try:
-            
-            print('thread starts')
-            time.sleep(2)  # Simulate a time-consuming mixing operation
-
-            self.controller.mix_all(self.output_viewer_number, self.region_mode)
-        finally:
-            self.mix_finished.emit()

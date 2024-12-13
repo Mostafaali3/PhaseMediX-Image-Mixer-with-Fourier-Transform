@@ -6,11 +6,14 @@ from classes.modesEnum import RegionMode
 from classes.customImage import CustomImage
 import numpy as np
 import cv2
-class Controller():
-    
-    roi_changed =  pyqtSignal(object)  # Signal to emit ROI object
+import logging
 
+class Controller():
+    roi_changed =  pyqtSignal(object)  
+    
     def __init__(self, list_of_iamges,list_of_image_viewers,list_of_component_viewers, list_of_combo_boxes , list_of_output_viewers):
+        self.logger = logging.getLogger(self.__class__.__name__)
+
         self.list_of_images = list_of_iamges
         self.list_of_image_viewers = list_of_image_viewers
         self.list_of_component_viewers = list_of_component_viewers
@@ -32,16 +35,17 @@ class Controller():
     def handle_roi_change(self, source_roi):
         """
         Synchronize ROI across all viewers.
+        
         """
         # Get the region and size from the source ROI
         new_pos = source_roi.pos()
         new_size = source_roi.size()
-        print(new_pos)
-
+        
         self.rect = [
             int(new_pos.x()), int(new_pos.y()),
             int(new_pos.x()+new_size.x()), int(new_pos.y()+new_size.y())
         ]
+        
         # Update all other ROIs
         for i, component_viewer in enumerate(self.list_of_component_viewers):
             roi = component_viewer.roi
@@ -50,7 +54,7 @@ class Controller():
                 roi.setPos(new_pos)
                 roi.setSize(new_size)
                 roi.blockSignals(False)
-                
+        logging.info(f"Change and Syncronize the ROI position across all the images to {self.rect}")                    
     def get_roi_boundries(self, roi):
         new_pos = roi.pos()
         new_size = roi.size()
@@ -139,13 +143,15 @@ class Controller():
     #     return incoming_weights, modified_indices, adjusted_values            
     
     def mix_all(self, output_viewer_number:int ,region_mode):
-        self.Mixer.images_list = self.list_of_images
-        temp_weights = self.image_weights
-        self.image_weights = [weight / 100 for weight in self.image_weights]
-        mixer_result = self.Mixer.mix(self.image_weights,self.rect,region_mode)
-        mixer_result_normalized = cv2.normalize(mixer_result , None ,0 ,255 ,cv2.NORM_MINMAX).astype(np.uint8)
-        self.result_image_1 = CustomImage(mixer_result_normalized)
-        self.list_of_output_viewers[output_viewer_number].current_image = self.result_image_1
-        self.list_of_output_viewers[output_viewer_number].update_plot()
-        self.image_weights = temp_weights  
-
+        try:
+            self.Mixer.images_list = self.list_of_images
+            temp_weights = self.image_weights
+            self.image_weights = [weight / 100 for weight in self.image_weights]
+            mixer_result = self.Mixer.mix(self.image_weights,self.rect,region_mode)
+            mixer_result_normalized = cv2.normalize(mixer_result , None ,0 ,255 ,cv2.NORM_MINMAX).astype(np.uint8)
+            self.result_image_1 = CustomImage(mixer_result_normalized)
+            self.list_of_output_viewers[output_viewer_number].current_image = self.result_image_1
+            self.list_of_output_viewers[output_viewer_number].update_plot()
+            self.image_weights = temp_weights  
+        except Exception as e:
+            logging.error("Error occurred in mix_all function", exc_info=True)

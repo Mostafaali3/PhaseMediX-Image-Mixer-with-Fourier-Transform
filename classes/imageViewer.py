@@ -5,6 +5,8 @@ from PyQt5.QtWidgets import QFileDialog, QLabel, QGraphicsView
 from PyQt5.QtGui import QPixmap, QImage, QMouseEvent
 from PyQt5.QtCore import Qt
 import cv2
+import logging
+
 # from PyQt5.QtGui import QMouseEvent
 
 class ImageViewer(Viewer):
@@ -13,6 +15,7 @@ class ImageViewer(Viewer):
         # self.show_grid(x=False, y=False)
         # self.getView().invertX(True)
         # self.getView().invertY(True)
+        self.logger = logging.getLogger(self.__class__.__name__)
         self.current_image = []
         self.double_click_handler = None
         self.mouse_release_handler = None
@@ -39,6 +42,7 @@ class ImageViewer(Viewer):
             # self.current_Image_Item = pg.ImageItem(self.current_image.modified_image[2])
             
             self.setImage(self.current_image.modified_image[2].T)
+            logging.debug("Current plot has been updated. Modified_image is now 2D")
             self.getView().setAspectLocked(True)
             self.getView().autoRange()
             self.getView().setMouseEnabled(x=False, y=False)
@@ -54,15 +58,15 @@ class ImageViewer(Viewer):
         if event.button() == Qt.LeftButton:
             self.prev_mouse_pos = event.pos()
             self.is_left_button_pressed = True
-            print(f"Left mouse button is pressed at {event.pos().y()}.")
+            logging.debug(f"Left mouse button is pressed at {event.pos().y()}.")
 
     def mouseReleaseEvent(self, event: QMouseEvent):
         if event.button() == Qt.LeftButton:
             self.is_left_button_pressed = False
             # if self.mouse_release_handler is not None:
             self.mouse_release_handler()
-            print(f"Left mouse button is released at {event.scenePos().y()}")
-            
+            logging.debug(f"Left mouse button is released at {event.pos().y()}.")
+
     def set_mouse_release_handler(self, handler):
         self.mouse_release_handler = handler
                     
@@ -70,31 +74,29 @@ class ImageViewer(Viewer):
         if self.is_left_button_pressed:
             self.change_in_y = event.scenePos().y() - self.prev_mouse_pos.y()
             self.change_in_x = event.scenePos().x() - self.prev_mouse_pos.x()
-            # print(event.scenePos().x())
             self.brigtness_offset = self.change_in_y *1
             self.contrast_offset = self.change_in_x * 0.001
             self.custom_adjust_brightness(self.brigtness_offset, self.contrast_offset)
             self.prev_mouse_pos = event.pos()
             self.update_plot()
-            # self.update_plot()
-            
-            # Call parent class' mouseMoveEvent with the correct event type
-            # super(QGraphicsView, self).mouseMoveEvent(event)
+            logging.info(f"Update the brightness and contrast of the image.")
+
             
     def custom_adjust_brightness(self, brightness, contrast):
         self.current_image.modified_image[2] = cv2.convertScaleAbs(self.current_image.original_sized_image[2], alpha=1+contrast, beta=brightness)
             
                     
     def image_to_pixmap(self):
-        if not isinstance(self.current_image, list):
-            if len(self.current_image.modified_image[2] == 2):
-                height, width = self.current_image.modified_image[2].shape
-                q_image = QImage(self.current_image.modified_image[2].data, width, height, QImage.Format_Grayscale8)
-                self.current_pixmap = QPixmap.fromImage(q_image)
-                return self.current_pixmap
-    # def on_mouse_moved(self, event):
-
-    
+        try:
+            if not isinstance(self.current_image, list):
+                if len(self.current_image.modified_image[2] == 2):
+                    height, width = self.current_image.modified_image[2].shape
+                    q_image = QImage(self.current_image.modified_image[2].data, width, height, QImage.Format_Grayscale8)
+                    self.current_pixmap = QPixmap.fromImage(q_image)
+                    logging.info("Attempting to convert grayscale image to QPixmap")
+                    return self.current_pixmap
+        except Exception as e:
+            logging.error("Error occurred in image_to_pixmap function {e}")
     def color_handle(self):
         pass
     

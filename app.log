@@ -42645,3 +42645,2044 @@
 2024-12-10 03:48:18,641 - MainWindow - DEBUG - Current output viewport: 0
 2024-12-10 03:48:18,641 - MainWindow - DEBUG - Current region mode: RegionMode.FULL
 2024-12-10 03:48:18,663 - MainWindow - INFO - Mixing completed successfully
+2024-12-10 03:51:06,249 - PyQt5.uic.uiparser - DEBUG - uiname is MainWindow
+2024-12-10 03:51:06,249 - PyQt5.uic.uiparser - DEBUG - toplevel widget is MainWindow
+2024-12-10 03:51:06,249 - PyQt5.uic.properties - DEBUG - setting property geometry
+2024-12-10 03:51:06,249 - PyQt5.uic.properties - DEBUG - setting property windowTitle
+2024-12-10 03:51:06,249 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-10 03:51:06,249 - PyQt5.uic.uiparser - DEBUG - push MainWindow MainWindow
+2024-12-10 03:51:06,249 - PyQt5.uic.uiparser - DEBUG - push QWidget centralwidget
+2024-12-10 03:51:06,249 - PyQt5.uic.properties - DEBUG - setting property horizontalSpacing
+2024-12-10 03:51:06,249 - PyQt5.uic.properties - DEBUG - setting property verticalSpacing
+2024-12-10 03:51:06,249 - PyQt5.uic.properties - DEBUG - setting property pyuicMargins
+2024-12-10 03:51:06,249 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-10 03:51:06,249 - PyQt5.uic.uiparser - DEBUG - push QGridLayout gridLayout
+2024-12-10 03:51:06,249 - PyQt5.uic.properties - DEBUG - setting property leftMargin
+2024-12-10 03:51:06,249 - PyQt5.uic.properties - DEBUG - setting property topMargin
+2024-12-10 03:51:06,249 - PyQt5.uic.properties - DEBUG - setting property rightMargin
+2024-12-10 03:51:06,249 - PyQt5.uic.properties - DEBUG - setting property pyuicMargins
+2024-12-10 03:51:06,249 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_15
+2024-12-10 03:51:06,249 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-10 03:51:06,249 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-10 03:51:06,249 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_2
+2024-12-10 03:51:06,249 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-10 03:51:06,249 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-10 03:51:06,249 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_2
+2024-12-10 03:51:06,249 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_9
+2024-12-10 03:51:06,249 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_3
+2024-12-10 03:51:06,249 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-10 03:51:06,249 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-10 03:51:06,249 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-10 03:51:06,249 - PyQt5.uic.uiparser - DEBUG - push QLabel label
+2024-12-10 03:51:06,249 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel label
+2024-12-10 03:51:06,249 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000182ED17CF80>
+2024-12-10 03:51:06,249 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - push QComboBox modeComboBox
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - pop widget QComboBox modeComboBox
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000182ED17CF80>
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_3
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_6
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - push QLabel label_3
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel label_3
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000182ED17CF80>
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - push QComboBox regionComboScale
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - pop widget QComboBox regionComboScale
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000182ED17CF80>
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_6
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_8
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - push QLabel label_4
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel label_4
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000182ED17CF80>
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - push QComboBox displayComboBox
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - pop widget QComboBox displayComboBox
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000182ED17CF80>
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_8
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_9
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_10
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property layoutDirection
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property icon
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property iconSize
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - push QPushButton convertButton
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - pop widget QPushButton convertButton
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000182ED17CF80>
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_10
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_2
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_7
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - push QFrame loadingParent
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_24
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - push QFrame loadingFrame
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame loadingFrame
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x00000182ED17DAC0>
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - push QLabel convertingLoading
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel convertingLoading
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x00000182ED17DAC0>
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_24
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame loadingParent
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000182ED17CF80>
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_7
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_2
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_15
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property leftMargin
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property rightMargin
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property bottomMargin
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property pyuicMargins
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_4
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_11
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_10
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_13
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - push QFrame image1Frame
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-10 03:51:06,253 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_14
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-10 03:51:06,253 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - push QFrame image1
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_3
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_3
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image1
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x00000182ED17DF40>
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - push QFrame image1Frequancy
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_5
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_5
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image1Frequancy
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x00000182ED17DF40>
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_14
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image1Frame
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000182ED17CF80>
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_13
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_12
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - push QComboBox image1ComboBox
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - pop widget QComboBox image1ComboBox
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000182ED17CF80>
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property orientation
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - push QSlider image1Slider
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - pop widget QSlider image1Slider
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000182ED17CF80>
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - push QLabel image1Loading
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel image1Loading
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000182ED17CF80>
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_12
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_10
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_7
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_16
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - push QFrame image2Frame
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_15
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - push QFrame image2
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_6
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_6
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image2
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x00000182ED17E690>
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - push QFrame image2Frequency
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_8
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_8
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image2Frequency
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x00000182ED17E690>
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_15
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image2Frame
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000182ED17CF80>
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_16
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_17
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - push QComboBox image2ComboBox
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - pop widget QComboBox image2ComboBox
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000182ED17CF80>
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property orientation
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - push QSlider image2Slider
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - pop widget QSlider image2Slider
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000182ED17CF80>
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - push QLabel image2Loading
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel image2Loading
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000182ED17CF80>
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_17
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_7
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_11
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_4
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_12
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_18
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - push QFrame image3Frame
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-10 03:51:06,257 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_22
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-10 03:51:06,257 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - push QFrame image3
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_20
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_20
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image3
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x00000182ED17ED50>
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - push QFrame image3Frequency
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_19
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_19
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image3Frequency
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x00000182ED17ED50>
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_22
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image3Frame
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000182ED17CF80>
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_18
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_19
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - push QComboBox image3ComboBox
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - pop widget QComboBox image3ComboBox
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000182ED17CF80>
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property orientation
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - push QSlider image3Slider
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - pop widget QSlider image3Slider
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000182ED17CF80>
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - push QLabel image3Loading
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel image3Loading
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000182ED17CF80>
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_19
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_12
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_11
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_20
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - push QFrame image4Frame
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_23
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - push QFrame image4
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_18
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_18
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image4
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x00000182ED17F4A0>
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - push QFrame image4Frequency
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_17
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_17
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image4Frequency
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x00000182ED17F4A0>
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_23
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image4Frame
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000182ED17CF80>
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_20
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_21
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - push QComboBox image4ComboBox
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - pop widget QComboBox image4ComboBox
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000182ED17CF80>
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property orientation
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - push QSlider image4Slider
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - pop widget QSlider image4Slider
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000182ED17CF80>
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - push QLabel image4Loading
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel image4Loading
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000182ED17CF80>
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_21
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_11
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_4
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_4
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property leftMargin
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property topMargin
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property rightMargin
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property bottomMargin
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property pyuicMargins
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_13
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-10 03:51:06,261 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-10 03:51:06,261 - PyQt5.uic.uiparser - DEBUG - push QFrame output1Frame
+2024-12-10 03:51:06,265 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_9
+2024-12-10 03:51:06,265 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_9
+2024-12-10 03:51:06,265 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame output1Frame
+2024-12-10 03:51:06,265 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000182ED17CF80>
+2024-12-10 03:51:06,265 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_5
+2024-12-10 03:51:06,265 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-10 03:51:06,265 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-10 03:51:06,265 - PyQt5.uic.uiparser - DEBUG - push QLabel label_2
+2024-12-10 03:51:06,265 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel label_2
+2024-12-10 03:51:06,265 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000182ED17CF80>
+2024-12-10 03:51:06,265 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_5
+2024-12-10 03:51:06,265 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_13
+2024-12-10 03:51:06,265 - PyQt5.uic.properties - DEBUG - setting property leftMargin
+2024-12-10 03:51:06,265 - PyQt5.uic.properties - DEBUG - setting property topMargin
+2024-12-10 03:51:06,265 - PyQt5.uic.properties - DEBUG - setting property rightMargin
+2024-12-10 03:51:06,265 - PyQt5.uic.properties - DEBUG - setting property bottomMargin
+2024-12-10 03:51:06,265 - PyQt5.uic.properties - DEBUG - setting property pyuicMargins
+2024-12-10 03:51:06,265 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_14
+2024-12-10 03:51:06,265 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-10 03:51:06,265 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-10 03:51:06,265 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-10 03:51:06,265 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-10 03:51:06,265 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-10 03:51:06,265 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-10 03:51:06,265 - PyQt5.uic.uiparser - DEBUG - push QFrame output2Frame
+2024-12-10 03:51:06,265 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_16
+2024-12-10 03:51:06,265 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_16
+2024-12-10 03:51:06,265 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame output2Frame
+2024-12-10 03:51:06,265 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000182ED17CF80>
+2024-12-10 03:51:06,265 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_25
+2024-12-10 03:51:06,265 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-10 03:51:06,265 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-10 03:51:06,265 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-10 03:51:06,265 - PyQt5.uic.uiparser - DEBUG - push QLabel label_5
+2024-12-10 03:51:06,265 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel label_5
+2024-12-10 03:51:06,265 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000182ED17CF80>
+2024-12-10 03:51:06,265 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_25
+2024-12-10 03:51:06,265 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_14
+2024-12-10 03:51:06,265 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout
+2024-12-10 03:51:06,265 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout
+2024-12-10 03:51:06,265 - PyQt5.uic.uiparser - DEBUG - pop layout QGridLayout gridLayout
+2024-12-10 03:51:06,265 - PyQt5.uic.uiparser - DEBUG - pop widget QWidget centralwidget
+2024-12-10 03:51:06,265 - PyQt5.uic.uiparser - DEBUG - new topwidget <__main__.MainWindow object at 0x00000182ED17CB00>
+2024-12-10 03:51:06,265 - PyQt5.uic.uiparser - DEBUG - pop widget MainWindow MainWindow
+2024-12-10 03:51:06,265 - PyQt5.uic.uiparser - DEBUG - new topwidget None
+2024-12-10 03:51:06,838 - Mixer - INFO - Changing mode from Mode.MAGNITUDE_PHASE to Mode.MAGNITUDE_PHASE.
+2024-12-10 03:51:11,753 - MainWindow - INFO - Selected file: D:/SBME/DSP/Tasks/DSP-Image-Frequency-Mixer/data/lion.jpeg
+2024-12-10 03:51:11,753 - MainWindow - INFO - Image loaded successfully for viewer 0
+2024-12-10 03:51:22,904 - MainWindow - INFO - Selected file: D:/SBME/DSP/Tasks/DSP-Image-Frequency-Mixer/data/cat_black.jpg
+2024-12-10 03:51:22,932 - MainWindow - INFO - Image loaded successfully for viewer 1
+2024-12-10 03:51:27,582 - MainWindow - DEBUG - Image 2 weight slider moved to: 1
+2024-12-10 03:51:27,586 - MainWindow - DEBUG - Image 2 weight slider moved to: 3
+2024-12-10 03:51:27,595 - MainWindow - DEBUG - Image 2 weight slider moved to: 5
+2024-12-10 03:51:27,602 - MainWindow - DEBUG - Image 2 weight slider moved to: 7
+2024-12-10 03:51:27,610 - MainWindow - DEBUG - Image 2 weight slider moved to: 8
+2024-12-10 03:51:27,618 - MainWindow - DEBUG - Image 2 weight slider moved to: 10
+2024-12-10 03:51:27,622 - MainWindow - DEBUG - Image 2 weight slider moved to: 12
+2024-12-10 03:51:27,630 - MainWindow - DEBUG - Image 2 weight slider moved to: 14
+2024-12-10 03:51:27,634 - MainWindow - DEBUG - Image 2 weight slider moved to: 16
+2024-12-10 03:51:27,644 - MainWindow - DEBUG - Image 2 weight slider moved to: 17
+2024-12-10 03:51:27,651 - MainWindow - DEBUG - Image 2 weight slider moved to: 19
+2024-12-10 03:51:27,657 - MainWindow - DEBUG - Image 2 weight slider moved to: 21
+2024-12-10 03:51:27,665 - MainWindow - DEBUG - Image 2 weight slider moved to: 23
+2024-12-10 03:51:27,669 - MainWindow - DEBUG - Image 2 weight slider moved to: 24
+2024-12-10 03:51:27,677 - MainWindow - DEBUG - Image 2 weight slider moved to: 25
+2024-12-10 03:51:27,685 - MainWindow - DEBUG - Image 2 weight slider moved to: 27
+2024-12-10 03:51:27,689 - MainWindow - DEBUG - Image 2 weight slider moved to: 28
+2024-12-10 03:51:27,697 - MainWindow - DEBUG - Image 2 weight slider moved to: 29
+2024-12-10 03:51:27,705 - MainWindow - DEBUG - Image 2 weight slider moved to: 30
+2024-12-10 03:51:27,709 - MainWindow - DEBUG - Image 2 weight slider moved to: 31
+2024-12-10 03:51:27,725 - MainWindow - DEBUG - Image 2 weight slider moved to: 32
+2024-12-10 03:51:27,733 - MainWindow - DEBUG - Image 2 weight slider moved to: 33
+2024-12-10 03:51:27,737 - MainWindow - DEBUG - Image 2 weight slider moved to: 34
+2024-12-10 03:51:27,751 - MainWindow - DEBUG - Image 2 weight slider moved to: 36
+2024-12-10 03:51:27,767 - MainWindow - DEBUG - Image 2 weight slider moved to: 37
+2024-12-10 03:51:27,779 - MainWindow - DEBUG - Image 2 weight slider moved to: 38
+2024-12-10 03:51:27,787 - MainWindow - DEBUG - Image 2 weight slider moved to: 39
+2024-12-10 03:51:27,799 - MainWindow - DEBUG - Image 2 weight slider moved to: 40
+2024-12-10 03:51:27,815 - MainWindow - DEBUG - Image 2 weight slider moved to: 41
+2024-12-10 03:51:27,835 - MainWindow - DEBUG - Image 2 weight slider moved to: 42
+2024-12-10 03:51:27,847 - MainWindow - DEBUG - Image 2 weight slider moved to: 43
+2024-12-10 03:51:28,003 - MainWindow - DEBUG - Image 2 weight slider moved to: 42
+2024-12-10 03:51:28,031 - MainWindow - DEBUG - Image 2 weight slider moved to: 41
+2024-12-10 03:51:28,079 - MainWindow - DEBUG - Image 2 weight slider moved to: 40
+2024-12-10 03:51:34,872 - MainWindow - DEBUG - Image 1 weight slider moved to: 3
+2024-12-10 03:51:34,880 - MainWindow - DEBUG - Image 1 weight slider moved to: 5
+2024-12-10 03:51:34,888 - MainWindow - DEBUG - Image 1 weight slider moved to: 8
+2024-12-10 03:51:34,892 - MainWindow - DEBUG - Image 1 weight slider moved to: 10
+2024-12-10 03:51:34,900 - MainWindow - DEBUG - Image 1 weight slider moved to: 12
+2024-12-10 03:51:34,908 - MainWindow - DEBUG - Image 1 weight slider moved to: 13
+2024-12-10 03:51:34,912 - MainWindow - DEBUG - Image 1 weight slider moved to: 15
+2024-12-10 03:51:34,920 - MainWindow - DEBUG - Image 1 weight slider moved to: 16
+2024-12-10 03:51:34,928 - MainWindow - DEBUG - Image 1 weight slider moved to: 17
+2024-12-10 03:51:34,936 - MainWindow - DEBUG - Image 1 weight slider moved to: 19
+2024-12-10 03:51:34,941 - MainWindow - DEBUG - Image 1 weight slider moved to: 20
+2024-12-10 03:51:34,950 - MainWindow - DEBUG - Image 1 weight slider moved to: 21
+2024-12-10 03:51:34,953 - MainWindow - DEBUG - Image 1 weight slider moved to: 22
+2024-12-10 03:51:34,961 - MainWindow - DEBUG - Image 1 weight slider moved to: 23
+2024-12-10 03:51:34,969 - MainWindow - DEBUG - Image 1 weight slider moved to: 24
+2024-12-10 03:51:34,976 - MainWindow - DEBUG - Image 1 weight slider moved to: 25
+2024-12-10 03:51:34,983 - MainWindow - DEBUG - Image 1 weight slider moved to: 26
+2024-12-10 03:51:34,988 - MainWindow - DEBUG - Image 1 weight slider moved to: 27
+2024-12-10 03:51:35,003 - MainWindow - DEBUG - Image 1 weight slider moved to: 28
+2024-12-10 03:51:35,007 - MainWindow - DEBUG - Image 1 weight slider moved to: 29
+2024-12-10 03:51:35,023 - MainWindow - DEBUG - Image 1 weight slider moved to: 30
+2024-12-10 03:51:35,035 - MainWindow - DEBUG - Image 1 weight slider moved to: 31
+2024-12-10 03:51:35,044 - MainWindow - DEBUG - Image 1 weight slider moved to: 32
+2024-12-10 03:51:35,051 - MainWindow - DEBUG - Image 1 weight slider moved to: 33
+2024-12-10 03:51:35,064 - MainWindow - DEBUG - Image 1 weight slider moved to: 34
+2024-12-10 03:51:35,075 - MainWindow - DEBUG - Image 1 weight slider moved to: 35
+2024-12-10 03:51:35,083 - MainWindow - DEBUG - Image 1 weight slider moved to: 36
+2024-12-10 03:51:35,091 - MainWindow - DEBUG - Image 1 weight slider moved to: 37
+2024-12-10 03:51:35,095 - MainWindow - DEBUG - Image 1 weight slider moved to: 38
+2024-12-10 03:51:35,103 - MainWindow - DEBUG - Image 1 weight slider moved to: 39
+2024-12-10 03:51:35,111 - MainWindow - DEBUG - Image 1 weight slider moved to: 40
+2024-12-10 03:51:35,123 - MainWindow - DEBUG - Image 1 weight slider moved to: 41
+2024-12-10 03:51:35,131 - MainWindow - DEBUG - Image 1 weight slider moved to: 42
+2024-12-10 03:51:35,139 - MainWindow - DEBUG - Image 1 weight slider moved to: 43
+2024-12-10 03:51:35,151 - MainWindow - DEBUG - Image 1 weight slider moved to: 44
+2024-12-10 03:51:35,159 - MainWindow - DEBUG - Image 1 weight slider moved to: 45
+2024-12-10 03:51:35,167 - MainWindow - DEBUG - Image 1 weight slider moved to: 46
+2024-12-10 03:51:35,171 - MainWindow - DEBUG - Image 1 weight slider moved to: 47
+2024-12-10 03:51:35,187 - MainWindow - DEBUG - Image 1 weight slider moved to: 48
+2024-12-10 03:51:35,191 - MainWindow - DEBUG - Image 1 weight slider moved to: 49
+2024-12-10 03:51:35,207 - MainWindow - DEBUG - Image 1 weight slider moved to: 50
+2024-12-10 03:51:35,227 - MainWindow - DEBUG - Image 1 weight slider moved to: 51
+2024-12-10 03:51:35,363 - MainWindow - DEBUG - Image 1 weight slider moved to: 50
+2024-12-10 03:51:37,807 - MainWindow - INFO - Mixing images...
+2024-12-10 03:51:37,807 - MainWindow - DEBUG - Current output viewport: 0
+2024-12-10 03:51:37,807 - MainWindow - DEBUG - Current region mode: RegionMode.INNER
+2024-12-10 03:51:39,819 - MainWindow - INFO - Mixing completed successfully
+2024-12-10 03:51:44,458 - MainWindow - DEBUG - Image 1 weight slider moved to: 51
+2024-12-10 03:51:44,466 - MainWindow - DEBUG - Image 1 weight slider moved to: 52
+2024-12-10 03:51:44,474 - MainWindow - DEBUG - Image 1 weight slider moved to: 53
+2024-12-10 03:51:44,478 - MainWindow - DEBUG - Image 1 weight slider moved to: 54
+2024-12-10 03:51:44,488 - MainWindow - DEBUG - Image 1 weight slider moved to: 55
+2024-12-10 03:51:44,493 - MainWindow - DEBUG - Image 1 weight slider moved to: 56
+2024-12-10 03:51:44,501 - MainWindow - DEBUG - Image 1 weight slider moved to: 57
+2024-12-10 03:51:44,506 - MainWindow - DEBUG - Image 1 weight slider moved to: 58
+2024-12-10 03:51:44,514 - MainWindow - DEBUG - Image 1 weight slider moved to: 59
+2024-12-10 03:51:44,522 - MainWindow - DEBUG - Image 1 weight slider moved to: 60
+2024-12-10 03:51:44,526 - MainWindow - DEBUG - Image 1 weight slider moved to: 61
+2024-12-10 03:51:44,542 - MainWindow - DEBUG - Image 1 weight slider moved to: 63
+2024-12-10 03:51:44,554 - MainWindow - DEBUG - Image 1 weight slider moved to: 64
+2024-12-10 03:51:44,570 - MainWindow - DEBUG - Image 1 weight slider moved to: 65
+2024-12-10 03:51:44,574 - MainWindow - DEBUG - Image 1 weight slider moved to: 66
+2024-12-10 03:51:44,582 - MainWindow - DEBUG - Image 1 weight slider moved to: 67
+2024-12-10 03:51:44,594 - MainWindow - DEBUG - Image 1 weight slider moved to: 68
+2024-12-10 03:51:44,610 - MainWindow - DEBUG - Image 1 weight slider moved to: 69
+2024-12-10 03:51:44,614 - MainWindow - DEBUG - Image 1 weight slider moved to: 70
+2024-12-10 03:51:44,622 - MainWindow - DEBUG - Image 1 weight slider moved to: 71
+2024-12-10 03:51:44,630 - MainWindow - DEBUG - Image 1 weight slider moved to: 72
+2024-12-10 03:51:44,638 - MainWindow - DEBUG - Image 1 weight slider moved to: 73
+2024-12-10 03:51:44,644 - MainWindow - DEBUG - Image 1 weight slider moved to: 74
+2024-12-10 03:51:44,652 - MainWindow - DEBUG - Image 1 weight slider moved to: 75
+2024-12-10 03:51:44,657 - MainWindow - DEBUG - Image 1 weight slider moved to: 77
+2024-12-10 03:51:44,665 - MainWindow - DEBUG - Image 1 weight slider moved to: 78
+2024-12-10 03:51:44,669 - MainWindow - DEBUG - Image 1 weight slider moved to: 79
+2024-12-10 03:51:44,677 - MainWindow - DEBUG - Image 1 weight slider moved to: 80
+2024-12-10 03:51:44,685 - MainWindow - DEBUG - Image 1 weight slider moved to: 81
+2024-12-10 03:51:44,689 - MainWindow - DEBUG - Image 1 weight slider moved to: 82
+2024-12-10 03:51:44,697 - MainWindow - DEBUG - Image 1 weight slider moved to: 83
+2024-12-10 03:51:44,706 - MainWindow - DEBUG - Image 1 weight slider moved to: 84
+2024-12-10 03:51:44,710 - MainWindow - DEBUG - Image 1 weight slider moved to: 85
+2024-12-10 03:51:44,718 - MainWindow - DEBUG - Image 1 weight slider moved to: 86
+2024-12-10 03:51:44,726 - MainWindow - DEBUG - Image 1 weight slider moved to: 87
+2024-12-10 03:51:44,734 - MainWindow - DEBUG - Image 1 weight slider moved to: 88
+2024-12-10 03:51:44,738 - MainWindow - DEBUG - Image 1 weight slider moved to: 89
+2024-12-10 03:51:44,746 - MainWindow - DEBUG - Image 1 weight slider moved to: 90
+2024-12-10 03:51:44,758 - MainWindow - DEBUG - Image 1 weight slider moved to: 91
+2024-12-10 03:51:44,778 - MainWindow - DEBUG - Image 1 weight slider moved to: 92
+2024-12-10 03:51:44,806 - MainWindow - DEBUG - Image 1 weight slider moved to: 93
+2024-12-10 03:51:44,862 - MainWindow - DEBUG - Image 1 weight slider moved to: 94
+2024-12-10 03:51:48,661 - MainWindow - INFO - Mixing images...
+2024-12-10 03:51:48,661 - MainWindow - DEBUG - Current output viewport: 0
+2024-12-10 03:51:48,661 - MainWindow - DEBUG - Current region mode: RegionMode.INNER
+2024-12-10 03:51:50,675 - MainWindow - INFO - Mixing completed successfully
+2024-12-10 03:51:59,156 - MainWindow - DEBUG - Image 2 weight slider moved to: 66
+2024-12-10 03:51:59,160 - MainWindow - DEBUG - Image 2 weight slider moved to: 67
+2024-12-10 03:51:59,168 - MainWindow - DEBUG - Image 2 weight slider moved to: 68
+2024-12-10 03:51:59,176 - MainWindow - DEBUG - Image 2 weight slider moved to: 69
+2024-12-10 03:51:59,180 - MainWindow - DEBUG - Image 2 weight slider moved to: 70
+2024-12-10 03:51:59,188 - MainWindow - DEBUG - Image 2 weight slider moved to: 71
+2024-12-10 03:51:59,196 - MainWindow - DEBUG - Image 2 weight slider moved to: 72
+2024-12-10 03:51:59,204 - MainWindow - DEBUG - Image 2 weight slider moved to: 73
+2024-12-10 03:51:59,208 - MainWindow - DEBUG - Image 2 weight slider moved to: 74
+2024-12-10 03:51:59,216 - MainWindow - DEBUG - Image 2 weight slider moved to: 75
+2024-12-10 03:51:59,224 - MainWindow - DEBUG - Image 2 weight slider moved to: 76
+2024-12-10 03:51:59,231 - MainWindow - DEBUG - Image 2 weight slider moved to: 77
+2024-12-10 03:51:59,244 - MainWindow - DEBUG - Image 2 weight slider moved to: 79
+2024-12-10 03:51:59,256 - MainWindow - DEBUG - Image 2 weight slider moved to: 80
+2024-12-10 03:51:59,264 - MainWindow - DEBUG - Image 2 weight slider moved to: 81
+2024-12-10 03:51:59,276 - MainWindow - DEBUG - Image 2 weight slider moved to: 83
+2024-12-10 03:51:59,284 - MainWindow - DEBUG - Image 2 weight slider moved to: 84
+2024-12-10 03:51:59,296 - MainWindow - DEBUG - Image 2 weight slider moved to: 85
+2024-12-10 03:51:59,312 - MainWindow - DEBUG - Image 2 weight slider moved to: 86
+2024-12-10 03:51:59,320 - MainWindow - DEBUG - Image 2 weight slider moved to: 87
+2024-12-10 03:51:59,332 - MainWindow - DEBUG - Image 2 weight slider moved to: 88
+2024-12-10 03:51:59,340 - MainWindow - DEBUG - Image 2 weight slider moved to: 89
+2024-12-10 03:51:59,360 - MainWindow - DEBUG - Image 2 weight slider moved to: 90
+2024-12-10 03:51:59,388 - MainWindow - DEBUG - Image 2 weight slider moved to: 91
+2024-12-10 03:51:59,412 - MainWindow - DEBUG - Image 2 weight slider moved to: 92
+2024-12-10 03:51:59,420 - MainWindow - DEBUG - Image 2 weight slider moved to: 93
+2024-12-10 03:51:59,436 - MainWindow - DEBUG - Image 2 weight slider moved to: 94
+2024-12-10 03:51:59,448 - MainWindow - DEBUG - Image 2 weight slider moved to: 95
+2024-12-10 03:51:59,456 - MainWindow - DEBUG - Image 2 weight slider moved to: 96
+2024-12-10 03:51:59,468 - MainWindow - DEBUG - Image 2 weight slider moved to: 97
+2024-12-10 03:51:59,480 - MainWindow - DEBUG - Image 2 weight slider moved to: 98
+2024-12-10 03:51:59,489 - MainWindow - DEBUG - Image 2 weight slider moved to: 99
+2024-12-10 03:51:59,510 - MainWindow - DEBUG - Image 2 weight slider moved to: 100
+2024-12-10 03:52:01,004 - MainWindow - INFO - Mixing images...
+2024-12-10 03:52:01,004 - MainWindow - DEBUG - Current output viewport: 0
+2024-12-10 03:52:01,004 - MainWindow - DEBUG - Current region mode: RegionMode.INNER
+2024-12-10 03:52:03,015 - MainWindow - INFO - Mixing completed successfully
+2024-12-10 03:52:08,461 - MainWindow - INFO - Mixing images...
+2024-12-10 03:52:08,461 - MainWindow - DEBUG - Current output viewport: 0
+2024-12-10 03:52:08,461 - MainWindow - DEBUG - Current region mode: RegionMode.INNER
+2024-12-10 03:52:10,471 - MainWindow - INFO - Mixing completed successfully
+2024-12-10 03:52:18,070 - MainWindow - INFO - Mixing images...
+2024-12-10 03:52:18,070 - MainWindow - DEBUG - Current output viewport: 0
+2024-12-10 03:52:18,070 - MainWindow - DEBUG - Current region mode: RegionMode.INNER
+2024-12-10 03:52:20,082 - MainWindow - INFO - Mixing completed successfully
+2024-12-10 03:52:29,094 - MainWindow - INFO - Mixing images...
+2024-12-10 03:52:29,094 - MainWindow - DEBUG - Current output viewport: 0
+2024-12-10 03:52:29,094 - MainWindow - DEBUG - Current region mode: RegionMode.FULL
+2024-12-10 03:52:31,114 - MainWindow - INFO - Mixing completed successfully
+2024-12-10 03:52:33,443 - MainWindow - DEBUG - Image 1 weight slider moved to: 83
+2024-12-10 03:52:33,451 - MainWindow - DEBUG - Image 1 weight slider moved to: 82
+2024-12-10 03:52:33,455 - MainWindow - DEBUG - Image 1 weight slider moved to: 80
+2024-12-10 03:52:33,463 - MainWindow - DEBUG - Image 1 weight slider moved to: 79
+2024-12-10 03:52:33,471 - MainWindow - DEBUG - Image 1 weight slider moved to: 77
+2024-12-10 03:52:33,479 - MainWindow - DEBUG - Image 1 weight slider moved to: 76
+2024-12-10 03:52:33,483 - MainWindow - DEBUG - Image 1 weight slider moved to: 75
+2024-12-10 03:52:33,491 - MainWindow - DEBUG - Image 1 weight slider moved to: 74
+2024-12-10 03:52:33,499 - MainWindow - DEBUG - Image 1 weight slider moved to: 72
+2024-12-10 03:52:33,507 - MainWindow - DEBUG - Image 1 weight slider moved to: 71
+2024-12-10 03:52:33,511 - MainWindow - DEBUG - Image 1 weight slider moved to: 70
+2024-12-10 03:52:33,519 - MainWindow - DEBUG - Image 1 weight slider moved to: 69
+2024-12-10 03:52:33,527 - MainWindow - DEBUG - Image 1 weight slider moved to: 68
+2024-12-10 03:52:33,531 - MainWindow - DEBUG - Image 1 weight slider moved to: 67
+2024-12-10 03:52:33,548 - MainWindow - DEBUG - Image 1 weight slider moved to: 66
+2024-12-10 03:52:33,552 - MainWindow - DEBUG - Image 1 weight slider moved to: 64
+2024-12-10 03:52:33,567 - MainWindow - DEBUG - Image 1 weight slider moved to: 63
+2024-12-10 03:52:33,579 - MainWindow - DEBUG - Image 1 weight slider moved to: 62
+2024-12-10 03:52:33,587 - MainWindow - DEBUG - Image 1 weight slider moved to: 61
+2024-12-10 03:52:33,601 - MainWindow - DEBUG - Image 1 weight slider moved to: 60
+2024-12-10 03:52:33,613 - MainWindow - DEBUG - Image 1 weight slider moved to: 59
+2024-12-10 03:52:33,632 - MainWindow - DEBUG - Image 1 weight slider moved to: 58
+2024-12-10 03:52:33,640 - MainWindow - DEBUG - Image 1 weight slider moved to: 57
+2024-12-10 03:52:33,669 - MainWindow - DEBUG - Image 1 weight slider moved to: 56
+2024-12-10 03:52:33,688 - MainWindow - DEBUG - Image 1 weight slider moved to: 55
+2024-12-10 03:52:33,696 - MainWindow - DEBUG - Image 1 weight slider moved to: 54
+2024-12-10 03:52:33,716 - MainWindow - DEBUG - Image 1 weight slider moved to: 53
+2024-12-10 03:52:33,729 - MainWindow - DEBUG - Image 1 weight slider moved to: 52
+2024-12-10 03:52:33,744 - MainWindow - DEBUG - Image 1 weight slider moved to: 51
+2024-12-10 03:52:33,764 - MainWindow - DEBUG - Image 1 weight slider moved to: 50
+2024-12-10 03:52:33,783 - MainWindow - DEBUG - Image 1 weight slider moved to: 49
+2024-12-10 03:52:33,826 - MainWindow - DEBUG - Image 1 weight slider moved to: 48
+2024-12-10 03:52:33,878 - MainWindow - DEBUG - Image 1 weight slider moved to: 49
+2024-12-10 03:52:35,612 - MainWindow - DEBUG - Image 2 weight slider moved to: 49
+2024-12-10 03:52:35,616 - MainWindow - DEBUG - Image 2 weight slider moved to: 47
+2024-12-10 03:52:35,624 - MainWindow - DEBUG - Image 2 weight slider moved to: 46
+2024-12-10 03:52:35,632 - MainWindow - DEBUG - Image 2 weight slider moved to: 45
+2024-12-10 03:52:35,640 - MainWindow - DEBUG - Image 2 weight slider moved to: 44
+2024-12-10 03:52:35,644 - MainWindow - DEBUG - Image 2 weight slider moved to: 42
+2024-12-10 03:52:35,652 - MainWindow - DEBUG - Image 2 weight slider moved to: 41
+2024-12-10 03:52:35,660 - MainWindow - DEBUG - Image 2 weight slider moved to: 40
+2024-12-10 03:52:35,664 - MainWindow - DEBUG - Image 2 weight slider moved to: 39
+2024-12-10 03:52:35,672 - MainWindow - DEBUG - Image 2 weight slider moved to: 37
+2024-12-10 03:52:35,676 - MainWindow - DEBUG - Image 2 weight slider moved to: 36
+2024-12-10 03:52:35,692 - MainWindow - DEBUG - Image 2 weight slider moved to: 34
+2024-12-10 03:52:35,712 - MainWindow - DEBUG - Image 2 weight slider moved to: 33
+2024-12-10 03:52:35,732 - MainWindow - DEBUG - Image 2 weight slider moved to: 32
+2024-12-10 03:52:35,772 - MainWindow - DEBUG - Image 2 weight slider moved to: 31
+2024-12-10 03:52:35,864 - MainWindow - DEBUG - Image 2 weight slider moved to: 32
+2024-12-10 03:52:35,904 - MainWindow - DEBUG - Image 2 weight slider moved to: 33
+2024-12-10 03:52:35,924 - MainWindow - DEBUG - Image 2 weight slider moved to: 34
+2024-12-10 03:52:35,944 - MainWindow - DEBUG - Image 2 weight slider moved to: 35
+2024-12-10 03:52:35,957 - MainWindow - DEBUG - Image 2 weight slider moved to: 36
+2024-12-10 03:52:35,973 - MainWindow - DEBUG - Image 2 weight slider moved to: 37
+2024-12-10 03:52:35,981 - MainWindow - DEBUG - Image 2 weight slider moved to: 38
+2024-12-10 03:52:35,984 - MainWindow - DEBUG - Image 2 weight slider moved to: 39
+2024-12-10 03:52:35,992 - MainWindow - DEBUG - Image 2 weight slider moved to: 40
+2024-12-10 03:52:36,000 - MainWindow - DEBUG - Image 2 weight slider moved to: 41
+2024-12-10 03:52:36,004 - MainWindow - DEBUG - Image 2 weight slider moved to: 43
+2024-12-10 03:52:36,012 - MainWindow - DEBUG - Image 2 weight slider moved to: 44
+2024-12-10 03:52:36,020 - MainWindow - DEBUG - Image 2 weight slider moved to: 47
+2024-12-10 03:52:36,024 - MainWindow - DEBUG - Image 2 weight slider moved to: 49
+2024-12-10 03:52:36,032 - MainWindow - DEBUG - Image 2 weight slider moved to: 51
+2024-12-10 03:52:36,040 - MainWindow - DEBUG - Image 2 weight slider moved to: 53
+2024-12-10 03:52:36,048 - MainWindow - DEBUG - Image 2 weight slider moved to: 54
+2024-12-10 03:52:36,052 - MainWindow - DEBUG - Image 2 weight slider moved to: 56
+2024-12-10 03:52:36,060 - MainWindow - DEBUG - Image 2 weight slider moved to: 57
+2024-12-10 03:52:36,068 - MainWindow - DEBUG - Image 2 weight slider moved to: 58
+2024-12-10 03:52:36,072 - MainWindow - DEBUG - Image 2 weight slider moved to: 59
+2024-12-10 03:52:36,080 - MainWindow - DEBUG - Image 2 weight slider moved to: 60
+2024-12-10 03:52:36,088 - MainWindow - DEBUG - Image 2 weight slider moved to: 61
+2024-12-10 03:52:36,092 - MainWindow - DEBUG - Image 2 weight slider moved to: 63
+2024-12-10 03:52:36,100 - MainWindow - DEBUG - Image 2 weight slider moved to: 64
+2024-12-10 03:52:36,108 - MainWindow - DEBUG - Image 2 weight slider moved to: 66
+2024-12-10 03:52:36,116 - MainWindow - DEBUG - Image 2 weight slider moved to: 69
+2024-12-10 03:52:36,120 - MainWindow - DEBUG - Image 2 weight slider moved to: 71
+2024-12-10 03:52:36,128 - MainWindow - DEBUG - Image 2 weight slider moved to: 74
+2024-12-10 03:52:36,136 - MainWindow - DEBUG - Image 2 weight slider moved to: 77
+2024-12-10 03:52:36,140 - MainWindow - DEBUG - Image 2 weight slider moved to: 79
+2024-12-10 03:52:36,148 - MainWindow - DEBUG - Image 2 weight slider moved to: 80
+2024-12-10 03:52:36,156 - MainWindow - DEBUG - Image 2 weight slider moved to: 81
+2024-12-10 03:52:36,164 - MainWindow - DEBUG - Image 2 weight slider moved to: 82
+2024-12-10 03:52:36,168 - MainWindow - DEBUG - Image 2 weight slider moved to: 83
+2024-12-10 03:52:36,176 - MainWindow - DEBUG - Image 2 weight slider moved to: 84
+2024-12-10 03:52:36,180 - MainWindow - DEBUG - Image 2 weight slider moved to: 85
+2024-12-10 03:52:36,188 - MainWindow - DEBUG - Image 2 weight slider moved to: 86
+2024-12-10 03:52:36,209 - MainWindow - DEBUG - Image 2 weight slider moved to: 87
+2024-12-10 03:52:36,229 - MainWindow - DEBUG - Image 2 weight slider moved to: 88
+2024-12-10 03:52:36,256 - MainWindow - DEBUG - Image 2 weight slider moved to: 89
+2024-12-10 03:52:36,299 - MainWindow - DEBUG - Image 2 weight slider moved to: 90
+2024-12-10 03:52:36,331 - MainWindow - DEBUG - Image 2 weight slider moved to: 89
+2024-12-10 03:52:37,142 - MainWindow - INFO - Mixing images...
+2024-12-10 03:52:37,142 - MainWindow - DEBUG - Current output viewport: 0
+2024-12-10 03:52:37,142 - MainWindow - DEBUG - Current region mode: RegionMode.FULL
+2024-12-10 03:52:39,160 - MainWindow - INFO - Mixing completed successfully
+2024-12-10 03:52:43,655 - MainWindow - INFO - Mixing images...
+2024-12-10 03:52:43,655 - MainWindow - DEBUG - Current output viewport: 0
+2024-12-10 03:52:43,655 - MainWindow - DEBUG - Current region mode: RegionMode.FULL
+2024-12-10 03:52:45,679 - MainWindow - INFO - Mixing completed successfully
+2024-12-10 03:52:51,846 - MainWindow - DEBUG - Image 2 weight slider moved to: 78
+2024-12-10 03:52:51,854 - MainWindow - DEBUG - Image 2 weight slider moved to: 77
+2024-12-10 03:52:51,858 - MainWindow - DEBUG - Image 2 weight slider moved to: 76
+2024-12-10 03:52:51,874 - MainWindow - DEBUG - Image 2 weight slider moved to: 74
+2024-12-10 03:52:51,885 - MainWindow - DEBUG - Image 2 weight slider moved to: 73
+2024-12-10 03:52:51,893 - MainWindow - DEBUG - Image 2 weight slider moved to: 72
+2024-12-10 03:52:51,905 - MainWindow - DEBUG - Image 2 weight slider moved to: 71
+2024-12-10 03:52:51,913 - MainWindow - DEBUG - Image 2 weight slider moved to: 70
+2024-12-10 03:52:51,942 - MainWindow - DEBUG - Image 2 weight slider moved to: 69
+2024-12-10 03:52:51,962 - MainWindow - DEBUG - Image 2 weight slider moved to: 68
+2024-12-10 03:52:51,974 - MainWindow - DEBUG - Image 2 weight slider moved to: 67
+2024-12-10 03:52:54,516 - MainWindow - INFO - Mixing images...
+2024-12-10 03:52:54,516 - MainWindow - DEBUG - Current output viewport: 0
+2024-12-10 03:52:54,516 - MainWindow - DEBUG - Current region mode: RegionMode.FULL
+2024-12-10 03:52:56,536 - MainWindow - INFO - Mixing completed successfully
+2024-12-10 03:53:02,332 - MainWindow - INFO - Mixing images...
+2024-12-10 03:53:02,332 - MainWindow - DEBUG - Current output viewport: 0
+2024-12-10 03:53:02,332 - MainWindow - DEBUG - Current region mode: RegionMode.FULL
+2024-12-10 03:53:04,349 - MainWindow - INFO - Mixing completed successfully
+2024-12-10 03:53:18,922 - MainWindow - INFO - Mixing images...
+2024-12-10 03:53:18,922 - MainWindow - DEBUG - Current output viewport: 0
+2024-12-10 03:53:18,922 - MainWindow - DEBUG - Current region mode: RegionMode.INNER
+2024-12-10 03:53:20,952 - MainWindow - INFO - Mixing completed successfully
+2024-12-12 14:23:30,591 - PyQt5.uic.uiparser - DEBUG - uiname is MainWindow
+2024-12-12 14:23:30,593 - PyQt5.uic.uiparser - DEBUG - toplevel widget is MainWindow
+2024-12-12 14:23:30,593 - PyQt5.uic.properties - DEBUG - setting property geometry
+2024-12-12 14:23:30,593 - PyQt5.uic.properties - DEBUG - setting property windowTitle
+2024-12-12 14:23:30,594 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:23:30,599 - PyQt5.uic.uiparser - DEBUG - push MainWindow MainWindow
+2024-12-12 14:23:30,600 - PyQt5.uic.uiparser - DEBUG - push QWidget centralwidget
+2024-12-12 14:23:30,602 - PyQt5.uic.properties - DEBUG - setting property horizontalSpacing
+2024-12-12 14:23:30,602 - PyQt5.uic.properties - DEBUG - setting property verticalSpacing
+2024-12-12 14:23:30,602 - PyQt5.uic.properties - DEBUG - setting property pyuicMargins
+2024-12-12 14:23:30,602 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 14:23:30,602 - PyQt5.uic.uiparser - DEBUG - push QGridLayout gridLayout
+2024-12-12 14:23:30,603 - PyQt5.uic.properties - DEBUG - setting property leftMargin
+2024-12-12 14:23:30,603 - PyQt5.uic.properties - DEBUG - setting property topMargin
+2024-12-12 14:23:30,603 - PyQt5.uic.properties - DEBUG - setting property rightMargin
+2024-12-12 14:23:30,603 - PyQt5.uic.properties - DEBUG - setting property pyuicMargins
+2024-12-12 14:23:30,603 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_15
+2024-12-12 14:23:30,603 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 14:23:30,603 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 14:23:30,603 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_2
+2024-12-12 14:23:30,603 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 14:23:30,603 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 14:23:30,603 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_2
+2024-12-12 14:23:30,603 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_9
+2024-12-12 14:23:30,603 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_3
+2024-12-12 14:23:30,605 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:23:30,605 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:23:30,605 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 14:23:30,607 - PyQt5.uic.uiparser - DEBUG - push QLabel label
+2024-12-12 14:23:30,607 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel label
+2024-12-12 14:23:30,607 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x0000022A9A059010>
+2024-12-12 14:23:30,609 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:23:30,609 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:23:30,609 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:23:30,609 - PyQt5.uic.uiparser - DEBUG - push QComboBox modeComboBox
+2024-12-12 14:23:30,610 - PyQt5.uic.uiparser - DEBUG - pop widget QComboBox modeComboBox
+2024-12-12 14:23:30,610 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x0000022A9A059010>
+2024-12-12 14:23:30,610 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_3
+2024-12-12 14:23:30,611 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_6
+2024-12-12 14:23:30,611 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:23:30,611 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 14:23:30,611 - PyQt5.uic.uiparser - DEBUG - push QLabel label_3
+2024-12-12 14:23:30,611 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel label_3
+2024-12-12 14:23:30,611 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x0000022A9A059010>
+2024-12-12 14:23:30,611 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:23:30,611 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:23:30,611 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:23:30,611 - PyQt5.uic.uiparser - DEBUG - push QComboBox regionComboScale
+2024-12-12 14:23:30,611 - PyQt5.uic.uiparser - DEBUG - pop widget QComboBox regionComboScale
+2024-12-12 14:23:30,611 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x0000022A9A059010>
+2024-12-12 14:23:30,611 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_6
+2024-12-12 14:23:30,611 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_8
+2024-12-12 14:23:30,611 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:23:30,611 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 14:23:30,611 - PyQt5.uic.uiparser - DEBUG - push QLabel label_4
+2024-12-12 14:23:30,611 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel label_4
+2024-12-12 14:23:30,611 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x0000022A9A059010>
+2024-12-12 14:23:30,611 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:23:30,612 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:23:30,612 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:23:30,612 - PyQt5.uic.uiparser - DEBUG - push QComboBox displayComboBox
+2024-12-12 14:23:30,612 - PyQt5.uic.uiparser - DEBUG - pop widget QComboBox displayComboBox
+2024-12-12 14:23:30,612 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x0000022A9A059010>
+2024-12-12 14:23:30,612 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_8
+2024-12-12 14:23:30,612 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_9
+2024-12-12 14:23:30,612 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_10
+2024-12-12 14:23:30,613 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:23:30,613 - PyQt5.uic.properties - DEBUG - setting property layoutDirection
+2024-12-12 14:23:30,613 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:23:30,613 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 14:23:30,613 - PyQt5.uic.properties - DEBUG - setting property icon
+2024-12-12 14:23:30,614 - PyQt5.uic.properties - DEBUG - setting property iconSize
+2024-12-12 14:23:30,614 - PyQt5.uic.uiparser - DEBUG - push QPushButton convertButton
+2024-12-12 14:23:30,615 - PyQt5.uic.uiparser - DEBUG - pop widget QPushButton convertButton
+2024-12-12 14:23:30,615 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x0000022A9A059010>
+2024-12-12 14:23:30,615 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_10
+2024-12-12 14:23:30,615 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_2
+2024-12-12 14:23:30,615 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_7
+2024-12-12 14:23:30,615 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:23:30,615 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 14:23:30,615 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 14:23:30,615 - PyQt5.uic.uiparser - DEBUG - push QFrame loadingParent
+2024-12-12 14:23:30,615 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_24
+2024-12-12 14:23:30,615 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:23:30,616 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:23:30,616 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:23:30,616 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 14:23:30,616 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 14:23:30,616 - PyQt5.uic.uiparser - DEBUG - push QFrame loadingFrame
+2024-12-12 14:23:30,616 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame loadingFrame
+2024-12-12 14:23:30,616 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x0000022A9A059B50>
+2024-12-12 14:23:30,616 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:23:30,616 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 14:23:30,616 - PyQt5.uic.uiparser - DEBUG - push QLabel convertingLoading
+2024-12-12 14:23:30,616 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel convertingLoading
+2024-12-12 14:23:30,616 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x0000022A9A059B50>
+2024-12-12 14:23:30,616 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_24
+2024-12-12 14:23:30,616 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame loadingParent
+2024-12-12 14:23:30,616 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x0000022A9A059010>
+2024-12-12 14:23:30,616 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_7
+2024-12-12 14:23:30,616 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_2
+2024-12-12 14:23:30,616 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_15
+2024-12-12 14:23:30,617 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 14:23:30,617 - PyQt5.uic.properties - DEBUG - setting property leftMargin
+2024-12-12 14:23:30,617 - PyQt5.uic.properties - DEBUG - setting property rightMargin
+2024-12-12 14:23:30,617 - PyQt5.uic.properties - DEBUG - setting property bottomMargin
+2024-12-12 14:23:30,617 - PyQt5.uic.properties - DEBUG - setting property pyuicMargins
+2024-12-12 14:23:30,617 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 14:23:30,617 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout
+2024-12-12 14:23:30,617 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 14:23:30,617 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 14:23:30,617 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_4
+2024-12-12 14:23:30,617 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_11
+2024-12-12 14:23:30,617 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 14:23:30,617 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 14:23:30,617 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_10
+2024-12-12 14:23:30,617 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_13
+2024-12-12 14:23:30,617 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:23:30,617 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:23:30,617 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:23:30,617 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 14:23:30,617 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 14:23:30,617 - PyQt5.uic.uiparser - DEBUG - push QFrame image1Frame
+2024-12-12 14:23:30,618 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 14:23:30,618 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 14:23:30,618 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_14
+2024-12-12 14:23:30,618 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-12 14:23:30,619 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:23:30,619 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:23:30,619 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:23:30,619 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 14:23:30,619 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 14:23:30,619 - PyQt5.uic.uiparser - DEBUG - push QFrame image1
+2024-12-12 14:23:30,619 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_3
+2024-12-12 14:23:30,619 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_3
+2024-12-12 14:23:30,619 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image1
+2024-12-12 14:23:30,619 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x0000022A9A059FD0>
+2024-12-12 14:23:30,619 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-12 14:23:30,619 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:23:30,619 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:23:30,619 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:23:30,619 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 14:23:30,619 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 14:23:30,619 - PyQt5.uic.uiparser - DEBUG - push QFrame image1Frequancy
+2024-12-12 14:23:30,619 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_5
+2024-12-12 14:23:30,619 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_5
+2024-12-12 14:23:30,619 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image1Frequancy
+2024-12-12 14:23:30,619 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x0000022A9A059FD0>
+2024-12-12 14:23:30,619 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_14
+2024-12-12 14:23:30,619 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image1Frame
+2024-12-12 14:23:30,619 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x0000022A9A059010>
+2024-12-12 14:23:30,619 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_13
+2024-12-12 14:23:30,620 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_12
+2024-12-12 14:23:30,620 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:23:30,620 - PyQt5.uic.uiparser - DEBUG - push QComboBox image1ComboBox
+2024-12-12 14:23:30,620 - PyQt5.uic.uiparser - DEBUG - pop widget QComboBox image1ComboBox
+2024-12-12 14:23:30,620 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x0000022A9A059010>
+2024-12-12 14:23:30,620 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:23:30,621 - PyQt5.uic.properties - DEBUG - setting property orientation
+2024-12-12 14:23:30,621 - PyQt5.uic.uiparser - DEBUG - push QSlider image1Slider
+2024-12-12 14:23:30,621 - PyQt5.uic.uiparser - DEBUG - pop widget QSlider image1Slider
+2024-12-12 14:23:30,621 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x0000022A9A059010>
+2024-12-12 14:23:30,621 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 14:23:30,621 - PyQt5.uic.uiparser - DEBUG - push QLabel image1Loading
+2024-12-12 14:23:30,621 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel image1Loading
+2024-12-12 14:23:30,621 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x0000022A9A059010>
+2024-12-12 14:23:30,621 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_12
+2024-12-12 14:23:30,621 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_10
+2024-12-12 14:23:30,621 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 14:23:30,621 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 14:23:30,621 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_7
+2024-12-12 14:23:30,622 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_16
+2024-12-12 14:23:30,622 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:23:30,622 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:23:30,622 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:23:30,622 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 14:23:30,622 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 14:23:30,622 - PyQt5.uic.uiparser - DEBUG - push QFrame image2Frame
+2024-12-12 14:23:30,622 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 14:23:30,622 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 14:23:30,622 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_15
+2024-12-12 14:23:30,622 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-12 14:23:30,622 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:23:30,622 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:23:30,623 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:23:30,623 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 14:23:30,623 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 14:23:30,623 - PyQt5.uic.uiparser - DEBUG - push QFrame image2
+2024-12-12 14:23:30,623 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_6
+2024-12-12 14:23:30,623 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_6
+2024-12-12 14:23:30,623 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image2
+2024-12-12 14:23:30,623 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x0000022A9A05A720>
+2024-12-12 14:23:30,623 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-12 14:23:30,623 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:23:30,623 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:23:30,623 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:23:30,623 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 14:23:30,623 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 14:23:30,623 - PyQt5.uic.uiparser - DEBUG - push QFrame image2Frequency
+2024-12-12 14:23:30,623 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_8
+2024-12-12 14:23:30,623 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_8
+2024-12-12 14:23:30,623 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image2Frequency
+2024-12-12 14:23:30,624 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x0000022A9A05A720>
+2024-12-12 14:23:30,624 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_15
+2024-12-12 14:23:30,624 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image2Frame
+2024-12-12 14:23:30,624 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x0000022A9A059010>
+2024-12-12 14:23:30,624 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_16
+2024-12-12 14:23:30,624 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_17
+2024-12-12 14:23:30,624 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:23:30,624 - PyQt5.uic.uiparser - DEBUG - push QComboBox image2ComboBox
+2024-12-12 14:23:30,624 - PyQt5.uic.uiparser - DEBUG - pop widget QComboBox image2ComboBox
+2024-12-12 14:23:30,624 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x0000022A9A059010>
+2024-12-12 14:23:30,624 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:23:30,624 - PyQt5.uic.properties - DEBUG - setting property orientation
+2024-12-12 14:23:30,624 - PyQt5.uic.uiparser - DEBUG - push QSlider image2Slider
+2024-12-12 14:23:30,624 - PyQt5.uic.uiparser - DEBUG - pop widget QSlider image2Slider
+2024-12-12 14:23:30,624 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x0000022A9A059010>
+2024-12-12 14:23:30,625 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 14:23:30,625 - PyQt5.uic.uiparser - DEBUG - push QLabel image2Loading
+2024-12-12 14:23:30,625 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel image2Loading
+2024-12-12 14:23:30,625 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x0000022A9A059010>
+2024-12-12 14:23:30,625 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_17
+2024-12-12 14:23:30,625 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_7
+2024-12-12 14:23:30,625 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_11
+2024-12-12 14:23:30,625 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_4
+2024-12-12 14:23:30,625 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 14:23:30,625 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 14:23:30,625 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_12
+2024-12-12 14:23:30,625 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_18
+2024-12-12 14:23:30,625 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:23:30,625 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:23:30,625 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:23:30,625 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 14:23:30,626 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 14:23:30,626 - PyQt5.uic.uiparser - DEBUG - push QFrame image3Frame
+2024-12-12 14:23:30,626 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 14:23:30,626 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 14:23:30,626 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_22
+2024-12-12 14:23:30,626 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-12 14:23:30,627 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:23:30,627 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:23:30,627 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:23:30,627 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 14:23:30,627 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 14:23:30,627 - PyQt5.uic.uiparser - DEBUG - push QFrame image3
+2024-12-12 14:23:30,627 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_20
+2024-12-12 14:23:30,627 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_20
+2024-12-12 14:23:30,627 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image3
+2024-12-12 14:23:30,627 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x0000022A9A05ADE0>
+2024-12-12 14:23:30,627 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-12 14:23:30,627 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:23:30,627 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:23:30,627 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:23:30,627 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 14:23:30,628 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 14:23:30,628 - PyQt5.uic.uiparser - DEBUG - push QFrame image3Frequency
+2024-12-12 14:23:30,628 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_19
+2024-12-12 14:23:30,628 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_19
+2024-12-12 14:23:30,628 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image3Frequency
+2024-12-12 14:23:30,628 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x0000022A9A05ADE0>
+2024-12-12 14:23:30,628 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_22
+2024-12-12 14:23:30,628 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image3Frame
+2024-12-12 14:23:30,628 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x0000022A9A059010>
+2024-12-12 14:23:30,628 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_18
+2024-12-12 14:23:30,628 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_19
+2024-12-12 14:23:30,628 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:23:30,628 - PyQt5.uic.uiparser - DEBUG - push QComboBox image3ComboBox
+2024-12-12 14:23:30,628 - PyQt5.uic.uiparser - DEBUG - pop widget QComboBox image3ComboBox
+2024-12-12 14:23:30,628 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x0000022A9A059010>
+2024-12-12 14:23:30,628 - PyQt5.uic.properties - DEBUG - setting property orientation
+2024-12-12 14:23:30,629 - PyQt5.uic.uiparser - DEBUG - push QSlider image3Slider
+2024-12-12 14:23:30,629 - PyQt5.uic.uiparser - DEBUG - pop widget QSlider image3Slider
+2024-12-12 14:23:30,629 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x0000022A9A059010>
+2024-12-12 14:23:30,629 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 14:23:30,629 - PyQt5.uic.uiparser - DEBUG - push QLabel image3Loading
+2024-12-12 14:23:30,629 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel image3Loading
+2024-12-12 14:23:30,629 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x0000022A9A059010>
+2024-12-12 14:23:30,629 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_19
+2024-12-12 14:23:30,629 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_12
+2024-12-12 14:23:30,629 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 14:23:30,629 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 14:23:30,629 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_11
+2024-12-12 14:23:30,629 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_20
+2024-12-12 14:23:30,629 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:23:30,629 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:23:30,629 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:23:30,630 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 14:23:30,630 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 14:23:30,630 - PyQt5.uic.uiparser - DEBUG - push QFrame image4Frame
+2024-12-12 14:23:30,630 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 14:23:30,630 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 14:23:30,630 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_23
+2024-12-12 14:23:30,630 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-12 14:23:30,630 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:23:30,630 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:23:30,630 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:23:30,630 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 14:23:30,630 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 14:23:30,630 - PyQt5.uic.uiparser - DEBUG - push QFrame image4
+2024-12-12 14:23:30,630 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_18
+2024-12-12 14:23:30,630 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_18
+2024-12-12 14:23:30,630 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image4
+2024-12-12 14:23:30,630 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x0000022A9A05B530>
+2024-12-12 14:23:30,631 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-12 14:23:30,631 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:23:30,631 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:23:30,631 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:23:30,631 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 14:23:30,631 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 14:23:30,631 - PyQt5.uic.uiparser - DEBUG - push QFrame image4Frequency
+2024-12-12 14:23:30,631 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_17
+2024-12-12 14:23:30,631 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_17
+2024-12-12 14:23:30,631 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image4Frequency
+2024-12-12 14:23:30,631 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x0000022A9A05B530>
+2024-12-12 14:23:30,631 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_23
+2024-12-12 14:23:30,631 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image4Frame
+2024-12-12 14:23:30,631 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x0000022A9A059010>
+2024-12-12 14:23:30,631 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_20
+2024-12-12 14:23:30,632 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_21
+2024-12-12 14:23:30,632 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:23:30,632 - PyQt5.uic.uiparser - DEBUG - push QComboBox image4ComboBox
+2024-12-12 14:23:30,632 - PyQt5.uic.uiparser - DEBUG - pop widget QComboBox image4ComboBox
+2024-12-12 14:23:30,632 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x0000022A9A059010>
+2024-12-12 14:23:30,632 - PyQt5.uic.properties - DEBUG - setting property orientation
+2024-12-12 14:23:30,632 - PyQt5.uic.uiparser - DEBUG - push QSlider image4Slider
+2024-12-12 14:23:30,632 - PyQt5.uic.uiparser - DEBUG - pop widget QSlider image4Slider
+2024-12-12 14:23:30,632 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x0000022A9A059010>
+2024-12-12 14:23:30,633 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 14:23:30,633 - PyQt5.uic.uiparser - DEBUG - push QLabel image4Loading
+2024-12-12 14:23:30,633 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel image4Loading
+2024-12-12 14:23:30,633 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x0000022A9A059010>
+2024-12-12 14:23:30,633 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_21
+2024-12-12 14:23:30,633 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_11
+2024-12-12 14:23:30,633 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_4
+2024-12-12 14:23:30,633 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_4
+2024-12-12 14:23:30,633 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 14:23:30,633 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 14:23:30,633 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout
+2024-12-12 14:23:30,633 - PyQt5.uic.properties - DEBUG - setting property leftMargin
+2024-12-12 14:23:30,633 - PyQt5.uic.properties - DEBUG - setting property topMargin
+2024-12-12 14:23:30,633 - PyQt5.uic.properties - DEBUG - setting property rightMargin
+2024-12-12 14:23:30,633 - PyQt5.uic.properties - DEBUG - setting property bottomMargin
+2024-12-12 14:23:30,633 - PyQt5.uic.properties - DEBUG - setting property pyuicMargins
+2024-12-12 14:23:30,634 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_13
+2024-12-12 14:23:30,634 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-12 14:23:30,634 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:23:30,634 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:23:30,634 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:23:30,634 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 14:23:30,634 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 14:23:30,634 - PyQt5.uic.uiparser - DEBUG - push QFrame output1Frame
+2024-12-12 14:23:30,635 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_9
+2024-12-12 14:23:30,635 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_9
+2024-12-12 14:23:30,635 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame output1Frame
+2024-12-12 14:23:30,635 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x0000022A9A059010>
+2024-12-12 14:23:30,635 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_5
+2024-12-12 14:23:30,635 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:23:30,635 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 14:23:30,635 - PyQt5.uic.uiparser - DEBUG - push QLabel label_2
+2024-12-12 14:23:30,635 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel label_2
+2024-12-12 14:23:30,636 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x0000022A9A059010>
+2024-12-12 14:23:30,636 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_5
+2024-12-12 14:23:30,636 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_13
+2024-12-12 14:23:30,636 - PyQt5.uic.properties - DEBUG - setting property leftMargin
+2024-12-12 14:23:30,636 - PyQt5.uic.properties - DEBUG - setting property topMargin
+2024-12-12 14:23:30,636 - PyQt5.uic.properties - DEBUG - setting property rightMargin
+2024-12-12 14:23:30,636 - PyQt5.uic.properties - DEBUG - setting property bottomMargin
+2024-12-12 14:23:30,636 - PyQt5.uic.properties - DEBUG - setting property pyuicMargins
+2024-12-12 14:23:30,636 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_14
+2024-12-12 14:23:30,636 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-12 14:23:30,636 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:23:30,636 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:23:30,636 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:23:30,636 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 14:23:30,636 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 14:23:30,636 - PyQt5.uic.uiparser - DEBUG - push QFrame output2Frame
+2024-12-12 14:23:30,636 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_16
+2024-12-12 14:23:30,637 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_16
+2024-12-12 14:23:30,637 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame output2Frame
+2024-12-12 14:23:30,637 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x0000022A9A059010>
+2024-12-12 14:23:30,637 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_25
+2024-12-12 14:23:30,637 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:23:30,637 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:23:30,637 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 14:23:30,637 - PyQt5.uic.uiparser - DEBUG - push QLabel label_5
+2024-12-12 14:23:30,637 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel label_5
+2024-12-12 14:23:30,637 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x0000022A9A059010>
+2024-12-12 14:23:30,637 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_25
+2024-12-12 14:23:30,637 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_14
+2024-12-12 14:23:30,637 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout
+2024-12-12 14:23:30,637 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout
+2024-12-12 14:23:30,637 - PyQt5.uic.uiparser - DEBUG - pop layout QGridLayout gridLayout
+2024-12-12 14:23:30,637 - PyQt5.uic.uiparser - DEBUG - pop widget QWidget centralwidget
+2024-12-12 14:23:30,637 - PyQt5.uic.uiparser - DEBUG - new topwidget <__main__.MainWindow object at 0x0000022A9A058B90>
+2024-12-12 14:23:30,638 - PyQt5.uic.uiparser - DEBUG - pop widget MainWindow MainWindow
+2024-12-12 14:23:30,638 - PyQt5.uic.uiparser - DEBUG - new topwidget None
+2024-12-12 14:23:32,269 - Mixer - INFO - Changing mode from Mode.MAGNITUDE_PHASE to Mode.MAGNITUDE_PHASE.
+2024-12-12 14:23:39,885 - MainWindow - INFO - Mixing images...
+2024-12-12 14:23:39,885 - MainWindow - DEBUG - Current output viewport: 0
+2024-12-12 14:23:39,885 - MainWindow - DEBUG - Current region mode: RegionMode.FULL
+2024-12-12 14:23:41,919 - MainWindow - INFO - Mixing completed successfully
+2024-12-12 14:58:47,151 - PyQt5.uic.uiparser - DEBUG - uiname is MainWindow
+2024-12-12 14:58:47,152 - PyQt5.uic.uiparser - DEBUG - toplevel widget is MainWindow
+2024-12-12 14:58:47,152 - PyQt5.uic.properties - DEBUG - setting property geometry
+2024-12-12 14:58:47,152 - PyQt5.uic.properties - DEBUG - setting property windowTitle
+2024-12-12 14:58:47,152 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:58:47,152 - PyQt5.uic.uiparser - DEBUG - push MainWindow MainWindow
+2024-12-12 14:58:47,152 - PyQt5.uic.uiparser - DEBUG - push QWidget centralwidget
+2024-12-12 14:58:47,152 - PyQt5.uic.properties - DEBUG - setting property horizontalSpacing
+2024-12-12 14:58:47,152 - PyQt5.uic.properties - DEBUG - setting property verticalSpacing
+2024-12-12 14:58:47,152 - PyQt5.uic.properties - DEBUG - setting property pyuicMargins
+2024-12-12 14:58:47,152 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 14:58:47,152 - PyQt5.uic.uiparser - DEBUG - push QGridLayout gridLayout
+2024-12-12 14:58:47,153 - PyQt5.uic.properties - DEBUG - setting property leftMargin
+2024-12-12 14:58:47,153 - PyQt5.uic.properties - DEBUG - setting property topMargin
+2024-12-12 14:58:47,153 - PyQt5.uic.properties - DEBUG - setting property rightMargin
+2024-12-12 14:58:47,153 - PyQt5.uic.properties - DEBUG - setting property pyuicMargins
+2024-12-12 14:58:47,153 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_15
+2024-12-12 14:58:47,153 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 14:58:47,153 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 14:58:47,153 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_2
+2024-12-12 14:58:47,153 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 14:58:47,153 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 14:58:47,153 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_2
+2024-12-12 14:58:47,153 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_9
+2024-12-12 14:58:47,153 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_3
+2024-12-12 14:58:47,153 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:58:47,153 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:58:47,153 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 14:58:47,154 - PyQt5.uic.uiparser - DEBUG - push QLabel label
+2024-12-12 14:58:47,154 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel label
+2024-12-12 14:58:47,154 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x000001C71D3ED010>
+2024-12-12 14:58:47,154 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:58:47,154 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:58:47,154 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:58:47,154 - PyQt5.uic.uiparser - DEBUG - push QComboBox modeComboBox
+2024-12-12 14:58:47,154 - PyQt5.uic.uiparser - DEBUG - pop widget QComboBox modeComboBox
+2024-12-12 14:58:47,154 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x000001C71D3ED010>
+2024-12-12 14:58:47,154 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_3
+2024-12-12 14:58:47,154 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_6
+2024-12-12 14:58:47,155 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:58:47,155 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 14:58:47,155 - PyQt5.uic.uiparser - DEBUG - push QLabel label_3
+2024-12-12 14:58:47,155 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel label_3
+2024-12-12 14:58:47,155 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x000001C71D3ED010>
+2024-12-12 14:58:47,155 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:58:47,155 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:58:47,155 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:58:47,155 - PyQt5.uic.uiparser - DEBUG - push QComboBox regionComboScale
+2024-12-12 14:58:47,155 - PyQt5.uic.uiparser - DEBUG - pop widget QComboBox regionComboScale
+2024-12-12 14:58:47,155 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x000001C71D3ED010>
+2024-12-12 14:58:47,155 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_6
+2024-12-12 14:58:47,155 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_8
+2024-12-12 14:58:47,156 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:58:47,156 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 14:58:47,156 - PyQt5.uic.uiparser - DEBUG - push QLabel label_4
+2024-12-12 14:58:47,156 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel label_4
+2024-12-12 14:58:47,156 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x000001C71D3ED010>
+2024-12-12 14:58:47,156 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:58:47,156 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:58:47,156 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:58:47,156 - PyQt5.uic.uiparser - DEBUG - push QComboBox displayComboBox
+2024-12-12 14:58:47,156 - PyQt5.uic.uiparser - DEBUG - pop widget QComboBox displayComboBox
+2024-12-12 14:58:47,156 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x000001C71D3ED010>
+2024-12-12 14:58:47,156 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_8
+2024-12-12 14:58:47,156 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_9
+2024-12-12 14:58:47,156 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_10
+2024-12-12 14:58:47,156 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:58:47,156 - PyQt5.uic.properties - DEBUG - setting property layoutDirection
+2024-12-12 14:58:47,156 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:58:47,156 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 14:58:47,156 - PyQt5.uic.properties - DEBUG - setting property icon
+2024-12-12 14:58:47,156 - PyQt5.uic.properties - DEBUG - setting property iconSize
+2024-12-12 14:58:47,156 - PyQt5.uic.uiparser - DEBUG - push QPushButton convertButton
+2024-12-12 14:58:47,156 - PyQt5.uic.uiparser - DEBUG - pop widget QPushButton convertButton
+2024-12-12 14:58:47,156 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x000001C71D3ED010>
+2024-12-12 14:58:47,156 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_10
+2024-12-12 14:58:47,157 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_2
+2024-12-12 14:58:47,157 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_7
+2024-12-12 14:58:47,157 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:58:47,157 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 14:58:47,157 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 14:58:47,157 - PyQt5.uic.uiparser - DEBUG - push QFrame loadingParent
+2024-12-12 14:58:47,157 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_24
+2024-12-12 14:58:47,157 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:58:47,157 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:58:47,157 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:58:47,157 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 14:58:47,157 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 14:58:47,157 - PyQt5.uic.uiparser - DEBUG - push QFrame loadingFrame
+2024-12-12 14:58:47,157 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame loadingFrame
+2024-12-12 14:58:47,157 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x000001C71D3EDB50>
+2024-12-12 14:58:47,157 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:58:47,157 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 14:58:47,157 - PyQt5.uic.uiparser - DEBUG - push QLabel convertingLoading
+2024-12-12 14:58:47,157 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel convertingLoading
+2024-12-12 14:58:47,157 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x000001C71D3EDB50>
+2024-12-12 14:58:47,157 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_24
+2024-12-12 14:58:47,157 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame loadingParent
+2024-12-12 14:58:47,157 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x000001C71D3ED010>
+2024-12-12 14:58:47,157 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_7
+2024-12-12 14:58:47,157 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_2
+2024-12-12 14:58:47,157 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_15
+2024-12-12 14:58:47,158 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 14:58:47,158 - PyQt5.uic.properties - DEBUG - setting property leftMargin
+2024-12-12 14:58:47,158 - PyQt5.uic.properties - DEBUG - setting property rightMargin
+2024-12-12 14:58:47,158 - PyQt5.uic.properties - DEBUG - setting property bottomMargin
+2024-12-12 14:58:47,158 - PyQt5.uic.properties - DEBUG - setting property pyuicMargins
+2024-12-12 14:58:47,158 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 14:58:47,158 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout
+2024-12-12 14:58:47,158 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 14:58:47,158 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 14:58:47,158 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_4
+2024-12-12 14:58:47,158 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_11
+2024-12-12 14:58:47,158 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 14:58:47,158 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 14:58:47,158 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_10
+2024-12-12 14:58:47,158 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_13
+2024-12-12 14:58:47,158 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:58:47,158 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:58:47,158 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:58:47,158 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 14:58:47,158 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 14:58:47,158 - PyQt5.uic.uiparser - DEBUG - push QFrame image1Frame
+2024-12-12 14:58:47,158 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 14:58:47,158 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 14:58:47,158 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_14
+2024-12-12 14:58:47,158 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-12 14:58:47,158 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:58:47,158 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:58:47,158 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:58:47,158 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 14:58:47,159 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 14:58:47,159 - PyQt5.uic.uiparser - DEBUG - push QFrame image1
+2024-12-12 14:58:47,159 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_3
+2024-12-12 14:58:47,159 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_3
+2024-12-12 14:58:47,159 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image1
+2024-12-12 14:58:47,159 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x000001C71D3EDFD0>
+2024-12-12 14:58:47,159 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-12 14:58:47,159 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:58:47,159 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:58:47,159 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:58:47,159 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 14:58:47,159 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 14:58:47,159 - PyQt5.uic.uiparser - DEBUG - push QFrame image1Frequancy
+2024-12-12 14:58:47,159 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_5
+2024-12-12 14:58:47,159 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_5
+2024-12-12 14:58:47,159 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image1Frequancy
+2024-12-12 14:58:47,159 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x000001C71D3EDFD0>
+2024-12-12 14:58:47,159 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_14
+2024-12-12 14:58:47,159 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image1Frame
+2024-12-12 14:58:47,159 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x000001C71D3ED010>
+2024-12-12 14:58:47,159 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_13
+2024-12-12 14:58:47,159 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_12
+2024-12-12 14:58:47,159 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:58:47,159 - PyQt5.uic.uiparser - DEBUG - push QComboBox image1ComboBox
+2024-12-12 14:58:47,159 - PyQt5.uic.uiparser - DEBUG - pop widget QComboBox image1ComboBox
+2024-12-12 14:58:47,159 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x000001C71D3ED010>
+2024-12-12 14:58:47,159 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:58:47,159 - PyQt5.uic.properties - DEBUG - setting property orientation
+2024-12-12 14:58:47,159 - PyQt5.uic.uiparser - DEBUG - push QSlider image1Slider
+2024-12-12 14:58:47,159 - PyQt5.uic.uiparser - DEBUG - pop widget QSlider image1Slider
+2024-12-12 14:58:47,160 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x000001C71D3ED010>
+2024-12-12 14:58:47,160 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 14:58:47,160 - PyQt5.uic.uiparser - DEBUG - push QLabel image1Loading
+2024-12-12 14:58:47,160 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel image1Loading
+2024-12-12 14:58:47,160 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x000001C71D3ED010>
+2024-12-12 14:58:47,160 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_12
+2024-12-12 14:58:47,160 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_10
+2024-12-12 14:58:47,160 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 14:58:47,160 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 14:58:47,160 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_7
+2024-12-12 14:58:47,160 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_16
+2024-12-12 14:58:47,160 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:58:47,160 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:58:47,160 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:58:47,160 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 14:58:47,160 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 14:58:47,160 - PyQt5.uic.uiparser - DEBUG - push QFrame image2Frame
+2024-12-12 14:58:47,160 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 14:58:47,160 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 14:58:47,160 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_15
+2024-12-12 14:58:47,160 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-12 14:58:47,160 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:58:47,160 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:58:47,160 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:58:47,160 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 14:58:47,160 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 14:58:47,160 - PyQt5.uic.uiparser - DEBUG - push QFrame image2
+2024-12-12 14:58:47,160 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_6
+2024-12-12 14:58:47,161 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_6
+2024-12-12 14:58:47,161 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image2
+2024-12-12 14:58:47,161 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x000001C71D3EE720>
+2024-12-12 14:58:47,161 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-12 14:58:47,161 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:58:47,161 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:58:47,161 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:58:47,161 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 14:58:47,161 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 14:58:47,161 - PyQt5.uic.uiparser - DEBUG - push QFrame image2Frequency
+2024-12-12 14:58:47,161 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_8
+2024-12-12 14:58:47,161 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_8
+2024-12-12 14:58:47,161 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image2Frequency
+2024-12-12 14:58:47,161 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x000001C71D3EE720>
+2024-12-12 14:58:47,161 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_15
+2024-12-12 14:58:47,161 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image2Frame
+2024-12-12 14:58:47,161 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x000001C71D3ED010>
+2024-12-12 14:58:47,161 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_16
+2024-12-12 14:58:47,161 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_17
+2024-12-12 14:58:47,161 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:58:47,161 - PyQt5.uic.uiparser - DEBUG - push QComboBox image2ComboBox
+2024-12-12 14:58:47,161 - PyQt5.uic.uiparser - DEBUG - pop widget QComboBox image2ComboBox
+2024-12-12 14:58:47,161 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x000001C71D3ED010>
+2024-12-12 14:58:47,162 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:58:47,162 - PyQt5.uic.properties - DEBUG - setting property orientation
+2024-12-12 14:58:47,162 - PyQt5.uic.uiparser - DEBUG - push QSlider image2Slider
+2024-12-12 14:58:47,162 - PyQt5.uic.uiparser - DEBUG - pop widget QSlider image2Slider
+2024-12-12 14:58:47,162 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x000001C71D3ED010>
+2024-12-12 14:58:47,162 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 14:58:47,162 - PyQt5.uic.uiparser - DEBUG - push QLabel image2Loading
+2024-12-12 14:58:47,162 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel image2Loading
+2024-12-12 14:58:47,162 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x000001C71D3ED010>
+2024-12-12 14:58:47,162 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_17
+2024-12-12 14:58:47,162 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_7
+2024-12-12 14:58:47,162 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_11
+2024-12-12 14:58:47,162 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_4
+2024-12-12 14:58:47,162 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 14:58:47,162 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 14:58:47,162 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_12
+2024-12-12 14:58:47,162 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_18
+2024-12-12 14:58:47,162 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:58:47,162 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:58:47,162 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:58:47,162 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 14:58:47,163 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 14:58:47,163 - PyQt5.uic.uiparser - DEBUG - push QFrame image3Frame
+2024-12-12 14:58:47,163 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 14:58:47,163 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 14:58:47,163 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_22
+2024-12-12 14:58:47,163 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-12 14:58:47,163 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:58:47,163 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:58:47,163 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:58:47,163 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 14:58:47,163 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 14:58:47,163 - PyQt5.uic.uiparser - DEBUG - push QFrame image3
+2024-12-12 14:58:47,163 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_20
+2024-12-12 14:58:47,163 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_20
+2024-12-12 14:58:47,163 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image3
+2024-12-12 14:58:47,163 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x000001C71D3EEDE0>
+2024-12-12 14:58:47,163 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-12 14:58:47,163 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:58:47,163 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:58:47,163 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:58:47,163 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 14:58:47,163 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 14:58:47,164 - PyQt5.uic.uiparser - DEBUG - push QFrame image3Frequency
+2024-12-12 14:58:47,164 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_19
+2024-12-12 14:58:47,164 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_19
+2024-12-12 14:58:47,164 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image3Frequency
+2024-12-12 14:58:47,164 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x000001C71D3EEDE0>
+2024-12-12 14:58:47,164 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_22
+2024-12-12 14:58:47,164 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image3Frame
+2024-12-12 14:58:47,164 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x000001C71D3ED010>
+2024-12-12 14:58:47,164 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_18
+2024-12-12 14:58:47,164 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_19
+2024-12-12 14:58:47,164 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:58:47,164 - PyQt5.uic.uiparser - DEBUG - push QComboBox image3ComboBox
+2024-12-12 14:58:47,164 - PyQt5.uic.uiparser - DEBUG - pop widget QComboBox image3ComboBox
+2024-12-12 14:58:47,164 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x000001C71D3ED010>
+2024-12-12 14:58:47,164 - PyQt5.uic.properties - DEBUG - setting property orientation
+2024-12-12 14:58:47,164 - PyQt5.uic.uiparser - DEBUG - push QSlider image3Slider
+2024-12-12 14:58:47,164 - PyQt5.uic.uiparser - DEBUG - pop widget QSlider image3Slider
+2024-12-12 14:58:47,164 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x000001C71D3ED010>
+2024-12-12 14:58:47,164 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 14:58:47,164 - PyQt5.uic.uiparser - DEBUG - push QLabel image3Loading
+2024-12-12 14:58:47,164 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel image3Loading
+2024-12-12 14:58:47,164 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x000001C71D3ED010>
+2024-12-12 14:58:47,164 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_19
+2024-12-12 14:58:47,164 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_12
+2024-12-12 14:58:47,164 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 14:58:47,164 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 14:58:47,164 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_11
+2024-12-12 14:58:47,165 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_20
+2024-12-12 14:58:47,165 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:58:47,165 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:58:47,165 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:58:47,165 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 14:58:47,165 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 14:58:47,165 - PyQt5.uic.uiparser - DEBUG - push QFrame image4Frame
+2024-12-12 14:58:47,165 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 14:58:47,165 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 14:58:47,165 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_23
+2024-12-12 14:58:47,165 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-12 14:58:47,165 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:58:47,165 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:58:47,165 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:58:47,165 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 14:58:47,165 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 14:58:47,165 - PyQt5.uic.uiparser - DEBUG - push QFrame image4
+2024-12-12 14:58:47,165 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_18
+2024-12-12 14:58:47,165 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_18
+2024-12-12 14:58:47,165 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image4
+2024-12-12 14:58:47,165 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x000001C71D3EF530>
+2024-12-12 14:58:47,165 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-12 14:58:47,165 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:58:47,165 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:58:47,165 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:58:47,165 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 14:58:47,165 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 14:58:47,165 - PyQt5.uic.uiparser - DEBUG - push QFrame image4Frequency
+2024-12-12 14:58:47,165 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_17
+2024-12-12 14:58:47,165 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_17
+2024-12-12 14:58:47,165 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image4Frequency
+2024-12-12 14:58:47,166 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x000001C71D3EF530>
+2024-12-12 14:58:47,166 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_23
+2024-12-12 14:58:47,166 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image4Frame
+2024-12-12 14:58:47,166 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x000001C71D3ED010>
+2024-12-12 14:58:47,166 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_20
+2024-12-12 14:58:47,166 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_21
+2024-12-12 14:58:47,166 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:58:47,166 - PyQt5.uic.uiparser - DEBUG - push QComboBox image4ComboBox
+2024-12-12 14:58:47,166 - PyQt5.uic.uiparser - DEBUG - pop widget QComboBox image4ComboBox
+2024-12-12 14:58:47,166 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x000001C71D3ED010>
+2024-12-12 14:58:47,166 - PyQt5.uic.properties - DEBUG - setting property orientation
+2024-12-12 14:58:47,166 - PyQt5.uic.uiparser - DEBUG - push QSlider image4Slider
+2024-12-12 14:58:47,166 - PyQt5.uic.uiparser - DEBUG - pop widget QSlider image4Slider
+2024-12-12 14:58:47,166 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x000001C71D3ED010>
+2024-12-12 14:58:47,166 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 14:58:47,166 - PyQt5.uic.uiparser - DEBUG - push QLabel image4Loading
+2024-12-12 14:58:47,166 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel image4Loading
+2024-12-12 14:58:47,166 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x000001C71D3ED010>
+2024-12-12 14:58:47,166 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_21
+2024-12-12 14:58:47,166 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_11
+2024-12-12 14:58:47,166 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_4
+2024-12-12 14:58:47,166 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_4
+2024-12-12 14:58:47,166 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 14:58:47,166 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 14:58:47,166 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout
+2024-12-12 14:58:47,166 - PyQt5.uic.properties - DEBUG - setting property leftMargin
+2024-12-12 14:58:47,166 - PyQt5.uic.properties - DEBUG - setting property topMargin
+2024-12-12 14:58:47,166 - PyQt5.uic.properties - DEBUG - setting property rightMargin
+2024-12-12 14:58:47,166 - PyQt5.uic.properties - DEBUG - setting property bottomMargin
+2024-12-12 14:58:47,166 - PyQt5.uic.properties - DEBUG - setting property pyuicMargins
+2024-12-12 14:58:47,166 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_13
+2024-12-12 14:58:47,167 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-12 14:58:47,167 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:58:47,167 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:58:47,167 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:58:47,167 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 14:58:47,167 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 14:58:47,167 - PyQt5.uic.uiparser - DEBUG - push QFrame output1Frame
+2024-12-12 14:58:47,167 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_9
+2024-12-12 14:58:47,167 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_9
+2024-12-12 14:58:47,167 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame output1Frame
+2024-12-12 14:58:47,167 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x000001C71D3ED010>
+2024-12-12 14:58:47,167 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_5
+2024-12-12 14:58:47,167 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:58:47,167 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 14:58:47,167 - PyQt5.uic.uiparser - DEBUG - push QLabel label_2
+2024-12-12 14:58:47,167 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel label_2
+2024-12-12 14:58:47,167 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x000001C71D3ED010>
+2024-12-12 14:58:47,167 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_5
+2024-12-12 14:58:47,167 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_13
+2024-12-12 14:58:47,167 - PyQt5.uic.properties - DEBUG - setting property leftMargin
+2024-12-12 14:58:47,167 - PyQt5.uic.properties - DEBUG - setting property topMargin
+2024-12-12 14:58:47,167 - PyQt5.uic.properties - DEBUG - setting property rightMargin
+2024-12-12 14:58:47,167 - PyQt5.uic.properties - DEBUG - setting property bottomMargin
+2024-12-12 14:58:47,167 - PyQt5.uic.properties - DEBUG - setting property pyuicMargins
+2024-12-12 14:58:47,167 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_14
+2024-12-12 14:58:47,167 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-12 14:58:47,167 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:58:47,167 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:58:47,167 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 14:58:47,167 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 14:58:47,167 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 14:58:47,167 - PyQt5.uic.uiparser - DEBUG - push QFrame output2Frame
+2024-12-12 14:58:47,168 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_16
+2024-12-12 14:58:47,168 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_16
+2024-12-12 14:58:47,168 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame output2Frame
+2024-12-12 14:58:47,168 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x000001C71D3ED010>
+2024-12-12 14:58:47,168 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_25
+2024-12-12 14:58:47,168 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 14:58:47,168 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 14:58:47,168 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 14:58:47,168 - PyQt5.uic.uiparser - DEBUG - push QLabel label_5
+2024-12-12 14:58:47,168 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel label_5
+2024-12-12 14:58:47,168 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x000001C71D3ED010>
+2024-12-12 14:58:47,168 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_25
+2024-12-12 14:58:47,168 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_14
+2024-12-12 14:58:47,168 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout
+2024-12-12 14:58:47,168 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout
+2024-12-12 14:58:47,168 - PyQt5.uic.uiparser - DEBUG - pop layout QGridLayout gridLayout
+2024-12-12 14:58:47,168 - PyQt5.uic.uiparser - DEBUG - pop widget QWidget centralwidget
+2024-12-12 14:58:47,168 - PyQt5.uic.uiparser - DEBUG - new topwidget <__main__.MainWindow object at 0x000001C71D3ECB90>
+2024-12-12 14:58:47,168 - PyQt5.uic.uiparser - DEBUG - pop widget MainWindow MainWindow
+2024-12-12 14:58:47,168 - PyQt5.uic.uiparser - DEBUG - new topwidget None
+2024-12-12 14:58:47,820 - Mixer - INFO - Changing mode from Mode.MAGNITUDE_PHASE to Mode.MAGNITUDE_PHASE.
+2024-12-12 14:58:52,292 - MainWindow - INFO - Mixing images...
+2024-12-12 14:58:52,292 - MainWindow - DEBUG - Current output viewport: 0
+2024-12-12 14:58:52,292 - MainWindow - DEBUG - Current region mode: RegionMode.FULL
+2024-12-12 14:58:54,294 - MainWindow - INFO - Mixing completed successfully
+2024-12-12 15:09:13,839 - PyQt5.uic.uiparser - DEBUG - uiname is MainWindow
+2024-12-12 15:09:13,840 - PyQt5.uic.uiparser - DEBUG - toplevel widget is MainWindow
+2024-12-12 15:09:13,840 - PyQt5.uic.properties - DEBUG - setting property geometry
+2024-12-12 15:09:13,840 - PyQt5.uic.properties - DEBUG - setting property windowTitle
+2024-12-12 15:09:13,841 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 15:09:13,847 - PyQt5.uic.uiparser - DEBUG - push MainWindow MainWindow
+2024-12-12 15:09:13,847 - PyQt5.uic.uiparser - DEBUG - push QWidget centralwidget
+2024-12-12 15:09:13,849 - PyQt5.uic.properties - DEBUG - setting property horizontalSpacing
+2024-12-12 15:09:13,849 - PyQt5.uic.properties - DEBUG - setting property verticalSpacing
+2024-12-12 15:09:13,849 - PyQt5.uic.properties - DEBUG - setting property pyuicMargins
+2024-12-12 15:09:13,849 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 15:09:13,849 - PyQt5.uic.uiparser - DEBUG - push QGridLayout gridLayout
+2024-12-12 15:09:13,849 - PyQt5.uic.properties - DEBUG - setting property leftMargin
+2024-12-12 15:09:13,849 - PyQt5.uic.properties - DEBUG - setting property topMargin
+2024-12-12 15:09:13,849 - PyQt5.uic.properties - DEBUG - setting property rightMargin
+2024-12-12 15:09:13,849 - PyQt5.uic.properties - DEBUG - setting property pyuicMargins
+2024-12-12 15:09:13,849 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_15
+2024-12-12 15:09:13,850 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 15:09:13,850 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 15:09:13,850 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_2
+2024-12-12 15:09:13,850 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 15:09:13,850 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 15:09:13,850 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_2
+2024-12-12 15:09:13,850 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_9
+2024-12-12 15:09:13,850 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_3
+2024-12-12 15:09:13,851 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 15:09:13,852 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 15:09:13,853 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 15:09:13,853 - PyQt5.uic.uiparser - DEBUG - push QLabel label
+2024-12-12 15:09:13,853 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel label
+2024-12-12 15:09:13,853 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000237C2DBD010>
+2024-12-12 15:09:13,856 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 15:09:13,857 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 15:09:13,857 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 15:09:13,857 - PyQt5.uic.uiparser - DEBUG - push QComboBox modeComboBox
+2024-12-12 15:09:13,858 - PyQt5.uic.uiparser - DEBUG - pop widget QComboBox modeComboBox
+2024-12-12 15:09:13,858 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000237C2DBD010>
+2024-12-12 15:09:13,858 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_3
+2024-12-12 15:09:13,859 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_6
+2024-12-12 15:09:13,859 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 15:09:13,859 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 15:09:13,859 - PyQt5.uic.uiparser - DEBUG - push QLabel label_3
+2024-12-12 15:09:13,859 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel label_3
+2024-12-12 15:09:13,859 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000237C2DBD010>
+2024-12-12 15:09:13,859 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 15:09:13,859 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 15:09:13,859 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 15:09:13,859 - PyQt5.uic.uiparser - DEBUG - push QComboBox regionComboScale
+2024-12-12 15:09:13,859 - PyQt5.uic.uiparser - DEBUG - pop widget QComboBox regionComboScale
+2024-12-12 15:09:13,859 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000237C2DBD010>
+2024-12-12 15:09:13,859 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_6
+2024-12-12 15:09:13,859 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_8
+2024-12-12 15:09:13,859 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 15:09:13,859 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 15:09:13,859 - PyQt5.uic.uiparser - DEBUG - push QLabel label_4
+2024-12-12 15:09:13,859 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel label_4
+2024-12-12 15:09:13,859 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000237C2DBD010>
+2024-12-12 15:09:13,860 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 15:09:13,860 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 15:09:13,860 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 15:09:13,860 - PyQt5.uic.uiparser - DEBUG - push QComboBox displayComboBox
+2024-12-12 15:09:13,860 - PyQt5.uic.uiparser - DEBUG - pop widget QComboBox displayComboBox
+2024-12-12 15:09:13,860 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000237C2DBD010>
+2024-12-12 15:09:13,860 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_8
+2024-12-12 15:09:13,860 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_9
+2024-12-12 15:09:13,860 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_10
+2024-12-12 15:09:13,861 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 15:09:13,861 - PyQt5.uic.properties - DEBUG - setting property layoutDirection
+2024-12-12 15:09:13,861 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 15:09:13,861 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 15:09:13,862 - PyQt5.uic.properties - DEBUG - setting property icon
+2024-12-12 15:09:13,863 - PyQt5.uic.properties - DEBUG - setting property iconSize
+2024-12-12 15:09:13,863 - PyQt5.uic.uiparser - DEBUG - push QPushButton convertButton
+2024-12-12 15:09:13,863 - PyQt5.uic.uiparser - DEBUG - pop widget QPushButton convertButton
+2024-12-12 15:09:13,863 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000237C2DBD010>
+2024-12-12 15:09:13,863 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_10
+2024-12-12 15:09:13,863 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_2
+2024-12-12 15:09:13,863 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_7
+2024-12-12 15:09:13,864 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 15:09:13,864 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 15:09:13,864 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 15:09:13,864 - PyQt5.uic.uiparser - DEBUG - push QFrame loadingParent
+2024-12-12 15:09:13,864 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_24
+2024-12-12 15:09:13,865 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 15:09:13,865 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 15:09:13,865 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 15:09:13,865 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 15:09:13,865 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 15:09:13,865 - PyQt5.uic.uiparser - DEBUG - push QFrame loadingFrame
+2024-12-12 15:09:13,865 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame loadingFrame
+2024-12-12 15:09:13,865 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x00000237C2DBDB50>
+2024-12-12 15:09:13,865 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 15:09:13,865 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 15:09:13,865 - PyQt5.uic.uiparser - DEBUG - push QLabel convertingLoading
+2024-12-12 15:09:13,865 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel convertingLoading
+2024-12-12 15:09:13,865 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x00000237C2DBDB50>
+2024-12-12 15:09:13,865 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_24
+2024-12-12 15:09:13,865 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame loadingParent
+2024-12-12 15:09:13,865 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000237C2DBD010>
+2024-12-12 15:09:13,865 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_7
+2024-12-12 15:09:13,865 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_2
+2024-12-12 15:09:13,865 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_15
+2024-12-12 15:09:13,865 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 15:09:13,865 - PyQt5.uic.properties - DEBUG - setting property leftMargin
+2024-12-12 15:09:13,865 - PyQt5.uic.properties - DEBUG - setting property rightMargin
+2024-12-12 15:09:13,865 - PyQt5.uic.properties - DEBUG - setting property bottomMargin
+2024-12-12 15:09:13,865 - PyQt5.uic.properties - DEBUG - setting property pyuicMargins
+2024-12-12 15:09:13,865 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 15:09:13,865 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout
+2024-12-12 15:09:13,865 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 15:09:13,865 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 15:09:13,865 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_4
+2024-12-12 15:09:13,865 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_11
+2024-12-12 15:09:13,865 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 15:09:13,865 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 15:09:13,865 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_10
+2024-12-12 15:09:13,865 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_13
+2024-12-12 15:09:13,865 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 15:09:13,865 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 15:09:13,865 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 15:09:13,865 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 15:09:13,865 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 15:09:13,865 - PyQt5.uic.uiparser - DEBUG - push QFrame image1Frame
+2024-12-12 15:09:13,865 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 15:09:13,865 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 15:09:13,865 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_14
+2024-12-12 15:09:13,865 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-12 15:09:13,867 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 15:09:13,867 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 15:09:13,867 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 15:09:13,867 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 15:09:13,867 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 15:09:13,868 - PyQt5.uic.uiparser - DEBUG - push QFrame image1
+2024-12-12 15:09:13,868 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_3
+2024-12-12 15:09:13,868 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_3
+2024-12-12 15:09:13,868 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image1
+2024-12-12 15:09:13,868 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x00000237C2DBDFD0>
+2024-12-12 15:09:13,868 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-12 15:09:13,868 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 15:09:13,868 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 15:09:13,868 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 15:09:13,868 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 15:09:13,868 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 15:09:13,868 - PyQt5.uic.uiparser - DEBUG - push QFrame image1Frequancy
+2024-12-12 15:09:13,868 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_5
+2024-12-12 15:09:13,868 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_5
+2024-12-12 15:09:13,868 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image1Frequancy
+2024-12-12 15:09:13,868 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x00000237C2DBDFD0>
+2024-12-12 15:09:13,868 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_14
+2024-12-12 15:09:13,868 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image1Frame
+2024-12-12 15:09:13,868 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000237C2DBD010>
+2024-12-12 15:09:13,868 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_13
+2024-12-12 15:09:13,868 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_12
+2024-12-12 15:09:13,868 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 15:09:13,868 - PyQt5.uic.uiparser - DEBUG - push QComboBox image1ComboBox
+2024-12-12 15:09:13,868 - PyQt5.uic.uiparser - DEBUG - pop widget QComboBox image1ComboBox
+2024-12-12 15:09:13,868 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000237C2DBD010>
+2024-12-12 15:09:13,869 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 15:09:13,869 - PyQt5.uic.properties - DEBUG - setting property orientation
+2024-12-12 15:09:13,869 - PyQt5.uic.uiparser - DEBUG - push QSlider image1Slider
+2024-12-12 15:09:13,869 - PyQt5.uic.uiparser - DEBUG - pop widget QSlider image1Slider
+2024-12-12 15:09:13,869 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000237C2DBD010>
+2024-12-12 15:09:13,869 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 15:09:13,869 - PyQt5.uic.uiparser - DEBUG - push QLabel image1Loading
+2024-12-12 15:09:13,869 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel image1Loading
+2024-12-12 15:09:13,870 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000237C2DBD010>
+2024-12-12 15:09:13,870 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_12
+2024-12-12 15:09:13,870 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_10
+2024-12-12 15:09:13,870 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 15:09:13,870 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 15:09:13,870 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_7
+2024-12-12 15:09:13,870 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_16
+2024-12-12 15:09:13,870 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 15:09:13,870 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 15:09:13,870 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 15:09:13,870 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 15:09:13,870 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 15:09:13,870 - PyQt5.uic.uiparser - DEBUG - push QFrame image2Frame
+2024-12-12 15:09:13,870 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 15:09:13,870 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 15:09:13,870 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_15
+2024-12-12 15:09:13,870 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-12 15:09:13,870 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 15:09:13,870 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 15:09:13,870 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 15:09:13,870 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 15:09:13,870 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 15:09:13,870 - PyQt5.uic.uiparser - DEBUG - push QFrame image2
+2024-12-12 15:09:13,870 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_6
+2024-12-12 15:09:13,870 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_6
+2024-12-12 15:09:13,870 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image2
+2024-12-12 15:09:13,870 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x00000237C2DBE720>
+2024-12-12 15:09:13,871 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-12 15:09:13,871 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 15:09:13,871 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 15:09:13,871 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 15:09:13,871 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 15:09:13,871 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 15:09:13,871 - PyQt5.uic.uiparser - DEBUG - push QFrame image2Frequency
+2024-12-12 15:09:13,871 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_8
+2024-12-12 15:09:13,871 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_8
+2024-12-12 15:09:13,871 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image2Frequency
+2024-12-12 15:09:13,871 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x00000237C2DBE720>
+2024-12-12 15:09:13,871 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_15
+2024-12-12 15:09:13,871 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image2Frame
+2024-12-12 15:09:13,871 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000237C2DBD010>
+2024-12-12 15:09:13,871 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_16
+2024-12-12 15:09:13,871 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_17
+2024-12-12 15:09:13,871 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 15:09:13,871 - PyQt5.uic.uiparser - DEBUG - push QComboBox image2ComboBox
+2024-12-12 15:09:13,871 - PyQt5.uic.uiparser - DEBUG - pop widget QComboBox image2ComboBox
+2024-12-12 15:09:13,872 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000237C2DBD010>
+2024-12-12 15:09:13,872 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 15:09:13,872 - PyQt5.uic.properties - DEBUG - setting property orientation
+2024-12-12 15:09:13,872 - PyQt5.uic.uiparser - DEBUG - push QSlider image2Slider
+2024-12-12 15:09:13,872 - PyQt5.uic.uiparser - DEBUG - pop widget QSlider image2Slider
+2024-12-12 15:09:13,872 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000237C2DBD010>
+2024-12-12 15:09:13,872 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 15:09:13,872 - PyQt5.uic.uiparser - DEBUG - push QLabel image2Loading
+2024-12-12 15:09:13,872 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel image2Loading
+2024-12-12 15:09:13,872 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000237C2DBD010>
+2024-12-12 15:09:13,872 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_17
+2024-12-12 15:09:13,872 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_7
+2024-12-12 15:09:13,872 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_11
+2024-12-12 15:09:13,872 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_4
+2024-12-12 15:09:13,873 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 15:09:13,873 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 15:09:13,873 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_12
+2024-12-12 15:09:13,873 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_18
+2024-12-12 15:09:13,873 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 15:09:13,873 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 15:09:13,873 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 15:09:13,873 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 15:09:13,873 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 15:09:13,873 - PyQt5.uic.uiparser - DEBUG - push QFrame image3Frame
+2024-12-12 15:09:13,873 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 15:09:13,873 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 15:09:13,873 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_22
+2024-12-12 15:09:13,873 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-12 15:09:13,873 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 15:09:13,873 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 15:09:13,873 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 15:09:13,873 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 15:09:13,873 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 15:09:13,873 - PyQt5.uic.uiparser - DEBUG - push QFrame image3
+2024-12-12 15:09:13,873 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_20
+2024-12-12 15:09:13,873 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_20
+2024-12-12 15:09:13,873 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image3
+2024-12-12 15:09:13,873 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x00000237C2DBEDE0>
+2024-12-12 15:09:13,873 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-12 15:09:13,874 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 15:09:13,874 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 15:09:13,874 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 15:09:13,874 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 15:09:13,874 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 15:09:13,874 - PyQt5.uic.uiparser - DEBUG - push QFrame image3Frequency
+2024-12-12 15:09:13,874 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_19
+2024-12-12 15:09:13,874 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_19
+2024-12-12 15:09:13,874 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image3Frequency
+2024-12-12 15:09:13,874 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x00000237C2DBEDE0>
+2024-12-12 15:09:13,874 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_22
+2024-12-12 15:09:13,874 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image3Frame
+2024-12-12 15:09:13,874 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000237C2DBD010>
+2024-12-12 15:09:13,874 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_18
+2024-12-12 15:09:13,874 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_19
+2024-12-12 15:09:13,874 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 15:09:13,874 - PyQt5.uic.uiparser - DEBUG - push QComboBox image3ComboBox
+2024-12-12 15:09:13,874 - PyQt5.uic.uiparser - DEBUG - pop widget QComboBox image3ComboBox
+2024-12-12 15:09:13,874 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000237C2DBD010>
+2024-12-12 15:09:13,874 - PyQt5.uic.properties - DEBUG - setting property orientation
+2024-12-12 15:09:13,874 - PyQt5.uic.uiparser - DEBUG - push QSlider image3Slider
+2024-12-12 15:09:13,874 - PyQt5.uic.uiparser - DEBUG - pop widget QSlider image3Slider
+2024-12-12 15:09:13,874 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000237C2DBD010>
+2024-12-12 15:09:13,874 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 15:09:13,874 - PyQt5.uic.uiparser - DEBUG - push QLabel image3Loading
+2024-12-12 15:09:13,874 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel image3Loading
+2024-12-12 15:09:13,874 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000237C2DBD010>
+2024-12-12 15:09:13,874 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_19
+2024-12-12 15:09:13,874 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_12
+2024-12-12 15:09:13,875 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 15:09:13,875 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 15:09:13,875 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_11
+2024-12-12 15:09:13,875 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_20
+2024-12-12 15:09:13,875 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 15:09:13,875 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 15:09:13,875 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 15:09:13,875 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 15:09:13,875 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 15:09:13,875 - PyQt5.uic.uiparser - DEBUG - push QFrame image4Frame
+2024-12-12 15:09:13,875 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 15:09:13,875 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 15:09:13,875 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_23
+2024-12-12 15:09:13,875 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-12 15:09:13,875 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 15:09:13,875 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 15:09:13,875 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 15:09:13,875 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 15:09:13,875 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 15:09:13,875 - PyQt5.uic.uiparser - DEBUG - push QFrame image4
+2024-12-12 15:09:13,875 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_18
+2024-12-12 15:09:13,875 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_18
+2024-12-12 15:09:13,875 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image4
+2024-12-12 15:09:13,875 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x00000237C2DBF530>
+2024-12-12 15:09:13,875 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-12 15:09:13,875 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 15:09:13,875 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 15:09:13,875 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 15:09:13,875 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 15:09:13,875 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 15:09:13,876 - PyQt5.uic.uiparser - DEBUG - push QFrame image4Frequency
+2024-12-12 15:09:13,876 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_17
+2024-12-12 15:09:13,876 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_17
+2024-12-12 15:09:13,876 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image4Frequency
+2024-12-12 15:09:13,876 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QFrame object at 0x00000237C2DBF530>
+2024-12-12 15:09:13,876 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_23
+2024-12-12 15:09:13,876 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame image4Frame
+2024-12-12 15:09:13,876 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000237C2DBD010>
+2024-12-12 15:09:13,876 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_20
+2024-12-12 15:09:13,876 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_21
+2024-12-12 15:09:13,876 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 15:09:13,876 - PyQt5.uic.uiparser - DEBUG - push QComboBox image4ComboBox
+2024-12-12 15:09:13,876 - PyQt5.uic.uiparser - DEBUG - pop widget QComboBox image4ComboBox
+2024-12-12 15:09:13,876 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000237C2DBD010>
+2024-12-12 15:09:13,876 - PyQt5.uic.properties - DEBUG - setting property orientation
+2024-12-12 15:09:13,876 - PyQt5.uic.uiparser - DEBUG - push QSlider image4Slider
+2024-12-12 15:09:13,876 - PyQt5.uic.uiparser - DEBUG - pop widget QSlider image4Slider
+2024-12-12 15:09:13,876 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000237C2DBD010>
+2024-12-12 15:09:13,876 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 15:09:13,876 - PyQt5.uic.uiparser - DEBUG - push QLabel image4Loading
+2024-12-12 15:09:13,876 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel image4Loading
+2024-12-12 15:09:13,876 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000237C2DBD010>
+2024-12-12 15:09:13,876 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_21
+2024-12-12 15:09:13,876 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_11
+2024-12-12 15:09:13,877 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_4
+2024-12-12 15:09:13,877 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_4
+2024-12-12 15:09:13,877 - PyQt5.uic.properties - DEBUG - setting property spacing
+2024-12-12 15:09:13,877 - PyQt5.uic.properties - DEBUG - setting property pyuicSpacing
+2024-12-12 15:09:13,877 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout
+2024-12-12 15:09:13,877 - PyQt5.uic.properties - DEBUG - setting property leftMargin
+2024-12-12 15:09:13,877 - PyQt5.uic.properties - DEBUG - setting property topMargin
+2024-12-12 15:09:13,877 - PyQt5.uic.properties - DEBUG - setting property rightMargin
+2024-12-12 15:09:13,877 - PyQt5.uic.properties - DEBUG - setting property bottomMargin
+2024-12-12 15:09:13,877 - PyQt5.uic.properties - DEBUG - setting property pyuicMargins
+2024-12-12 15:09:13,877 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_13
+2024-12-12 15:09:13,877 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-12 15:09:13,877 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 15:09:13,877 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 15:09:13,877 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 15:09:13,877 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 15:09:13,877 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 15:09:13,877 - PyQt5.uic.uiparser - DEBUG - push QFrame output1Frame
+2024-12-12 15:09:13,877 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_9
+2024-12-12 15:09:13,877 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_9
+2024-12-12 15:09:13,877 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame output1Frame
+2024-12-12 15:09:13,877 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000237C2DBD010>
+2024-12-12 15:09:13,877 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_5
+2024-12-12 15:09:13,877 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 15:09:13,877 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 15:09:13,877 - PyQt5.uic.uiparser - DEBUG - push QLabel label_2
+2024-12-12 15:09:13,877 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel label_2
+2024-12-12 15:09:13,877 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000237C2DBD010>
+2024-12-12 15:09:13,877 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_5
+2024-12-12 15:09:13,877 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_13
+2024-12-12 15:09:13,877 - PyQt5.uic.properties - DEBUG - setting property leftMargin
+2024-12-12 15:09:13,878 - PyQt5.uic.properties - DEBUG - setting property topMargin
+2024-12-12 15:09:13,878 - PyQt5.uic.properties - DEBUG - setting property rightMargin
+2024-12-12 15:09:13,878 - PyQt5.uic.properties - DEBUG - setting property bottomMargin
+2024-12-12 15:09:13,878 - PyQt5.uic.properties - DEBUG - setting property pyuicMargins
+2024-12-12 15:09:13,878 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_14
+2024-12-12 15:09:13,878 - PyQt5.uic.properties - DEBUG - setting property sizePolicy
+2024-12-12 15:09:13,878 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 15:09:13,878 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 15:09:13,878 - PyQt5.uic.properties - DEBUG - setting property styleSheet
+2024-12-12 15:09:13,878 - PyQt5.uic.properties - DEBUG - setting property frameShape
+2024-12-12 15:09:13,878 - PyQt5.uic.properties - DEBUG - setting property frameShadow
+2024-12-12 15:09:13,878 - PyQt5.uic.uiparser - DEBUG - push QFrame output2Frame
+2024-12-12 15:09:13,878 - PyQt5.uic.uiparser - DEBUG - push QVBoxLayout verticalLayout_16
+2024-12-12 15:09:13,878 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_16
+2024-12-12 15:09:13,878 - PyQt5.uic.uiparser - DEBUG - pop widget QFrame output2Frame
+2024-12-12 15:09:13,878 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000237C2DBD010>
+2024-12-12 15:09:13,878 - PyQt5.uic.uiparser - DEBUG - push QHBoxLayout horizontalLayout_25
+2024-12-12 15:09:13,878 - PyQt5.uic.properties - DEBUG - setting property minimumSize
+2024-12-12 15:09:13,878 - PyQt5.uic.properties - DEBUG - setting property maximumSize
+2024-12-12 15:09:13,878 - PyQt5.uic.properties - DEBUG - setting property text
+2024-12-12 15:09:13,878 - PyQt5.uic.uiparser - DEBUG - push QLabel label_5
+2024-12-12 15:09:13,878 - PyQt5.uic.uiparser - DEBUG - pop widget QLabel label_5
+2024-12-12 15:09:13,878 - PyQt5.uic.uiparser - DEBUG - new topwidget <PyQt5.QtWidgets.QWidget object at 0x00000237C2DBD010>
+2024-12-12 15:09:13,878 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout_25
+2024-12-12 15:09:13,878 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout_14
+2024-12-12 15:09:13,878 - PyQt5.uic.uiparser - DEBUG - pop layout QVBoxLayout verticalLayout
+2024-12-12 15:09:13,878 - PyQt5.uic.uiparser - DEBUG - pop layout QHBoxLayout horizontalLayout
+2024-12-12 15:09:13,878 - PyQt5.uic.uiparser - DEBUG - pop layout QGridLayout gridLayout
+2024-12-12 15:09:13,878 - PyQt5.uic.uiparser - DEBUG - pop widget QWidget centralwidget
+2024-12-12 15:09:13,878 - PyQt5.uic.uiparser - DEBUG - new topwidget <__main__.MainWindow object at 0x00000237C2DBCB90>
+2024-12-12 15:09:13,879 - PyQt5.uic.uiparser - DEBUG - pop widget MainWindow MainWindow
+2024-12-12 15:09:13,879 - PyQt5.uic.uiparser - DEBUG - new topwidget None
+2024-12-12 15:09:14,554 - Mixer - INFO - Changing mode from Mode.MAGNITUDE_PHASE to Mode.MAGNITUDE_PHASE.
+2024-12-12 15:09:25,665 - MainWindow - INFO - Selected file: D:/SBME/DSP/Tasks/DSP-Image-Frequency-Mixer/data/dog.jpeg
+2024-12-12 15:09:25,675 - MainWindow - INFO - Image loaded successfully for viewer 0
+2024-12-12 15:09:29,191 - MainWindow - INFO - Selected file: D:/SBME/DSP/Tasks/DSP-Image-Frequency-Mixer/data/lion.jpeg
+2024-12-12 15:09:29,201 - MainWindow - INFO - Image loaded successfully for viewer 2
+2024-12-12 15:09:34,588 - Mixer - INFO - Changing mode from Mode.MAGNITUDE_PHASE to Mode.REAL_IMAGINARY.
+2024-12-12 15:09:37,033 - MainWindow - DEBUG - Image 1 weight slider moved to: 1
+2024-12-12 15:09:37,040 - MainWindow - DEBUG - Image 1 weight slider moved to: 2
+2024-12-12 15:09:37,047 - MainWindow - DEBUG - Image 1 weight slider moved to: 3
+2024-12-12 15:09:37,060 - MainWindow - DEBUG - Image 1 weight slider moved to: 5
+2024-12-12 15:09:37,074 - MainWindow - DEBUG - Image 1 weight slider moved to: 6
+2024-12-12 15:09:37,081 - MainWindow - DEBUG - Image 1 weight slider moved to: 8
+2024-12-12 15:09:37,088 - MainWindow - DEBUG - Image 1 weight slider moved to: 9
+2024-12-12 15:09:37,094 - MainWindow - DEBUG - Image 1 weight slider moved to: 12
+2024-12-12 15:09:37,101 - MainWindow - DEBUG - Image 1 weight slider moved to: 14
+2024-12-12 15:09:37,109 - MainWindow - DEBUG - Image 1 weight slider moved to: 17
+2024-12-12 15:09:37,115 - MainWindow - DEBUG - Image 1 weight slider moved to: 20
+2024-12-12 15:09:37,121 - MainWindow - DEBUG - Image 1 weight slider moved to: 22
+2024-12-12 15:09:37,129 - MainWindow - DEBUG - Image 1 weight slider moved to: 25
+2024-12-12 15:09:37,136 - MainWindow - DEBUG - Image 1 weight slider moved to: 27
+2024-12-12 15:09:37,142 - MainWindow - DEBUG - Image 1 weight slider moved to: 29
+2024-12-12 15:09:37,149 - MainWindow - DEBUG - Image 1 weight slider moved to: 30
+2024-12-12 15:09:37,155 - MainWindow - DEBUG - Image 1 weight slider moved to: 31
+2024-12-12 15:09:37,163 - MainWindow - DEBUG - Image 1 weight slider moved to: 33
+2024-12-12 15:09:37,169 - MainWindow - DEBUG - Image 1 weight slider moved to: 34
+2024-12-12 15:09:37,177 - MainWindow - DEBUG - Image 1 weight slider moved to: 35
+2024-12-12 15:09:37,190 - MainWindow - DEBUG - Image 1 weight slider moved to: 36
+2024-12-12 15:09:37,197 - MainWindow - DEBUG - Image 1 weight slider moved to: 37
+2024-12-12 15:09:37,217 - MainWindow - DEBUG - Image 1 weight slider moved to: 38
+2024-12-12 15:09:37,230 - MainWindow - DEBUG - Image 1 weight slider moved to: 39
+2024-12-12 15:09:37,258 - MainWindow - DEBUG - Image 1 weight slider moved to: 40
+2024-12-12 15:09:37,326 - MainWindow - DEBUG - Image 1 weight slider moved to: 41
+2024-12-12 15:09:37,374 - MainWindow - DEBUG - Image 1 weight slider moved to: 42
+2024-12-12 15:09:37,394 - MainWindow - DEBUG - Image 1 weight slider moved to: 43
+2024-12-12 15:09:37,462 - MainWindow - DEBUG - Image 1 weight slider moved to: 42
+2024-12-12 15:09:37,483 - MainWindow - DEBUG - Image 1 weight slider moved to: 41
+2024-12-12 15:09:37,511 - MainWindow - DEBUG - Image 1 weight slider moved to: 40
+2024-12-12 15:09:37,530 - MainWindow - DEBUG - Image 1 weight slider moved to: 39
+2024-12-12 15:09:37,551 - MainWindow - DEBUG - Image 1 weight slider moved to: 38
+2024-12-12 15:09:37,578 - MainWindow - DEBUG - Image 1 weight slider moved to: 37
+2024-12-12 15:09:47,670 - MainWindow - DEBUG - Image 3 weight slider moved to: 1
+2024-12-12 15:09:47,690 - MainWindow - DEBUG - Image 3 weight slider moved to: 2
+2024-12-12 15:09:47,703 - MainWindow - DEBUG - Image 3 weight slider moved to: 3
+2024-12-12 15:09:47,725 - MainWindow - DEBUG - Image 3 weight slider moved to: 4
+2024-12-12 15:09:47,744 - MainWindow - DEBUG - Image 3 weight slider moved to: 5
+2024-12-12 15:09:47,771 - MainWindow - DEBUG - Image 3 weight slider moved to: 6
+2024-12-12 15:09:47,798 - MainWindow - DEBUG - Image 3 weight slider moved to: 7
+2024-12-12 15:09:47,825 - MainWindow - DEBUG - Image 3 weight slider moved to: 8
+2024-12-12 15:09:47,853 - MainWindow - DEBUG - Image 3 weight slider moved to: 9
+2024-12-12 15:09:47,887 - MainWindow - DEBUG - Image 3 weight slider moved to: 10
+2024-12-12 15:09:47,894 - MainWindow - DEBUG - Image 3 weight slider moved to: 11
+2024-12-12 15:09:47,922 - MainWindow - DEBUG - Image 3 weight slider moved to: 12
+2024-12-12 15:09:47,942 - MainWindow - DEBUG - Image 3 weight slider moved to: 13
+2024-12-12 15:09:47,969 - MainWindow - DEBUG - Image 3 weight slider moved to: 14
+2024-12-12 15:09:47,989 - MainWindow - DEBUG - Image 3 weight slider moved to: 15
+2024-12-12 15:09:48,010 - MainWindow - DEBUG - Image 3 weight slider moved to: 16
+2024-12-12 15:09:48,024 - MainWindow - DEBUG - Image 3 weight slider moved to: 17
+2024-12-12 15:09:48,044 - MainWindow - DEBUG - Image 3 weight slider moved to: 18
+2024-12-12 15:09:48,064 - MainWindow - DEBUG - Image 3 weight slider moved to: 19
+2024-12-12 15:09:48,085 - MainWindow - DEBUG - Image 3 weight slider moved to: 20
+2024-12-12 15:09:48,105 - MainWindow - DEBUG - Image 3 weight slider moved to: 21
+2024-12-12 15:09:48,133 - MainWindow - DEBUG - Image 3 weight slider moved to: 22
+2024-12-12 15:09:48,154 - MainWindow - DEBUG - Image 3 weight slider moved to: 23
+2024-12-12 15:09:48,186 - MainWindow - DEBUG - Image 3 weight slider moved to: 24
+2024-12-12 15:09:48,221 - MainWindow - DEBUG - Image 3 weight slider moved to: 25
+2024-12-12 15:09:48,228 - MainWindow - DEBUG - Image 3 weight slider moved to: 26
+2024-12-12 15:09:48,241 - MainWindow - DEBUG - Image 3 weight slider moved to: 27
+2024-12-12 15:09:48,255 - MainWindow - DEBUG - Image 3 weight slider moved to: 28
+2024-12-12 15:09:48,263 - MainWindow - DEBUG - Image 3 weight slider moved to: 29
+2024-12-12 15:09:48,276 - MainWindow - DEBUG - Image 3 weight slider moved to: 30
+2024-12-12 15:09:48,296 - MainWindow - DEBUG - Image 3 weight slider moved to: 31
+2024-12-12 15:09:48,310 - MainWindow - DEBUG - Image 3 weight slider moved to: 32
+2024-12-12 15:09:48,317 - MainWindow - DEBUG - Image 3 weight slider moved to: 33
+2024-12-12 15:09:48,330 - MainWindow - DEBUG - Image 3 weight slider moved to: 34
+2024-12-12 15:09:48,350 - MainWindow - DEBUG - Image 3 weight slider moved to: 35
+2024-12-12 15:09:48,358 - MainWindow - DEBUG - Image 3 weight slider moved to: 36
+2024-12-12 15:09:48,371 - MainWindow - DEBUG - Image 3 weight slider moved to: 37
+2024-12-12 15:09:48,392 - MainWindow - DEBUG - Image 3 weight slider moved to: 38
+2024-12-12 15:09:48,405 - MainWindow - DEBUG - Image 3 weight slider moved to: 39
+2024-12-12 15:09:48,549 - MainWindow - DEBUG - Image 3 weight slider moved to: 38
+2024-12-12 15:09:51,164 - MainWindow - INFO - Mixing images...
+2024-12-12 15:09:51,164 - MainWindow - DEBUG - Current output viewport: 0
+2024-12-12 15:09:51,164 - MainWindow - DEBUG - Current region mode: RegionMode.FULL
+2024-12-12 15:09:53,194 - MainWindow - INFO - Mixing completed successfully
+2024-12-12 15:10:13,936 - MainWindow - INFO - Mixing images...
+2024-12-12 15:10:13,936 - MainWindow - DEBUG - Current output viewport: 0
+2024-12-12 15:10:13,936 - MainWindow - DEBUG - Current region mode: RegionMode.FULL
+2024-12-12 15:10:15,948 - MainWindow - INFO - Mixing completed successfully
+2024-12-12 17:01:52,389 - MainWindow - DEBUG - Image 1 weight slider moved to: 36
+2024-12-12 17:01:52,417 - MainWindow - DEBUG - Image 1 weight slider moved to: 35
+2024-12-12 17:01:52,430 - MainWindow - DEBUG - Image 1 weight slider moved to: 34
+2024-12-12 17:01:52,451 - MainWindow - DEBUG - Image 1 weight slider moved to: 33
+2024-12-12 17:01:52,464 - MainWindow - DEBUG - Image 1 weight slider moved to: 32
+2024-12-12 17:01:52,471 - MainWindow - DEBUG - Image 1 weight slider moved to: 31
+2024-12-12 17:01:52,485 - MainWindow - DEBUG - Image 1 weight slider moved to: 30
+2024-12-12 17:01:52,492 - MainWindow - DEBUG - Image 1 weight slider moved to: 29
+2024-12-12 17:01:52,505 - MainWindow - DEBUG - Image 1 weight slider moved to: 27
+2024-12-12 17:01:52,519 - MainWindow - DEBUG - Image 1 weight slider moved to: 26
+2024-12-12 17:01:52,533 - MainWindow - DEBUG - Image 1 weight slider moved to: 25
+2024-12-12 17:01:52,539 - MainWindow - DEBUG - Image 1 weight slider moved to: 24
+2024-12-12 17:01:52,553 - MainWindow - DEBUG - Image 1 weight slider moved to: 23
+2024-12-12 17:01:52,567 - MainWindow - DEBUG - Image 1 weight slider moved to: 22
+2024-12-12 17:01:52,573 - MainWindow - DEBUG - Image 1 weight slider moved to: 21
+2024-12-12 17:01:52,594 - MainWindow - DEBUG - Image 1 weight slider moved to: 20
+2024-12-12 17:01:52,628 - MainWindow - DEBUG - Image 1 weight slider moved to: 19
+2024-12-12 17:01:52,798 - MainWindow - DEBUG - Image 1 weight slider moved to: 20
+2024-12-12 17:01:52,832 - MainWindow - DEBUG - Image 1 weight slider moved to: 21
+2024-12-12 17:01:52,860 - MainWindow - DEBUG - Image 1 weight slider moved to: 22
+2024-12-12 17:01:52,873 - MainWindow - DEBUG - Image 1 weight slider moved to: 23
+2024-12-12 17:01:52,886 - MainWindow - DEBUG - Image 1 weight slider moved to: 24
+2024-12-12 17:01:52,893 - MainWindow - DEBUG - Image 1 weight slider moved to: 25
+2024-12-12 17:01:52,907 - MainWindow - DEBUG - Image 1 weight slider moved to: 26
+2024-12-12 17:01:52,914 - MainWindow - DEBUG - Image 1 weight slider moved to: 27
+2024-12-12 17:01:52,927 - MainWindow - DEBUG - Image 1 weight slider moved to: 29
+2024-12-12 17:01:52,941 - MainWindow - DEBUG - Image 1 weight slider moved to: 30
+2024-12-12 17:01:52,955 - MainWindow - DEBUG - Image 1 weight slider moved to: 31
+2024-12-12 17:01:52,968 - MainWindow - DEBUG - Image 1 weight slider moved to: 32
+2024-12-12 17:01:52,975 - MainWindow - DEBUG - Image 1 weight slider moved to: 33
+2024-12-12 17:01:52,981 - MainWindow - DEBUG - Image 1 weight slider moved to: 34
+2024-12-12 17:01:52,995 - MainWindow - DEBUG - Image 1 weight slider moved to: 35
+2024-12-12 17:01:53,002 - MainWindow - DEBUG - Image 1 weight slider moved to: 36
+2024-12-12 17:01:53,022 - MainWindow - DEBUG - Image 1 weight slider moved to: 37
+2024-12-12 17:01:53,036 - MainWindow - DEBUG - Image 1 weight slider moved to: 38
+2024-12-12 17:01:53,043 - MainWindow - DEBUG - Image 1 weight slider moved to: 39
+2024-12-12 17:01:53,056 - MainWindow - DEBUG - Image 1 weight slider moved to: 40
+2024-12-12 17:01:53,070 - MainWindow - DEBUG - Image 1 weight slider moved to: 41
+2024-12-12 17:01:53,077 - MainWindow - DEBUG - Image 1 weight slider moved to: 42
+2024-12-12 17:01:53,083 - MainWindow - DEBUG - Image 1 weight slider moved to: 43
+2024-12-12 17:01:53,097 - MainWindow - DEBUG - Image 1 weight slider moved to: 44
+2024-12-12 17:01:53,104 - MainWindow - DEBUG - Image 1 weight slider moved to: 45
+2024-12-12 17:01:53,118 - MainWindow - DEBUG - Image 1 weight slider moved to: 46
+2024-12-12 17:01:53,138 - MainWindow - DEBUG - Image 1 weight slider moved to: 47
+2024-12-12 17:01:53,159 - MainWindow - DEBUG - Image 1 weight slider moved to: 48
+2024-12-12 17:01:53,172 - MainWindow - DEBUG - Image 1 weight slider moved to: 49
+2024-12-12 17:01:53,193 - MainWindow - DEBUG - Image 1 weight slider moved to: 50
+2024-12-12 17:01:53,213 - MainWindow - DEBUG - Image 1 weight slider moved to: 51
+2024-12-12 17:01:53,247 - MainWindow - DEBUG - Image 1 weight slider moved to: 52
+2024-12-12 17:01:53,268 - MainWindow - DEBUG - Image 1 weight slider moved to: 53
+2024-12-12 17:01:53,294 - MainWindow - DEBUG - Image 1 weight slider moved to: 54
+2024-12-12 17:01:53,342 - MainWindow - DEBUG - Image 1 weight slider moved to: 55
+2024-12-12 17:02:09,730 - MainWindow - INFO - Mixing images...
+2024-12-12 17:02:09,730 - MainWindow - DEBUG - Current output viewport: 0
+2024-12-12 17:02:09,730 - MainWindow - DEBUG - Current region mode: RegionMode.FULL
+2024-12-12 17:02:11,733 - MainWindow - INFO - Mixing completed successfully

@@ -147,17 +147,11 @@ class MainWindow(QMainWindow):
         #setting the double click handlers
         for i, viewer in enumerate(self.list_of_image_viewers):
             viewer.set_double_click_handler(lambda i=i: self.load_image(i))
-        
-        
-
-    
-    
-                
+             
     def load_image(self, viewer_number):
         file_path, _ = QFileDialog.getOpenFileName(self, 'Open Image File', '', 'Image Files (*.jpeg *.jpg *.png *.bmp *.gif);;All Files (*)')
         self.logger.info(f"Selected file: {file_path}")
 
-        print(viewer_number)
         if file_path:
             if file_path.endswith('.jpeg') or file_path.endswith('.jpg'):
                 
@@ -178,13 +172,12 @@ class MainWindow(QMainWindow):
                     self.logger.error(f"Failed to load image from {file_path}")             
                         
         else:
-            self.logger.warning("No file selected")
+            self.logger.warning("NO FILE SELECTED / FILE DOESN'T EXIST")
     
     def set_output_viewport(self , new_output_viewport):
+        self.current_output_viewport = new_output_viewport
         self.logger.info(f"Output viewport changed to: {new_output_viewport}")
 
-        self.current_output_viewport = new_output_viewport
-    
     def set_current_region_mode(self,new_region):
         if(new_region == 0 ):
             self.current_region_mode = RegionMode.FULL
@@ -192,6 +185,8 @@ class MainWindow(QMainWindow):
             self.current_region_mode = RegionMode.INNER
         elif(new_region == 2 ):
             self.current_region_mode = RegionMode.OUTER
+        logging.info(f"Current region mode has been changed to {self.current_region_mode} )")
+
     
     def set_current_mode(self, new_mode_index):
         if(new_mode_index == 0):
@@ -199,11 +194,14 @@ class MainWindow(QMainWindow):
             for combobox in self.list_of_combo_boxes:
                 combobox.clear()
                 combobox.addItems(["Magnitude" , "Phase"])
+            logging.info(f"Current mixing mode has been changed to (Magnitude/Phase)")
+
         elif(new_mode_index == 1):
             self.controller.Mixer.current_mode = Mode.REAL_IMAGINARY
             for combobox in self.list_of_combo_boxes:
                 combobox.clear()
                 combobox.addItems(["Real" , "Imaginary"])
+            logging.info(f"Current mixing mode has been changed to (Real/Imaginary)")
     
     def set_image1_current_mode(self , mode_index):
         if (self.controller.Mixer.current_mode == Mode.MAGNITUDE_PHASE):
@@ -216,6 +214,7 @@ class MainWindow(QMainWindow):
                 self.controller.Mixer.images_modes[0] = Mode.REAL
             elif(mode_index == 1):
                 self.controller.Mixer.images_modes[0] = Mode.IMAGINARY
+        logging.info(f"Current region mode of image 1 has been changed to {self.controller.Mixer.images_modes[1]}")
     
     def set_image2_current_mode(self , mode_index):
         if (self.controller.Mixer.current_mode == Mode.MAGNITUDE_PHASE):
@@ -228,6 +227,7 @@ class MainWindow(QMainWindow):
                 self.controller.Mixer.images_modes[1] = Mode.REAL
             elif(mode_index == 1):
                 self.controller.Mixer.images_modes[1] = Mode.IMAGINARY
+        logging.info(f"Current region mode of image 2 has been changed to {self.controller.Mixer.images_modes[1]}")
                             
     def set_image3_current_mode(self , mode_index):
         if (self.controller.Mixer.current_mode == Mode.MAGNITUDE_PHASE):
@@ -240,6 +240,8 @@ class MainWindow(QMainWindow):
                 self.controller.Mixer.images_modes[2] = Mode.REAL
             elif(mode_index == 1):
                 self.controller.Mixer.images_modes[2] = Mode.IMAGINARY
+        logging.info(f"Current region mode of image 3 has been changed to {self.controller.Mixer.images_modes[2]}")
+
                             
     def set_image4_current_mode(self , mode_index):
         if (self.controller.Mixer.current_mode == Mode.MAGNITUDE_PHASE):
@@ -252,7 +254,8 @@ class MainWindow(QMainWindow):
                 self.controller.Mixer.images_modes[3] = Mode.REAL
             elif(mode_index == 1):
                 self.controller.Mixer.images_modes[3] = Mode.IMAGINARY
-    
+        logging.info(f"Current region mode of image 4 has been changed to {self.controller.Mixer.images_modes[3]}")
+        
     def set_image1_weight(self , slider_value):
         self.logger.debug(f"Image 1 weight slider moved to: {slider_value}")
         self.controller.image_weights[0] = slider_value
@@ -289,7 +292,6 @@ class MainWindow(QMainWindow):
         
     def mixing_finished(self):
         self.logger.info("Mixing completed successfully")
-        print('Mixing Done')
         self.stop_loading()
         self.mix_thread.deleteLater()
         
@@ -302,8 +304,6 @@ class MainWindow(QMainWindow):
     def update_loading_frame(self):
         increment = 2.5  # Each update increases position by 2.5 pixels
         self.loading_gradient_pos += increment
-        if self.loading_gradient_pos > self.loading_frame.width():
-            self.loading_gradient_pos = 0  # Reset for looping animation if needed
 
         # Create gradient animation
         # Create a gradient as a stylesheet background
@@ -312,8 +312,8 @@ class MainWindow(QMainWindow):
                                     y1: 0, 
                                     x2: 1, 
                                     y2: 0, 
-                                    stop: 0 red, 
-                                    stop: 1 white);
+                                    stop: 0 white, 
+                                    stop: 1 blue);
         """
         self.loading_frame.setStyleSheet(gradient)
 
@@ -332,7 +332,7 @@ class MixThread(QThread):
 
     def run(self):
         try:
-            print('thread starts')
+            time.sleep(2)
             self.controller.mix_all(self.output_viewer_number, self.region_mode)
         finally:
             self.mix_finished.emit()

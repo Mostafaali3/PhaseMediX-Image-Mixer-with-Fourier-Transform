@@ -51,7 +51,7 @@ class ComponentViewer(Viewer):
                 magnitude_normalized = magnitude_normalized.astype(np.uint8)
                 self.setImage(magnitude_normalized)
                 self.roi.show()
-
+                
             elif plot_type == "Phase":
                 phase = np.angle(self.current_image.modified_image_fourier_components).T
                 phase_normalized = (phase + np.pi) * (255.0 / (2 * np.pi))  # Normalize to [0, 255]

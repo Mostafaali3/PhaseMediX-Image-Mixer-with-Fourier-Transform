@@ -128,9 +128,16 @@ class Mixer():
                 resulted_mix_real += weighted_real
             for weighted_imag in weighted_images_imaginary_parts:
                 resulted_mix_imag += weighted_imag
-            resulted_mix_complex = resulted_mix_real + 1j * resulted_mix_imag
-            
-        resulted_inversed_image = np.fft.ifft2(np.fft.ifftshift(resulted_mix_complex))
+            resulted_mix_complex = resulted_mix_real + 1j* resulted_mix_imag
+            # Enforce Hermitian symmetry
+        rows, cols = resulted_mix_complex.shape
+        for r in range(rows):
+            for c in range(cols // 2 + 1):  # Mirror up to Nyquist frequency
+                resulted_mix_complex[r, -c] = np.conj(resulted_mix_complex[r, c])
+
+        # Perform inverse FFT
+        resulted_inversed_image = np.fft.ifft2(np.fft.ifftshift(resulted_mix_complex))    
+
         resulted_image_real = resulted_inversed_image.real
         return resulted_image_real
     

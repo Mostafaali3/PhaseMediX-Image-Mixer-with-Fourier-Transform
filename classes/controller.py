@@ -13,7 +13,7 @@ class Controller():
     
     def __init__(self, list_of_iamges,list_of_image_viewers,list_of_component_viewers, list_of_combo_boxes , list_of_output_viewers):
         self.logger = logging.getLogger(self.__class__.__name__)
-
+        self.current_region_mode = RegionMode.FULL
         self.list_of_images = list_of_iamges
         self.list_of_image_viewers = list_of_image_viewers
         self.list_of_component_viewers = list_of_component_viewers
@@ -38,9 +38,10 @@ class Controller():
         
         """
         # Get the region and size from the source ROI
+    
         new_pos = source_roi.pos()
         new_size = source_roi.size()
-        
+
         self.rect = [
             int(new_pos.x()), int(new_pos.y()),
             int(new_pos.x()+new_size.x()), int(new_pos.y()+new_size.y())
@@ -55,6 +56,7 @@ class Controller():
                 roi.setSize(new_size)
                 roi.blockSignals(False)
         logging.info(f"Change and Syncronize the ROI position across all the images to {self.rect}")                    
+    
     def get_roi_boundries(self, roi):
         new_pos = roi.pos()
         new_size = roi.size()
@@ -113,6 +115,11 @@ class Controller():
                 index = copy(i)
                 self.list_of_component_viewers[index].curret_image = self.list_of_images[index]
                 self.list_of_component_viewers[index].update_plot(self.list_of_combo_boxes[index].currentText())
+                for viewer in self.list_of_component_viewers:
+                    if self.current_region_mode == RegionMode.FULL:
+                        viewer.roi.hide()
+                
+
         # for viewer in self.list_of_component_viewers:
         #     viewer.roi.sigRegionChanged.connect(lambda: self.handle_roi_change(viewer.roi))
         
@@ -144,6 +151,7 @@ class Controller():
     
     def mix_all(self, output_viewer_number:int ,region_mode):
         try:
+            self.current_region_mode =region_mode
             self.Mixer.images_list = self.list_of_images
             temp_weights = self.image_weights
             self.image_weights = [weight / 100 for weight in self.image_weights]
@@ -152,6 +160,7 @@ class Controller():
             self.result_image_1 = CustomImage(mixer_result_normalized)
             self.list_of_output_viewers[output_viewer_number].current_image = self.result_image_1
             self.list_of_output_viewers[output_viewer_number].update_plot()
+            
             self.image_weights = temp_weights  
         except Exception as e:
             logging.error("Error occurred in mix_all function", exc_info=True)

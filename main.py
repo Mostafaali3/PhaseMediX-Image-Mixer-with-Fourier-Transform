@@ -181,10 +181,22 @@ class MainWindow(QMainWindow):
     def set_current_region_mode(self,new_region):
         if(new_region == 0 ):
             self.current_region_mode = RegionMode.FULL
+            for i,viewer in enumerate(self.list_of_image_viewers):
+                if viewer.current_image:
+                    self.list_of_component_viewers[i].roi.hide()
+                    
         elif(new_region == 1 ):
             self.current_region_mode = RegionMode.INNER
+            for i,viewer in enumerate(self.list_of_image_viewers):
+                if viewer.current_image:
+                    self.list_of_component_viewers[i].roi.show()
+                    
         elif(new_region == 2 ):
             self.current_region_mode = RegionMode.OUTER
+            for i,viewer in enumerate(self.list_of_image_viewers):
+                if viewer.current_image:
+                    self.list_of_component_viewers[i].roi.show()
+                    
         logging.info(f"Current region mode has been changed to {self.current_region_mode} )")
 
     

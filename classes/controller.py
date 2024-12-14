@@ -55,7 +55,7 @@ class Controller():
                 roi.setSize(new_size)
                 roi.blockSignals(False)
             
-            component_viewer.fill_roi(self.current_region_mode)
+            # component_viewer.fill_roi(self.current_region_mode)
         logging.info(f"Change and Syncronize the ROI position across all the images to {self.rect}")                    
     
     def get_roi_boundries(self, roi):

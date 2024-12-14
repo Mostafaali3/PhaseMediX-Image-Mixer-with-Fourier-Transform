@@ -193,6 +193,7 @@ class MainWindow(QMainWindow):
             for i,viewer in enumerate(self.list_of_image_viewers):
                 if viewer.current_image:
                     self.list_of_component_viewers[i].roi.show()
+                    self.list_of_component_viewers[i].roi.set_region('inner')
                     
         elif(new_region == 2 ):
             self.current_region_mode = RegionMode.OUTER
@@ -201,6 +202,8 @@ class MainWindow(QMainWindow):
             for i,viewer in enumerate(self.list_of_image_viewers):
                 if viewer.current_image:
                     self.list_of_component_viewers[i].roi.show()
+                    self.list_of_component_viewers[i].roi.set_region('outer')
+
                     
         logging.info(f"Current region mode has been changed to {self.current_region_mode} )")
 

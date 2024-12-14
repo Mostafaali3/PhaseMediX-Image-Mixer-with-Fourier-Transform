@@ -1,7 +1,9 @@
 from classes.viewer import Viewer
 import numpy as np 
 from PyQt5.QtWidgets import QFileDialog, QLabel
-import pyqtgraph as pg
+import pyqtgraph as pg 
+from pyqtgraph import RectROI, mkBrush
+from classes.CustomROI import CustomRectROI
 from classes.controller import Controller
 from classes.modesEnum import RegionMode
 
@@ -14,7 +16,7 @@ class ComponentViewer(Viewer):
 
         self.overlay_items = []  # List to track overlay items
     
-        self.roi = pg.RectROI([0, 0], [20, 20], pen='r', movable=True, resizable=True)
+        self.roi = CustomRectROI([0, 0], [20, 20], pen='r', movable=True, resizable=True)
         self.roi.addScaleHandle([1, 1], [0, 0])  # Add handles for resizing
         self.roi.addScaleHandle([0, 0], [1, 1])
         self.roi.hide()
@@ -94,47 +96,44 @@ class ComponentViewer(Viewer):
             self.getView().setMouseEnabled(x=False, y=False)
             view_range = self.getView().viewRange()
 
-# Extract the minimum x and y values
+        # Extract the minimum x and y values
             self.xmin, self.xmax = view_range[0]  # x range (xmin, xmax)
             self.ymin, self.ymax = view_range[0]
             
             self.roi.maxBounds = QRectF(self.xmin, self.ymin, self.xmax, self.ymax)
 
-    def fill_roi(self, mode):
-        """
-        Draw a transparent rectangle or polygon over the viewer.
-        mode:
-            1 - Rectangle
-            2 - Polygon (using ROI vertices)
-        """
-        # Remove previously added overlays
-        # for item in self.overlay_items:
-        #     self.getView().removeItem(item)
+    # def fill_roi(self, mode):
+    #     """
+    #     Draw a transparent rectangle or polygon over the viewer.
+    #     mode:
+    #         1 - Rectangle
+    #         2 - Polygon (using ROI vertices)
+    #     """
+    #     # Remove previously added overlays
+    #     # for item in self.overlay_items:
+    #     #     self.getView().removeItem(item)
    
 
-        # Get ROI boundaries
-        x_min, y_min = self.roi_x_min, self.roi_y_min
-        x_max, y_max = self.roi_x_max, self.roi_y_max
+    #     # Get ROI boundaries
+    #     x_min, y_min = self.roi_x_min, self.roi_y_min
+    #     x_max, y_max = self.roi_x_max, self.roi_y_max
 
-        if mode == RegionMode.INNER:  # Draw a transparent rectangle
-            rect_item = QGraphicsRectItem(x_min, y_min, x_max - x_min, y_max - y_min)
-            rect_item.setPen(pg.mkPen('r', width=2))  # Red border
-            rect_item.setBrush(pg.mkBrush(255, 0, 0, 50))  # Semi-transparent red fill
-            self.getView().addItem(rect_item)
-            self.overlay_items.append(rect_item)
-
-        elif mode == RegionMode.OUTER:  # Draw a polygon based on ROI vertices
-            # Get ROI vertices
-            roi_bounds = self.roi.getArraySlice(self.current_image.modified_image[2], self.imageItem)[1]
-            polygon = QPolygonF()
-            for point in roi_bounds:
-                polygon.append(QPointF(point[0], point[1]))
-
-            polygon_item = QGraphicsPolygonItem(polygon)
-            polygon_item.setPen(pg.mkPen('g', width=2))  # Green border
-            polygon_item.setBrush(pg.mkBrush(0, 255, 0, 50))  # Semi-transparent green fill
-            self.getView().addItem(polygon_item)
-            self.overlay_items.append(polygon_item)
+    #     if mode == RegionMode.INNER:  # Draw a transparent rectangle
+    #         rect_item = QGraphicsRectItem(x_min, y_min, x_max - x_min, y_max - y_min)
+    #         rect_item.setPen(pg.mkPen('r', width=2))  # Red border
+    #         rect_item.setBrush(pg.mkBrush(255, 0, 0, 50))  # Semi-transparent red fill
+    #         self.getView().addItem(rect_item)
+    #         self.overlay_items.append(rect_item)
+    #     elif mode == RegionMode.OUTER:  # Draw a polygon based on ROI vertices
+    #         # Get ROI vertices
+    #         roi_bounds = self.roi.getArraySlice(self.current_image.modified_image[2], self.imageItem)[1]
+    #         polygon = QPolygonF()
+  
+    #         polygon_item = QGraphicsPolygonItem(polygon)
+    #         polygon_item.setPen(pg.mkPen('g', width=2))  # Green border
+    #         polygon_item.setBrush(pg.mkBrush(0, 255, 0, 50))  # Semi-transparent green fill
+    #         self.getView().addItem(polygon_item)
+    #         self.overlay_items.append(polygon_item)
    
     def size_handle(self):
         pass

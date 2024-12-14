@@ -119,7 +119,7 @@ class Mixer():
                     weighted_images_real_parts.append(weighted_image_real)
                     # weighted_images_phases.append(image_phase)
                     
-                if(self.images_modes[image_number] == Mode.PHASE):
+                if(self.images_modes[image_number] == Mode.IMAGINARY):
                     weighted_image_imag = image_imag * weights[image_number]
                     weighted_images_imaginary_parts.append(weighted_image_imag)
                     # weighted_images_magnitudes.append(image_magnitude)

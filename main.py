@@ -38,7 +38,7 @@ class MainWindow(QMainWindow):
         self.setWindowIcon(QIcon('icons_setup\icons\logo.png'))
         
         # self.mix_finished = pyqtSignal()  # Signal emitted when mixing finishes
-
+        self.mix_thread = None
         
         self.image_viewer_frame_1 = self.findChild(QFrame, 'image1')
         self.components_viewer_frame_1 = self.findChild(QFrame, 'image1Frequancy')
@@ -300,21 +300,35 @@ class MainWindow(QMainWindow):
         self.logger.info("Mixing images...")
         self.logger.debug(f"Current output viewport: {self.current_output_viewport}")
         self.logger.debug(f"Current region mode: {self.current_region_mode}")
-        
+
         try:
+            # Stop the current thread if it is running
+            if self.mix_thread and self.mix_thread.isRunning():
+                self.logger.debug("Stopping the currently running mix thread...")
+                self.mix_thread.quit()
+                print('quit')
+  # Wait for the thread to finish execution
+            
+            # Create and start a new thread
             self.start_loading()
             self.mix_thread = MixThread(self.controller, self.current_output_viewport, self.current_region_mode)
             self.mix_thread.mix_finished.connect(self.mixing_finished)  # Connect signal to handler
+            self.mix_thread.finished.connect(self.cleanup_thread)  # Ensure proper cleanup
             self.mix_thread.start()
+
         except Exception as e:
             self.logger.error(f"Error during mixing operation: {e}")
             raise
-        
+
     def mixing_finished(self):
         self.logger.info("Mixing completed successfully")
         self.stop_loading()
-        self.mix_thread.deleteLater()
-        
+
+    def cleanup_thread(self):
+        """Ensure proper cleanup of the thread."""
+        if self.mix_thread:
+            self.mix_thread = None
+            
     def start_loading(self):
         self.loading_gradient_pos = 0
         self.loading_timer = QTimer(self)  # Ensure timer is instantiated
@@ -349,11 +363,14 @@ class MixThread(QThread):
         self.controller = controller
         self.output_viewer_number = output_viewer_number
         self.region_mode = region_mode
+        self._running = True  # Flag to control thread execution
 
     def run(self):
         try:
-            time.sleep(2)
-            self.controller.mix_all(self.output_viewer_number, self.region_mode)
+            while self._running:  # Check the flag to ensure the thread can stop
+                time.sleep(2)
+                self.controller.mix_all(self.output_viewer_number, self.region_mode)
+                break
         finally:
             self.mix_finished.emit()
             

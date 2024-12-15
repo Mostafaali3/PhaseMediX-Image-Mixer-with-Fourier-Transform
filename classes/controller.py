@@ -29,7 +29,7 @@ class Controller():
         self.result_image_2 = None #custom image
         self.min_hight = 50000
         self.min_width = 50000
-        self.image_weights = [25,25,25,25]
+        self.image_weights = [0,0,0,0]
         # self.old_image_weights = [25,25,25,25]
      
     def handle_roi_change(self, source_roi):

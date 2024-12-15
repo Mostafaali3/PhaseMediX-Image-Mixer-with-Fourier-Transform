@@ -167,7 +167,7 @@ class MainWindow(QMainWindow):
                     lambda: self.controller.handle_roi_change(self.list_of_component_viewers[viewer_number].roi)
                 )
                     self.controller.set_current_images_list()
-                    self.controller.image_weights[viewer_number] = 0
+                    # self.controller.image_weights[viewer_number] = 0
                 else:
                     self.logger.error(f"Failed to load image from {file_path}")             
                         

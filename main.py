@@ -17,6 +17,7 @@ from copy import copy
 import cv2
 import logging
 
+
 # compile_qrc()
 
 logging.basicConfig(

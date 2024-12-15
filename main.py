@@ -310,11 +310,13 @@ class MainWindow(QMainWindow):
   # Wait for the thread to finish execution
             
             # Create and start a new thread
-            self.start_loading()
-            self.mix_thread = MixThread(self.controller, self.current_output_viewport, self.current_region_mode)
-            self.mix_thread.mix_finished.connect(self.mixing_finished)  # Connect signal to handler
-            self.mix_thread.finished.connect(self.cleanup_thread)  # Ensure proper cleanup
-            self.mix_thread.start()
+            self.controller.mix_all(self.current_output_viewport, self.current_region_mode)
+            # self.start_loading()
+            # self.mix_thread = MixThread(self.controller, self.current_output_viewport, self.current_region_mode)
+            # self.mix_thread.controller = self.controller
+            # self.mix_thread.mix_finished.connect(self.mixing_finished)  # Connect signal to handler
+            # self.mix_thread.finished.connect(self.cleanup_thread)  # Ensure proper cleanup
+            # self.mix_thread.start()
 
         except Exception as e:
             self.logger.error(f"Error during mixing operation: {e}")
@@ -369,6 +371,7 @@ class MixThread(QThread):
         try:
             while self._running:  # Check the flag to ensure the thread can stop
                 time.sleep(2)
+                print("done")
                 self.controller.mix_all(self.output_viewer_number, self.region_mode)
                 break
         finally:

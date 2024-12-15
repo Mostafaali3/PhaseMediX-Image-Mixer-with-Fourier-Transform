@@ -27,6 +27,7 @@ class ImageViewer(Viewer):
         self.current_Image_Item = None
         self.setMouseTracking(True)
         self.flag =0
+        # self.getView().setAspectLocked(False)
     
     def mouseDoubleClickEvent(self, event):
         if self.double_click_handler is not None:
@@ -47,7 +48,7 @@ class ImageViewer(Viewer):
             self.getView().autoRange()
             self.getView().setMouseEnabled(x=False, y=False)
             
-            if self.flag == 0:
+            if self.flag == 0 and self.mouse_release_handler is not None:
                 self.getImageItem().scene().mousePressEvent = self.mousePressEvent
                 self.getImageItem().scene().mouseMoveEvent = self.mouseMoveEvent
                 self.getImageItem().scene().mouseReleaseEvent = self.mouseReleaseEvent

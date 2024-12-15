@@ -1,5 +1,6 @@
 from classes.customImage import CustomImage
 from classes.modesEnum import Mode , RegionMode
+import matplotlib.pyplot as plt 
 import time
 import numpy as np
 import logging
@@ -49,19 +50,28 @@ class Mixer():
             
         if region_mode == RegionMode.INNER:
             # Correct slicing for the inner region
-            region_image = region_image[top:bottom+1, left:right+1]
+            mask = np.zeros(region_image.shape)
+            mask[top:bottom+1, left:right+1] = 1
+            region_image = region_image * mask
+            # plt.imshow(region_image, cmap='gray')
+            # plt.colorbar()
+            # plt.show()
         elif region_mode == RegionMode.OUTER:
             # Correct slices for outer regions
-            left_region = region_image[top:bottom+1, :left]
-            right_region = region_image[top:bottom+1, right+1:]
-            top_region = region_image[:top, :]
-            bottom_region = region_image[bottom+1:, :]
+            mask = np.ones(region_image.shape)
+            mask[top:bottom+1, left:right+1] = 0
+            region_image = region_image * mask
+            
+            # left_region = region_image[top:bottom+1, :left]
+            # right_region = region_image[top:bottom+1, right+1:]
+            # top_region = region_image[:top, :]
+            # bottom_region = region_image[bottom+1:, :]
 
-            # Combine outer regions
-            top_bottom_region = np.vstack((top_region, bottom_region))
-            inner_zero_padding = np.zeros((bottom - top + 1, right - left + 1))
-            left_right_region = np.hstack((left_region, inner_zero_padding, right_region))
-            region_image = np.vstack((top_bottom_region, left_right_region))
+            # # Combine outer regions
+            # top_bottom_region = np.vstack((top_region, bottom_region))
+            # inner_zero_padding = np.zeros((bottom - top + 1, right - left + 1))
+            # left_right_region = np.hstack((left_region, inner_zero_padding, right_region))
+            # region_image = np.vstack((top_bottom_region, left_right_region))
         print(f'region {region_image.shape}')
         return region_image
     
@@ -119,7 +129,7 @@ class Mixer():
                     weighted_images_real_parts.append(weighted_image_real)
                     # weighted_images_phases.append(image_phase)
                     
-                if(self.images_modes[image_number] == Mode.IMAGINARY):
+                elif(self.images_modes[image_number] == Mode.IMAGINARY):
                     weighted_image_imag = image_imag * weights[image_number]
                     weighted_images_imaginary_parts.append(weighted_image_imag)
                     # weighted_images_magnitudes.append(image_magnitude)
@@ -130,10 +140,10 @@ class Mixer():
                 resulted_mix_imag += weighted_imag
             resulted_mix_complex = resulted_mix_real + 1j* resulted_mix_imag
             # Enforce Hermitian symmetry
-        rows, cols = resulted_mix_complex.shape
-        for r in range(rows):
-            for c in range(cols // 2 + 1):  # Mirror up to Nyquist frequency
-                resulted_mix_complex[r, -c] = np.conj(resulted_mix_complex[r, c])
+        # rows, cols = resulted_mix_complex.shape
+        # for r in range(rows):
+        #     for c in range(cols // 2 + 1):  # Mirror up to Nyquist frequency
+        #         resulted_mix_complex[r, -c] = np.conj(resulted_mix_complex[r, c])
 
         # Perform inverse FFT
         resulted_inversed_image = np.fft.ifft2(np.fft.ifftshift(resulted_mix_complex))    

@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1190</width>
+    <width>1279</width>
     <height>765</height>
    </rect>
   </property>
@@ -1447,7 +1447,7 @@ border-radius: 10px;
                 </size>
                </property>
                <property name="text">
-                <string>  10 %</string>
+                <string>  0 %</string>
                </property>
               </widget>
              </item>

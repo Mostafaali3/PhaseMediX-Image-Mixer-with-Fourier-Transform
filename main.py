@@ -5,6 +5,7 @@ from PyQt5.QtGui import QLinearGradient, QColor, QBrush, QPalette
 from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import Qt, QTimer
 import time
+import numpy as np
 from PyQt5.QtCore import QThread, pyqtSignal
 
 from helper_function.compile_qrc import compile_qrc
@@ -93,6 +94,8 @@ class MainWindow(QMainWindow):
         self.current_mode_combobox = self.findChild(QComboBox , "modeComboBox")
         self.current_mode_combobox.currentIndexChanged.connect(self.set_current_mode)
 
+        self.converting_loading_percentage = self.findChild(QLabel , "convertingLoading")
+        self.converting_loading_percentage.setText("0 %")
         self.image1_weight_slider = self.findChild( QSlider , "image1Slider")
         self.image1_weight_slider.setRange(0,100)
         self.image1_weight_slider.sliderMoved.connect(self.set_image1_weight)
@@ -308,16 +311,17 @@ class MainWindow(QMainWindow):
                 self.logger.debug("Stopping the currently running mix thread...")
                 self.mix_thread.quit()
                 print('quit')
-  # Wait for the thread to finish execution
+            # Wait for the thread to finish execution
             
             # Create and start a new thread
-            self.controller.mix_all(self.current_output_viewport, self.current_region_mode)
-            # self.start_loading()
-            # self.mix_thread = MixThread(self.controller, self.current_output_viewport, self.current_region_mode)
-            # self.mix_thread.controller = self.controller
-            # self.mix_thread.mix_finished.connect(self.mixing_finished)  # Connect signal to handler
-            # self.mix_thread.finished.connect(self.cleanup_thread)  # Ensure proper cleanup
-            # self.mix_thread.start()
+            # self.controller.mix_all(self.current_output_viewport, self.current_region_mode)
+            self.start_loading()
+            self.mix_thread = MixThread(self.controller, self.current_output_viewport, self.current_region_mode)
+            self.mix_thread.controller = self.controller
+            self.mix_thread.image_ready.connect(self.update_image_viewer)
+            self.mix_thread.mix_finished.connect(self.mixing_finished)  # Connect signal to handler
+            self.mix_thread.finished.connect(self.cleanup_thread)  # Ensure proper cleanup
+            self.mix_thread.start()
 
         except Exception as e:
             self.logger.error(f"Error during mixing operation: {e}")
@@ -334,14 +338,18 @@ class MainWindow(QMainWindow):
             
     def start_loading(self):
         self.loading_gradient_pos = 0
+        self.converting_loading_percentage.setText("0")
         self.loading_timer = QTimer(self)  # Ensure timer is instantiated
         self.loading_timer.timeout.connect(self.update_loading_frame)
         self.loading_timer.start(10)  # Update every 10 ms for smooth animation
 
     def update_loading_frame(self):
-        increment = 2.5  # Each update increases position by 2.5 pixels
+        increment = 1.5  # Each update increases position by 2.5 pixels
         self.loading_gradient_pos += increment
-
+        if(float(self.converting_loading_percentage.text()) != 100):
+            self.converting_loading_percentage.setText(f"{float(self.converting_loading_percentage.text()) + 0.5}")
+        elif(float(self.converting_loading_percentage.text()) == 100):
+            self.converting_loading_percentage.setText("100")
         # Create gradient animation
         # Create a gradient as a stylesheet background
         gradient = f"""
@@ -357,10 +365,14 @@ class MainWindow(QMainWindow):
     def stop_loading(self):
         if self.loading_timer and self.loading_timer.isActive():
             self.loading_timer.stop()
-
+            
+    def update_image_viewer(self, image_data):
+        """Update the ImageViewer with the processed image."""
+        self.controller.list_of_output_viewers[self.current_output_viewport].setImage(image_data)
 class MixThread(QThread):
     mix_finished = pyqtSignal()
-
+    image_ready = pyqtSignal(np.ndarray)
+    
     def __init__(self, controller, output_viewer_number, region_mode):
         super().__init__()
         self.controller = controller
@@ -371,10 +383,15 @@ class MixThread(QThread):
     def run(self):
         try:
             while self._running:  # Check the flag to ensure the thread can stop
-                time.sleep(2)
+                time.sleep(2) 
                 print("done")
                 self.controller.mix_all(self.output_viewer_number, self.region_mode)
+                # self.controller.list_of_output_viewers[0].update_plot()
+                output_image_data = self.controller.list_of_output_viewers[self.output_viewer_number].current_image.modified_image[2].T
+                self.image_ready.emit(output_image_data)
                 break
+        except Exception as e:
+            print(e)
         finally:
             self.mix_finished.emit()
             

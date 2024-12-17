@@ -78,10 +78,10 @@ class MainWindow(QMainWindow):
         self.output_viewer_2 = ImageViewer()
         self.output_viewer_frame_2.layout().addWidget(self.output_viewer_2)
         
-        self.convert_button = self.findChild(QPushButton , "convertButton")
-        self.convert_button.clicked.connect(self.mix_and_view)
+        # self.convert_button = self.findChild(QPushButton , "convertButton")
+        # self.convert_button.clicked.connect(self.mix_and_view)
         
-        self.loading_frame = self.findChild(QFrame, "loadingFrame")
+        # self.loading_frame = self.findChild(QFrame, "loadingFrame")
         
         self.output_dispaly_combobox = self.findChild(QComboBox , "displayComboBox")
         self.output_dispaly_combobox.currentIndexChanged.connect(self.set_output_viewport)
@@ -99,19 +99,25 @@ class MainWindow(QMainWindow):
         self.image1_weight_slider = self.findChild( QSlider , "image1Slider")
         self.image1_weight_slider.setRange(0,100)
         self.image1_weight_slider.sliderMoved.connect(self.set_image1_weight)
+        self.image1_weight_slider.sliderReleased.connect(self.real_time_mix_and_view)
         
         
         self.image2_weight_slider = self.findChild( QSlider , "image2Slider")
         self.image2_weight_slider.setRange(0,100)
         self.image2_weight_slider.sliderMoved.connect(self.set_image2_weight)
+        self.image2_weight_slider.sliderReleased.connect(self.real_time_mix_and_view)
+        
+        
         
         self.image3_weight_slider = self.findChild( QSlider , "image3Slider")
         self.image3_weight_slider.setRange(0,100)
         self.image3_weight_slider.sliderMoved.connect(self.set_image3_weight)
+        self.image3_weight_slider.sliderReleased.connect(self.real_time_mix_and_view)
         
         self.image4_weight_slider = self.findChild( QSlider , "image4Slider")
         self.image4_weight_slider.setRange(0,100)
         self.image4_weight_slider.sliderMoved.connect(self.set_image4_weight)
+        self.image4_weight_slider.sliderReleased.connect(self.real_time_mix_and_view)
         
         # Initialize the weights labels
         self.image1_weight_label = self.findChild(QLabel , "image1Loading")
@@ -301,6 +307,9 @@ class MainWindow(QMainWindow):
         self.logger.debug(f"Image 4 weight slider moved to: {slider_value}")
         self.controller.image_weights[3] = slider_value
         self.image4_weight_label.setText(f'{slider_value} %')
+    
+    def real_time_mix_and_view(self):
+        self.controller.mix_all(self.current_output_viewport, self.current_region_mode)
     
     def mix_and_view(self):
         self.logger.info("Mixing images...")

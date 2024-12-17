@@ -35,6 +35,8 @@ class CustomImage():
             self.image__phase_weight = 25
             self.image_mag_taken = False
             self.image_phase_taken = False
+            self.modified_image_fourier_components_mag = np.abs(self.modified_image_fourier_components).T
+            self.modified_image_fourier_components_phase = np.angle(self.modified_image_fourier_components).T
     @property
     def original_image(self):
         return self.__original_image

@@ -41,10 +41,10 @@ class ComponentViewer(Viewer):
 
             # Plot selected component
             if plot_type == "Magnitude":
-                magnitude = np.abs(self.current_image.modified_image_fourier_components).T
+                magnitude =self.current_image.modified_image_fourier_components_mag
                 processed_image = self._normalize_and_convert(np.log1p(magnitude))
             elif plot_type == "Phase":
-                phase = np.angle(self.current_image.modified_image_fourier_components).T
+                phase = self.current_image.modified_image_fourier_components_phase
                 processed_image = self._normalize_and_convert((phase + np.pi) * (255.0 / (2 * np.pi)))
             elif plot_type == "Real":
                 real = self.current_image.modified_image_fourier_components.T.real

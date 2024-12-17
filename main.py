@@ -94,8 +94,8 @@ class MainWindow(QMainWindow):
         self.current_mode_combobox = self.findChild(QComboBox , "modeComboBox")
         self.current_mode_combobox.currentIndexChanged.connect(self.set_current_mode)
 
-        self.converting_loading_percentage = self.findChild(QLabel , "convertingLoading")
-        self.converting_loading_percentage.setText("0 %")
+        # self.converting_loading_percentage = self.findChild(QLabel , "convertingLoading")
+        # self.converting_loading_percentage.setText("0 %")
         self.image1_weight_slider = self.findChild( QSlider , "image1Slider")
         self.image1_weight_slider.setRange(0,100)
         self.image1_weight_slider.sliderMoved.connect(self.set_image1_weight)
@@ -176,6 +176,7 @@ class MainWindow(QMainWindow):
                     self.list_of_component_viewers[viewer_number].roi.sigRegionChanged.connect(
                     lambda: self.controller.handle_roi_change(self.list_of_component_viewers[viewer_number].roi)
                 )
+                    self.list_of_component_viewers[viewer_number].roi.sigRegionChanged.connect(self.real_time_mix_and_view)
                     self.controller.set_current_images_list()
                     # self.controller.image_weights[viewer_number] = 0
                 else:
@@ -215,7 +216,7 @@ class MainWindow(QMainWindow):
                     self.list_of_component_viewers[i].roi.show()
                     self.list_of_component_viewers[i].set_region('outer')
 
-                    
+        self.real_time_mix_and_view()            
         logging.info(f"Current region mode has been changed to {self.current_region_mode} )")
 
     

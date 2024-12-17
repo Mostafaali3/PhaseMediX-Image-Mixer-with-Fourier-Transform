@@ -275,6 +275,7 @@ class MainWindow(QMainWindow):
                 self.controller.Mixer.images_modes[3] = Mode.REAL
             elif(mode_index == 1):
                 self.controller.Mixer.images_modes[3] = Mode.IMAGINARY
+        
         logging.info(f"Current region mode of image 4 has been changed to {self.controller.Mixer.images_modes[3]}")
         
     def set_image1_weight(self , slider_value):

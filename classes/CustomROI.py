@@ -1,65 +1,63 @@
-from PyQt5.QtGui import QPen, QColor
+from PyQt5.QtGui import QPen, QColor, QPainterPath, QBrush
+from PyQt5.QtCore import QRectF
 import pyqtgraph as pg
-from PyQt5.QtGui import QPainter, QColor, QPolygonF,QBrush, QPainterPath
-from PyQt5.QtCore import QRectF, QPointF
+
 
 class CustomRectROI(pg.RectROI):
     def __init__(self, pos, size, pen=None, **kwargs):
-        # If pen is a string, convert it to QPen
+        """
+        Custom Rectangular ROI with support for inner/outer region drawing.
+        """
+        
+        # Convert pen string to QPen if needed
         if isinstance(pen, str):
-            pen = QPen(QColor(pen))  # Convert the string to a QPen with the specified color
-        super().__init__(pos, size, pen, **kwargs)
-        self.region = 'inner'
-    def paint(self, painter, *args):
-        """
-        Custom paint event to override the default painting behavior.
-        Fills the ROI with a semi-transparent color or pattern.
-        """
-        
-        bounds_rect = self.maxBounds
-        rect = QRectF(0, 0, self.state['size'][0], self.state['size'][1]).normalized()
-        painter.setPen(self.currentPen)
-        painter.setBrush(QColor(255, 0, 0, 50))  # Semi-transparent red
-        
-        outer_path = QPainterPath()
-        outer_path.addRect(bounds_rect)  # Full outer rectangle
+            pen = QPen(QColor(pen))
 
-        inner_path = QPainterPath()
-        inner_path.addRect(rect) 
-        if self.region == 'inner':
-            painter.drawRect(rect)
-        else :
-           # Fill the outer region (area outside the inner rectangle)
-        # Step 1: Fill the entire bounding rectangle
-            outer_path = outer_path.subtracted(inner_path)  # Subtract the inner region
-            painter.setBrush(QColor(255, 0, 0, 50))  # Semi-transparent red for the outer region
-            painter.drawPath(outer_path)
+        super().__init__(pos, size, pen=pen, **kwargs)
+
+        self.region_mode = 'inner'  # Modes: 'inner' or 'outer'
+        self.max_bounds = QRectF(-500, -500, 1000, 1000)  # Set large bounds for the outer region
+        self.outer_path = QPainterPath()  # Path for the outer region
+        self.inner_path = QPainterPath()  # Path for the inner region
+
+        # Connect ROI region change signal
+        self.sigRegionChanged.connect(self.handle_roi_change)
+    
+    def handle_roi_change(self):
+        """
+        Update the paths for the inner and outer regions dynamically.
+        """
+                # Trigger repaint of the ROI
+        self.update()
+
+    def paint(self, painter, option, widget=None):
+        """
+        Custom paint function to draw the ROI and outer region.
+        """
+        # Call the region update logic
+        self.handle_roi_change()
+
+        if self.region_mode == 'inner':
+            # Inner mode: Fill the ROI with a semi-transparent color
+            painter.setBrush(QColor(255, 0, 0, 50))  # Semi-transparent red
+            painter.drawRect(self.max_bounds)
+            painter.setBrush(QColor(0, 255, 0, 50))  # Semi-transparent green
+            painter.drawRect(self.boundingRect())
+        elif self.region_mode == 'outer': 
+            # Outer mode: Draw the outer region with the ROI subtracted
+            painter.setBrush(QColor(0, 255, 0, 50))  # Semi-transparent red
+            painter.drawRect(self.max_bounds)
+            painter.setBrush(QColor(255, 0, 0, 50))  # Semi-transparent green
+            painter.drawRect(self.boundingRect())
+
+
+        
     def set_region(self, region):
-        self.region = region
-
-    def get_rectangle_points(self,bounds_rect, rect):
-        # Bounds rectangle corners (8 points in total)
-        bounds_top_left = bounds_rect.topLeft()
-        bounds_top_right = bounds_rect.topRight()
-        bounds_bottom_left = bounds_rect.bottomLeft()
-        bounds_bottom_right = bounds_rect.bottomRight()
-
-        # Rect rectangle corners (inside bounds_rect)
-        rect_top_left = rect.topLeft()
-        rect_top_right = rect.topRight()
-        rect_bottom_left = rect.bottomLeft()
-        rect_bottom_right = rect.bottomRight()
-
-        # Return the list of 8 points
-        points = [
-            bounds_top_left,  # Top-left corner of bounds_rect
-            bounds_top_right,  # Top-right corner of bounds_rect
-            bounds_bottom_left,  # Bottom-left corner of bounds_rect
-            bounds_bottom_right,  # Bottom-right corner of bounds_rect
-            rect_top_left,  # Top-left corner of rect
-            rect_top_right,  # Top-right corner of rect
-            rect_bottom_left,  # Bottom-left corner of rect
-            rect_bottom_right,  # Bottom-right corner of rect
-        ]
-
-        return points
+        """
+        Update the region type (inner or outer).
+        """
+        self.region_mode = region
+        self.handle_roi_change()
+        self.update()
+        # Trig
+        print(region)

@@ -1,84 +1,110 @@
-from classes.viewer import Viewer
-import numpy as np 
-from PyQt5.QtWidgets import QFileDialog, QLabel
-import pyqtgraph as pg 
-from pyqtgraph import RectROI, mkBrush
+from PyQt5.QtGui import QBrush, QColor
+from PyQt5.QtWidgets import QGraphicsRectItem
+import numpy as np
+import pyqtgraph as pg
 from classes.CustomROI import CustomRectROI
-from classes.controller import Controller
-from classes.modesEnum import RegionMode
+from classes.viewer import Viewer
 
-from PyQt5.QtWidgets import QGraphicsRectItem, QGraphicsPolygonItem
-from PyQt5.QtGui import QPolygonF 
-from PyQt5.QtCore import QPointF, QRectF
 class ComponentViewer(Viewer):
     def __init__(self):
+        """
+        Initialize ComponentViewer with custom ROI and default settings.
+        """
         super().__init__()
-        
+        self.region_mode = "full"
+
+        # Custom Rectangular ROI
         self.roi = CustomRectROI([0, 0], [20, 20], pen='r', movable=True, resizable=True)
-        self.roi.addScaleHandle([1, 1], [0, 0])  # Add handles for resizing
+        self.roi.addScaleHandle([1, 1], [0, 0])
         self.roi.addScaleHandle([0, 0], [1, 1])
         self.roi.hide()
-        
 
-        
-        # Add ROI to the view and connect its signal
+        # Transparent rectangle for full/outer visualization
+        self.transparent_rect = None
+
+        # Add ROI to the view
         self.getView().addItem(self.roi)
-        # self.roi.sigRegionChanged.connect(Controller.handle_roi_change(self.roi))
-        view_range = self.getView().viewRange()
 
-        self.xmin, self.xmax = view_range[0]  
-        self.ymin, self.ymax = view_range[1]  
-        
-        # self.show_grid(x=False, y=False)  
-    
+        # Track view bounds
+        self.xmin = self.ymin = self.xmax = self.ymax = 0
 
-    def update_plot(self, plot_type:str):
+    def update_plot(self, plot_type: str):
+        """
+        Update the current image plot based on the selected plot type.
+        Args:
+            plot_type (str): 'Magnitude', 'Phase', 'Real', or 'Imaginary'.
+        """
         if self.current_image.modified_image[2].ndim == 2:
-            if hasattr(self, 'imageItem'):
-                self.imageItem.setImage(self.current_image.modified_image[2])
-            # self.current_Image_Item = pg.ImageItem(self.current_image.modified_image[2])
+            # Remove previous transparent rect if exists
+            # if self.transparent_rect:
+            #     self.getView().removeItem(self.transparent_rect)
+
+            # Plot selected component
             if plot_type == "Magnitude":
                 magnitude = np.abs(self.current_image.modified_image_fourier_components).T
-                magnitude_log = np.log1p(magnitude)  
-                magnitude_normalized = (magnitude_log - np.min(magnitude_log)) * (255.0 / (np.max(magnitude_log) - np.min(magnitude_log)))
-                magnitude_normalized = magnitude_normalized.astype(np.uint8)
-                self.setImage(magnitude_normalized)
-                
+                processed_image = self._normalize_and_convert(np.log1p(magnitude))
             elif plot_type == "Phase":
                 phase = np.angle(self.current_image.modified_image_fourier_components).T
-                phase_normalized = (phase + np.pi) * (255.0 / (2 * np.pi))  # Normalize to [0, 255]
-                phase_normalized = phase_normalized.astype(np.uint8)
-                self.setImage(phase_normalized)
-
+                processed_image = self._normalize_and_convert((phase + np.pi) * (255.0 / (2 * np.pi)))
             elif plot_type == "Real":
                 real = self.current_image.modified_image_fourier_components.T.real
-                real_clipped = np.clip(real, 1e-10, None)
-                real_log = np.log1p(real_clipped)
-                real_normalized = (real_log - np.min(real_log)) * (255.0 / (np.max(real_log) - np.min(real_log)))
-                real_normalized = real_normalized.astype(np.uint8)
-                self.setImage(real_normalized)
-            
-                
+                processed_image = self._normalize_and_convert(np.log1p(np.clip(real, 1e-10, None)))
             elif plot_type == "Imaginary":
                 imaginary = self.current_image.modified_image_fourier_components.T.imag
-                imaginary_clipped = np.clip(imaginary, 1e-10, None)
-                imaginary_log = np.log1p(imaginary_clipped)
-                imaginary_normalized = (imaginary_log - np.min(imaginary_log)) * (255.0 / (np.max(imaginary_log) - np.min(imaginary_log)))
-                imaginary_normalized = imaginary_normalized.astype(np.uint8)
-                self.setImage(imaginary_normalized)
-                
+                processed_image = self._normalize_and_convert(np.log1p(np.clip(imaginary, 1e-10, None)))
+            else:
+                return  # Invalid plot type
+
+            self.setImage(processed_image)
+
+            # Show ROI and update bounds
             self.roi.show()
             self.getView().autoRange()
             self.getView().setMouseEnabled(x=False, y=False)
-            view_range = self.getView().viewRange()
 
-        # Extract the minimum x and y values
-            self.xmin, self.xmax = view_range[0]  # x range (xmin, xmax)
-            self.ymin, self.ymax = view_range[0]
-            
-            self.roi.maxBounds = self.getImageItem().boundingRect()  
-            # self.roi.max_bounds = QRectF(self.roi.maxBounds.topLeft(), self.roi.maxBounds.size())
-    
-    def size_handle(self):
-        pass
-    
+            # Update view range for ROI bounds
+            self._update_view_bounds()
+
+            # Set ROI bounds to the current image
+            # self.roi.set_image(self.getImageItem())
+            self.roi.maxBounds = self.getImageItem().boundingRect()
+
+    def set_region(self, region):
+        """
+        Set the current ROI region mode and update the transparent rectangle.
+        Args:
+            region (str): 'full', 'inner', or 'outer'.
+        """
+        self.region_mode = region
+
+        # Remove previous transparent rect
+        if self.transparent_rect:
+            self.getView().removeItem(self.transparent_rect)
+            self.transparent_rect = None
+
+        # Add transparent overlay if needed
+        if region in {'inner', 'outer'}:
+            self.transparent_rect = QGraphicsRectItem(self.getImageItem().boundingRect())
+            color = QColor(0, 255, 0, 50) if region == 'outer' else QColor(255, 0, 0, 50)
+            self.getView().removeItem(self.transparent_rect)
+
+            self.transparent_rect.setBrush(QBrush(color))
+            self.getView().addItem(self.transparent_rect)
+
+        # Update ROI's mode
+        self.roi.set_region(region)
+        self.update()
+    def _normalize_and_convert(self, image):
+        """
+        Normalize and convert the image to 8-bit format.
+        """
+        normalized = (image - np.min(image)) * (255.0 / (np.max(image) - np.min(image)))
+        return normalized.astype(np.uint8)
+
+    def _update_view_bounds(self):
+        """
+        Update the minimum and maximum bounds of the view.
+        """
+        view_range = self.getView().viewRange()
+        self.xmin, self.xmax = view_range[0]  # X range
+        self.ymin, self.ymax = view_range[1]  # Y range

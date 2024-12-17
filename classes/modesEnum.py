@@ -9,6 +9,6 @@ class Mode(Enum):
     REAL_IMAGINARY = "Real / Imaginary"
     
 class RegionMode(Enum):
-    OUTER = "Outer"
-    INNER = "Inner"
-    FULL = "Full"
+    OUTER = "outer"
+    INNER = "inner"
+    FULL = "full"

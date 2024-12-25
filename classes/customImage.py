@@ -80,6 +80,10 @@ class CustomImage():
         
     def transform(self):
         self.modified_image_fourier_components = np.fft.fftshift(np.fft.fft2(self.modified_image[2]))
+        self.modified_image_fourier_components_mag = np.abs(self.__modified_image_fourier_components)
+        self.modified_image_fourier_components_phase = np.angle(self.__modified_image_fourier_components)
+        self.modified_image_fourier_components_real = np.real(self.__modified_image_fourier_components)
+        self.modified_image_fourier_components_imag = np.imag(self.__modified_image_fourier_components)
     
     def inverse_transform(self):
         self.modified_image[2] = np.fft.ifft2(np.fft.ifftshift(self.modified_image_fourier_components))
@@ -95,3 +99,4 @@ class CustomImage():
             self.original_sized_image[0] = np.arange(1 , height + 1)
             self.original_sized_image[1] = np.arange(1 , width + 1)
             self.original_sized_image[2] = cv2.resize(self.original_image[2] , (width , height))
+            

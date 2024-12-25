@@ -48,7 +48,7 @@ class ImageViewer(Viewer):
             self.getView().autoRange()
             self.getView().setMouseEnabled(x=False, y=False)
             
-            if self.flag == 0 and self.mouse_release_handler is not None:
+            if self.flag == 0 :
                 self.getImageItem().scene().mousePressEvent = self.mousePressEvent
                 self.getImageItem().scene().mouseMoveEvent = self.mouseMoveEvent
                 self.getImageItem().scene().mouseReleaseEvent = self.mouseReleaseEvent

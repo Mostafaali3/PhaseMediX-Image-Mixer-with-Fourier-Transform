@@ -1,6 +1,6 @@
 # Fourier Transform Mixer
 
-![Application Overview](assets/ui_overview.png "Overview of the Fourier Transform Mixer")
+![Application Overview](assets/screen_mockup.png "Overview of the Fourier Transform Mixer")
 
 The Fourier Transform Mixer is an interactive application designed to visualize and manipulate the magnitude and phase components of images. By separating and recombining these components, users can explore the impact of Fourier transforms in image processing and understand the relationship between image structure, frequency content, and phase information.
 

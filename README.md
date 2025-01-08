@@ -28,6 +28,14 @@ The Fourier Transform Mixer is an interactive application designed to visualize 
   - Evaluate how phase dominates in defining an image's structure, while magnitude refines details.
 
 ---
+## Preveiw:
+ **Inner and Outter ROI Control**
+  - ![Video Demo](assets/roi.gif)
+ **Realtiem Contrast control**
+  - ![Video Demo](assets/contrast.gif)
+
+**Realtiem Mixing**
+  - ![Video Demo](assets/mix.gif)
 
 ## Getting Started
 
@@ -35,12 +43,12 @@ The Fourier Transform Mixer is an interactive application designed to visualize 
 
 #### Clone the Repository
 ```bash
-git clone https://github.com/YourUsername/Fourier-Transform-Mixer.git
+git clone https://github.com/Mostafaali3/Realtime-Image-Frequency-Mixer.git
 ```
 
 #### Navigate to the Project Directory
 ```bash
-cd Fourier-Transform-Mixer
+cd Realtime-Image-Frequency-Mixer
 ```
 
 #### Install Required Packages
@@ -88,43 +96,48 @@ python main.py
 
 The Fourier Transform Mixer relies on the following technologies and libraries:
 
-| **Dependency**   | **Description**                                      |
-|-------------------|------------------------------------------------------|
-| Python 3.x       | Core programming language.                           |
-| NumPy            | Numerical computations for Fourier transforms.       |
-| OpenCV           | Image processing and visualization.                  |
-| PyQt5            | GUI framework for building desktop applications.     |
-| matplotlib       | Visualizations for frequency domain representations. |
+| **Dependency**       | **Description**                                       |
+|-----------------------|-------------------------------------------------------|
+| Python 3.x           | Core programming language.                            |
+| NumPy                | Numerical computations for signal processing.         |
+| PyQt5                | GUI framework for building desktop applications.      |
+| pyqtgraph            | Fast plotting and 2D visualization in PyQt.           |
+| matplotlib           | Visualization library for plotting and analysis.      |
+| OpenCV (cv2)         | Computer vision library for image manipulation.       |
+| logging              | Python standard logging module for debugging.         |
 
----
-
-## Contributors
-
+## Contributors <a name="Contributors"></a>
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/YourUsername" target="_blank">
-        <img src="https://github.com/YourUsername.png" width="150px;" alt="Your Name"/>
+      <a href="https://github.com/Mostafaali3" target="_blank">
+        <img src="https://github.com/Mostafaali3.png" width="150px;" alt="Mostafa Ali"/>
         <br />
-        <sub><b>Your Name</b></sub>
+        <sub><b>Mostafa Ali</b></sub>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/Contributor1" target="_blank">
-        <img src="https://github.com/Contributor1.png" width="150px;" alt="Contributor 1"/>
+      <a href="https://github.com/Youssef-Abo-El-Ela" target="_blank">
+        <img src="https://github.com/Youssef-Abo-El-Ela.png" width="150px;" alt="Youssef Abo El Ela"/>
         <br />
-        <sub><b>Contributor 1</b></sub>
+        <sub><b>Youssef Abo El-Ela</b></sub>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/Contributor2" target="_blank">
-        <img src="https://github.com/Contributor2.png" width="150px;" alt="Contributor 2"/>
+      <a href="https://github.com/karreemm" target="_blank">
+        <img src="https://github.com/karreemm.png" width="150px;" alt="Kareem Abdel Nabi"/>
         <br />
-        <sub><b>Contributor 2</b></sub>
+        <sub><b>Kareem Abdel Nabi</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/AhmedXAlDeeb" target="_blank">
+        <img src="https://github.com/AhmedXAlDeeb.png" width="150px;" alt="Ahmed X AlDeeb"/>
+        <br />
+        <sub><b>Ahmed AlDeeb</b></sub>
       </a>
     </td>
   </tr>
 </table>
-
 Thank you for using the Fourier Transform Mixer! Feel free to contribute or reach out with feedback.
 

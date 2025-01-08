@@ -43,12 +43,12 @@ The Fourier Transform Mixer is an interactive application designed to visualize 
 
 #### Clone the Repository
 ```bash
-git clone https://github.com/YourUsername/Fourier-Transform-Mixer.git
+git clone https://github.com/Mostafaali3/Realtime-Image-Frequency-Mixer.git
 ```
 
 #### Navigate to the Project Directory
 ```bash
-cd Fourier-Transform-Mixer
+cd Realtime-Image-Frequency-Mixer
 ```
 
 #### Install Required Packages

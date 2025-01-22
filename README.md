@@ -139,5 +139,9 @@ The Fourier Transform Mixer relies on the following technologies and libraries:
     </td>
   </tr>
 </table>
+
+## Acknowledgments
+These projects was supervised by Dr. Tamer Basha as part of the Digital Signal Processing course at Cairo University Faculty of Engineering.
+
 Thank you for using the Fourier Transform Mixer! Feel free to contribute or reach out with feedback.
 
